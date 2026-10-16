@@ -1,0 +1,18 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+/Data/
+/.tools/
+/gamerelease/
+/build/
+/dist/
+
+# Godot import cache sidecars are recreated from source assets.
+*.import
+
+# Local test output and editor-only previews.
+Tools/__pycache__/
+
+# Python authoring caches
+__pycache__/
+*.py[cod]
