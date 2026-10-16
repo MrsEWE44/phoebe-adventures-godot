@@ -1,0 +1,114 @@
+[
+  {
+    "order": 1,
+    "id": "level_01_sunken_temple",
+    "name_zh": "沉沙神殿",
+    "theme": "古埃及遗迹神殿地下城 / 初入地宫",
+    "folder": "level_01_sunken_temple",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 2,
+    "id": "level_02_collapsed_ruins",
+    "name_zh": "崩塌遗迹",
+    "theme": "断桥、深坑、崩塌遗迹 / 探险路线",
+    "folder": "level_02_collapsed_ruins",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 3,
+    "id": "level_03_mirror_sanctum",
+    "name_zh": "镜像祭殿",
+    "theme": "对称地宫、祭坛、守护石像 / 神秘仪式感",
+    "folder": "level_03_mirror_sanctum",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 4,
+    "id": "level_04_drowned_crypt",
+    "name_zh": "沉没圣池",
+    "theme": "水下遗迹、淹没墓室、残柱 / 阴冷探索",
+    "folder": "level_04_drowned_crypt",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 5,
+    "id": "level_05_cursed_traps",
+    "name_zh": "诅咒机关廊",
+    "theme": "尖刺、机关、狭窄通路 / 高危险陷阱区",
+    "folder": "level_05_cursed_traps",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 6,
+    "id": "level_06_shadow_necropolis",
+    "name_zh": "冥影墓城",
+    "theme": "地下墓城、蛛网、棺椁与深坑 / 恐怖墓穴",
+    "folder": "level_06_shadow_necropolis",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  },
+  {
+    "order": 7,
+    "id": "level_07_anubis_temple",
+    "name_zh": "阿努比斯终殿",
+    "theme": "阿努比斯神殿、中央祭坛、水池 / 终局神殿",
+    "folder": "level_07_anubis_temple",
+    "map": "map.png",
+    "tileset": "tileset_32x32.png",
+    "tilemap_json": "tilemap.json",
+    "tilemap_csv": "tilemap.csv",
+    "unique_tiles": 1590,
+    "grid_tiles": [
+      53,
+      30
+    ]
+  }
+]

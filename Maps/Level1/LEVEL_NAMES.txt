@@ -1,0 +1,7 @@
+1. 沉沙神殿  (level_01_sunken_temple)  — 古埃及遗迹神殿地下城 / 初入地宫
+2. 崩塌遗迹  (level_02_collapsed_ruins)  — 断桥、深坑、崩塌遗迹 / 探险路线
+3. 镜像祭殿  (level_03_mirror_sanctum)  — 对称地宫、祭坛、守护石像 / 神秘仪式感
+4. 沉没圣池  (level_04_drowned_crypt)  — 水下遗迹、淹没墓室、残柱 / 阴冷探索
+5. 诅咒机关廊  (level_05_cursed_traps)  — 尖刺、机关、狭窄通路 / 高危险陷阱区
+6. 冥影墓城  (level_06_shadow_necropolis)  — 地下墓城、蛛网、棺椁与深坑 / 恐怖墓穴
+7. 阿努比斯终殿  (level_07_anubis_temple)  — 阿努比斯神殿、中央祭坛、水池 / 终局神殿
