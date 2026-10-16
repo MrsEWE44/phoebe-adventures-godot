@@ -1,0 +1,16 @@
+Adventurer's Kit — 16 Free Icons — License
+
+You MAY:
+  - use these assets in personal and commercial games and projects
+  - modify, recolour and remix them
+  - use them in an unlimited number of projects
+
+You MAY NOT:
+  - resell or redistribute these assets as an asset pack, on their own or
+    as part of another asset collection
+  - claim authorship of the assets themselves
+
+Attribution is appreciated but not required.
+
+AI disclosure: base artwork was generated with Google Gemini, then cut,
+downscaled, palette-quantised and curated by hand.
