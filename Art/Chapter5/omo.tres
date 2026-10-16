@@ -1,0 +1,72 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://Art/Chapter5/omo_rgba.png" id="t"]
+[sub_resource type="AtlasTexture" id="f00"]
+atlas = ExtResource("t")
+region = Rect2(155,15,202,346)
+margin = Rect2(27,21,54,25)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f01"]
+atlas = ExtResource("t")
+region = Rect2(456,15,203,344)
+margin = Rect2(26,23,53,27)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f02"]
+atlas = ExtResource("t")
+region = Rect2(783,15,201,349)
+margin = Rect2(27,18,55,22)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f03"]
+atlas = ExtResource("t")
+region = Rect2(1089,15,199,344)
+margin = Rect2(28,23,57,27)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f10"]
+atlas = ExtResource("t")
+region = Rect2(140,373,229,321)
+margin = Rect2(13,46,27,50)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f11"]
+atlas = ExtResource("t")
+region = Rect2(426,373,238,321)
+margin = Rect2(9,46,18,50)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f12"]
+atlas = ExtResource("t")
+region = Rect2(755,373,248,321)
+margin = Rect2(4,46,8,50)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f13"]
+atlas = ExtResource("t")
+region = Rect2(1073,373,230,321)
+margin = Rect2(13,46,26,50)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f20"]
+atlas = ExtResource("t")
+region = Rect2(147,702,213,361)
+margin = Rect2(21,6,43,10)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f21"]
+atlas = ExtResource("t")
+region = Rect2(449,702,212,362)
+margin = Rect2(22,5,44,9)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f22"]
+atlas = ExtResource("t")
+region = Rect2(777,702,214,362)
+margin = Rect2(21,5,42,9)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f23"]
+atlas = ExtResource("t")
+region = Rect2(1082,702,213,363)
+margin = Rect2(21,4,43,8)
+filter_clip = true
+[resource]
+animations = [{"name":&"idle","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")}]},
+{"name":&"down","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"left","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f10")},{"duration":1.0,"texture":SubResource("f11")},{"duration":1.0,"texture":SubResource("f12")},{"duration":1.0,"texture":SubResource("f13")}]},
+{"name":&"up","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f20")},{"duration":1.0,"texture":SubResource("f21")},{"duration":1.0,"texture":SubResource("f22")},{"duration":1.0,"texture":SubResource("f23")}]},
+{"name":&"walk","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"attack","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"hit","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f01")}]},
+{"name":&"hurt","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f01")}]},
+{"name":&"death","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f02")}]}]

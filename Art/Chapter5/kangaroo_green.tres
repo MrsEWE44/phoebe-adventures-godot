@@ -1,0 +1,72 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://NextPlayer/袋鼠狗/奶娃狗_尖耳_墨绿色.png" id="t"]
+[sub_resource type="AtlasTexture" id="f00"]
+atlas = ExtResource("t")
+region = Rect2(107,16,186,341)
+margin = Rect2(85,36,170,40)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f01"]
+atlas = ExtResource("t")
+region = Rect2(455,13,190,342)
+margin = Rect2(83,35,166,39)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f02"]
+atlas = ExtResource("t")
+region = Rect2(819,14,197,342)
+margin = Rect2(79,35,159,39)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f03"]
+atlas = ExtResource("t")
+region = Rect2(1177,12,188,343)
+margin = Rect2(84,34,168,38)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f10"]
+atlas = ExtResource("t")
+region = Rect2(25,374,348,298)
+margin = Rect2(4,79,8,83)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f11"]
+atlas = ExtResource("t")
+region = Rect2(394,374,329,298)
+margin = Rect2(13,79,27,83)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f12"]
+atlas = ExtResource("t")
+region = Rect2(758,373,320,299)
+margin = Rect2(18,78,36,82)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f13"]
+atlas = ExtResource("t")
+region = Rect2(1116,373,316,299)
+margin = Rect2(20,78,40,82)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f20"]
+atlas = ExtResource("t")
+region = Rect2(101,690,174,373)
+margin = Rect2(91,4,182,8)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f21"]
+atlas = ExtResource("t")
+region = Rect2(460,691,168,372)
+margin = Rect2(94,5,188,9)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f22"]
+atlas = ExtResource("t")
+region = Rect2(812,691,176,370)
+margin = Rect2(90,7,180,11)
+filter_clip = true
+[sub_resource type="AtlasTexture" id="f23"]
+atlas = ExtResource("t")
+region = Rect2(1176,691,167,370)
+margin = Rect2(94,7,189,11)
+filter_clip = true
+[resource]
+animations = [{"name":&"idle","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")}]},
+{"name":&"down","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"left","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f10")},{"duration":1.0,"texture":SubResource("f11")},{"duration":1.0,"texture":SubResource("f12")},{"duration":1.0,"texture":SubResource("f13")}]},
+{"name":&"up","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f20")},{"duration":1.0,"texture":SubResource("f21")},{"duration":1.0,"texture":SubResource("f22")},{"duration":1.0,"texture":SubResource("f23")}]},
+{"name":&"walk","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"attack","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f00")},{"duration":1.0,"texture":SubResource("f01")},{"duration":1.0,"texture":SubResource("f02")},{"duration":1.0,"texture":SubResource("f03")}]},
+{"name":&"hit","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f01")}]},
+{"name":&"hurt","loop":true,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f01")}]},
+{"name":&"death","loop":false,"speed":8.0,"frames":[{"duration":1.0,"texture":SubResource("f02")}]}]

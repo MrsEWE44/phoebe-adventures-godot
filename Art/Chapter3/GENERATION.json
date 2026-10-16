@@ -1,0 +1,22 @@
+[
+  {
+    "id": "doro",
+    "ref": "doro三视图.png",
+    "prompt": "Use case: identity-preserve. Input is character identity reference. Create transparent RGBA game sprite atlas for pink-haired plush Doro mascot, violet eyes, purple hair bow, tiny cream-pink plush body. No clothes needed, same fully nonsexual toy as reference. 4 equal columns x 5 equal rows. Row1 four WALK TOWARD viewer phases. Row2 four WALK FACING LEFT phases. Row3 four WALK AWAY/back phases. Row4 four ATTACK frames facing LEFT (windup, big arm/wing swing, impact, recovery). Row5 four DEATH frames (stagger, kneel, falling, lying still) facing LEFT. Four clearly distinct leg and arm poses per walk row; no static duplicated frames. Same scale, centered full body in every cell, consistent feet baseline for walking, generous transparent gutters. Cute crisp outlined game art adapted from reference, not photography. NO background, no text, no ground shadow, no grid, no held weapons; true transparent alpha. Prefer 1024x1280. Every cell fully contains its sprite, no overlaps."
+  },
+  {
+    "id": "naiwa",
+    "ref": "奶娃三视图.png",
+    "prompt": "Use case: identity-preserve. Input is character identity reference. Create transparent RGBA game sprite atlas for yellow round friendly rubber mascot with big green eyes, cream oval belly, long flipper arms and two short feet. Same toy identity. 4 equal columns x 5 equal rows. Row1 four WALK TOWARD viewer phases. Row2 four WALK FACING LEFT phases. Row3 four WALK AWAY/back phases. Row4 four ATTACK frames facing LEFT (windup, big arm/wing swing, impact, recovery). Row5 four DEATH frames (stagger, kneel, falling, lying still) facing LEFT. Four clearly distinct leg and arm poses per walk row; no static duplicated frames. Same scale, centered full body in every cell, consistent feet baseline for walking, generous transparent gutters. Cute crisp outlined game art adapted from reference, not photography. NO background, no text, no ground shadow, no grid, no held weapons; true transparent alpha. Prefer 1024x1280. Every cell fully contains its sprite, no overlaps."
+  },
+  {
+    "id": "gugu",
+    "ref": "咕咕嘎嘎三视图.png",
+    "prompt": "Use case: identity-preserve. Input is character identity reference. Create transparent RGBA game sprite atlas for cute small girl inside black penguin plush suit, white belly, yellow feet, black hair and penguin hood, silver bow at neck. 4 equal columns x 5 equal rows. Row1 four WALK TOWARD viewer phases. Row2 four WALK FACING LEFT phases. Row3 four WALK AWAY/back phases. Row4 four ATTACK frames facing LEFT (windup, big arm/wing swing, impact, recovery). Row5 four DEATH frames (stagger, kneel, falling, lying still) facing LEFT. Four clearly distinct leg and arm poses per walk row; no static duplicated frames. Same scale, centered full body in every cell, consistent feet baseline for walking, generous transparent gutters. Cute crisp outlined game art adapted from reference, not photography. NO background, no text, no ground shadow, no grid, no held weapons; true transparent alpha. Prefer 1024x1280. Every cell fully contains its sprite, no overlaps."
+  },
+  {
+    "id": "q_penguin",
+    "ref": "Q币企鹅精灵图.png",
+    "prompt": "Use case: identity-preserve. Input is character identity reference. Create transparent RGBA game sprite atlas for black penguin mascot, cream belly, red beak, orange feet, black ushanka with tiny red star. REMOVE ALL GUNS and held objects; weapons are separate sprites. 4 equal columns x 5 equal rows. Row1 four WALK TOWARD viewer phases. Row2 four WALK FACING LEFT phases. Row3 four WALK AWAY/back phases. Row4 four ATTACK frames facing LEFT (windup, big arm/wing swing, impact, recovery). Row5 four DEATH frames (stagger, kneel, falling, lying still) facing LEFT. Four clearly distinct leg and arm poses per walk row; no static duplicated frames. Same scale, centered full body in every cell, consistent feet baseline for walking, generous transparent gutters. Cute crisp outlined game art adapted from reference, not photography. NO background, no text, no ground shadow, no grid, no held weapons; true transparent alpha. Prefer 1024x1280. Every cell fully contains its sprite, no overlaps."
+  }
+]

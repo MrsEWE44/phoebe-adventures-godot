@@ -1,0 +1,95 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://Art/Chapter3/doro.png" id="a"]
+[sub_resource type="AtlasTexture" id="f0"]
+atlas = ExtResource("a")
+region = Rect2(67,24,213,248)
+margin = Rect2(38.0,20,76,23)
+[sub_resource type="AtlasTexture" id="f1"]
+atlas = ExtResource("a")
+region = Rect2(280,30,259,243)
+margin = Rect2(15.0,25,30,28)
+[sub_resource type="AtlasTexture" id="f2"]
+atlas = ExtResource("a")
+region = Rect2(587,27,214,246)
+margin = Rect2(37.5,22,75,25)
+[sub_resource type="AtlasTexture" id="f3"]
+atlas = ExtResource("a")
+region = Rect2(854,28,213,245)
+margin = Rect2(38.0,23,76,26)
+[sub_resource type="AtlasTexture" id="f4"]
+atlas = ExtResource("a")
+region = Rect2(57,290,209,258)
+margin = Rect2(40.0,10,80,13)
+[sub_resource type="AtlasTexture" id="f5"]
+atlas = ExtResource("a")
+region = Rect2(332,290,198,257)
+margin = Rect2(45.5,11,91,14)
+[sub_resource type="AtlasTexture" id="f6"]
+atlas = ExtResource("a")
+region = Rect2(594,294,201,253)
+margin = Rect2(44.0,15,88,18)
+[sub_resource type="AtlasTexture" id="f7"]
+atlas = ExtResource("a")
+region = Rect2(868,296,193,251)
+margin = Rect2(48.0,17,96,20)
+[sub_resource type="AtlasTexture" id="f8"]
+atlas = ExtResource("a")
+region = Rect2(53,566,221,263)
+margin = Rect2(34.0,5,68,8)
+[sub_resource type="AtlasTexture" id="f9"]
+atlas = ExtResource("a")
+region = Rect2(323,569,210,258)
+margin = Rect2(39.5,10,79,13)
+[sub_resource type="AtlasTexture" id="f10"]
+atlas = ExtResource("a")
+region = Rect2(589,569,211,257)
+margin = Rect2(39.0,11,78,14)
+[sub_resource type="AtlasTexture" id="f11"]
+atlas = ExtResource("a")
+region = Rect2(854,568,216,262)
+margin = Rect2(36.5,6,73,9)
+[sub_resource type="AtlasTexture" id="f12"]
+atlas = ExtResource("a")
+region = Rect2(41,848,213,246)
+margin = Rect2(38.0,22,76,25)
+[sub_resource type="AtlasTexture" id="f13"]
+atlas = ExtResource("a")
+region = Rect2(312,849,249,245)
+margin = Rect2(20.0,23,40,26)
+[sub_resource type="AtlasTexture" id="f14"]
+atlas = ExtResource("a")
+region = Rect2(561,846,254,247)
+margin = Rect2(17.5,21,35,24)
+[sub_resource type="AtlasTexture" id="f15"]
+atlas = ExtResource("a")
+region = Rect2(855,849,208,245)
+margin = Rect2(40.5,23,81,26)
+[sub_resource type="AtlasTexture" id="f16"]
+atlas = ExtResource("a")
+region = Rect2(44,1123,219,246)
+margin = Rect2(35.0,22,70,25)
+[sub_resource type="AtlasTexture" id="f17"]
+atlas = ExtResource("a")
+region = Rect2(307,1151,254,211)
+margin = Rect2(17.5,57,35,60)
+[sub_resource type="AtlasTexture" id="f18"]
+atlas = ExtResource("a")
+region = Rect2(561,1185,281,180)
+margin = Rect2(4.0,88,8,91)
+[sub_resource type="AtlasTexture" id="f19"]
+atlas = ExtResource("a")
+region = Rect2(842,1216,248,150)
+margin = Rect2(20.5,118,41,121)
+[resource]
+animations = [
+{"name":&"down","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0")}, {"duration":1.0,"texture":SubResource("f1")}, {"duration":1.0,"texture":SubResource("f2")}, {"duration":1.0,"texture":SubResource("f3")}]},
+{"name":&"left","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f4")}, {"duration":1.0,"texture":SubResource("f5")}, {"duration":1.0,"texture":SubResource("f6")}, {"duration":1.0,"texture":SubResource("f7")}]},
+{"name":&"up","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f8")}, {"duration":1.0,"texture":SubResource("f9")}, {"duration":1.0,"texture":SubResource("f10")}, {"duration":1.0,"texture":SubResource("f11")}]},
+{"name":&"walk","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f4")}, {"duration":1.0,"texture":SubResource("f5")}, {"duration":1.0,"texture":SubResource("f6")}, {"duration":1.0,"texture":SubResource("f7")}]},
+{"name":&"idle","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0")}]},
+{"name":&"attack","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f12")}, {"duration":1.0,"texture":SubResource("f13")}, {"duration":1.0,"texture":SubResource("f14")}, {"duration":1.0,"texture":SubResource("f15")}]},
+{"name":&"ultimate","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f12")}, {"duration":1.0,"texture":SubResource("f13")}, {"duration":1.0,"texture":SubResource("f14")}, {"duration":1.0,"texture":SubResource("f15")}]},
+{"name":&"death","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f16")}, {"duration":1.0,"texture":SubResource("f17")}, {"duration":1.0,"texture":SubResource("f18")}, {"duration":1.0,"texture":SubResource("f19")}]},
+{"name":&"hit","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f16")}, {"duration":1.0,"texture":SubResource("f0")}]},
+{"name":&"hurt","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f16")}, {"duration":1.0,"texture":SubResource("f0")}]},
+]

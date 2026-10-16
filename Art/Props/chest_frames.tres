@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dilm8370efyb"]
+
+[ext_resource type="Texture2D" uid="uid://bhutc0nj0axv6" path="res://Art/Props/chest_opening.png" id="0"]
+
+[sub_resource type="AtlasTexture" id="open_0"]
+atlas = ExtResource("0")
+region = Rect2(0, 0, 543, 724)
+
+[sub_resource type="AtlasTexture" id="open_1"]
+atlas = ExtResource("0")
+region = Rect2(543, 0, 543, 724)
+
+[sub_resource type="AtlasTexture" id="open_2"]
+atlas = ExtResource("0")
+region = Rect2(1086, 0, 543, 724)
+
+[sub_resource type="AtlasTexture" id="open_3"]
+atlas = ExtResource("0")
+region = Rect2(1629, 0, 543, 724)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("open_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("open_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("open_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("open_3")
+}],
+"loop": 0,
+"name": &"open",
+"speed": 7.0
+}]

@@ -1,0 +1,236 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://phx17jykjgcc"]
+
+[ext_resource type="Texture2D" uid="uid://idnqd80bc3ya" path="res://Art/Chapter5/omo_spin_rgba.png" id="t"]
+
+[sub_resource type="AtlasTexture" id="f00"]
+atlas = ExtResource("t")
+region = Rect2(18, 47, 393, 323)
+margin = Rect2(4, 7, 8, 11)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f01"]
+atlas = ExtResource("t")
+region = Rect2(428, 47, 311, 322)
+margin = Rect2(45, 8, 90, 12)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f02"]
+atlas = ExtResource("t")
+region = Rect2(762, 47, 301, 321)
+margin = Rect2(50, 9, 100, 13)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f03"]
+atlas = ExtResource("t")
+region = Rect2(1105, 45, 325, 326)
+margin = Rect2(38, 4, 76, 8)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f10"]
+atlas = ExtResource("t")
+region = Rect2(20, 391, 323, 312)
+margin = Rect2(39, 18, 78, 22)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f11"]
+atlas = ExtResource("t")
+region = Rect2(416, 391, 295, 312)
+margin = Rect2(53, 18, 106, 22)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f12"]
+atlas = ExtResource("t")
+region = Rect2(729, 391, 350, 312)
+margin = Rect2(25, 18, 51, 22)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f13"]
+atlas = ExtResource("t")
+region = Rect2(1108, 393, 322, 311)
+margin = Rect2(39, 19, 79, 23)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f20"]
+atlas = ExtResource("t")
+region = Rect2(18, 718, 319, 313)
+margin = Rect2(41, 17, 82, 21)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f21"]
+atlas = ExtResource("t")
+region = Rect2(384, 718, 315, 313)
+margin = Rect2(43, 17, 86, 21)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f22"]
+atlas = ExtResource("t")
+region = Rect2(718, 721, 313, 311)
+margin = Rect2(44, 19, 88, 23)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="f23"]
+atlas = ExtResource("t")
+region = Rect2(1046, 723, 384, 309)
+margin = Rect2(8, 21, 17, 25)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f00")
+}, {
+"duration": 1.0,
+"texture": SubResource("f01")
+}, {
+"duration": 1.0,
+"texture": SubResource("f02")
+}, {
+"duration": 1.0,
+"texture": SubResource("f03")
+}],
+"loop": 0,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f02")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f00")
+}, {
+"duration": 1.0,
+"texture": SubResource("f01")
+}, {
+"duration": 1.0,
+"texture": SubResource("f02")
+}, {
+"duration": 1.0,
+"texture": SubResource("f03")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f01")
+}],
+"loop": 0,
+"name": &"hit",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f01")
+}],
+"loop": 1,
+"name": &"hurt",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f00")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f10")
+}, {
+"duration": 1.0,
+"texture": SubResource("f11")
+}, {
+"duration": 1.0,
+"texture": SubResource("f12")
+}, {
+"duration": 1.0,
+"texture": SubResource("f13")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f00")
+}, {
+"duration": 1.0,
+"texture": SubResource("f01")
+}, {
+"duration": 1.0,
+"texture": SubResource("f02")
+}, {
+"duration": 1.0,
+"texture": SubResource("f03")
+}, {
+"duration": 1.0,
+"texture": SubResource("f10")
+}, {
+"duration": 1.0,
+"texture": SubResource("f11")
+}, {
+"duration": 1.0,
+"texture": SubResource("f12")
+}, {
+"duration": 1.0,
+"texture": SubResource("f13")
+}, {
+"duration": 1.0,
+"texture": SubResource("f20")
+}, {
+"duration": 1.0,
+"texture": SubResource("f21")
+}, {
+"duration": 1.0,
+"texture": SubResource("f22")
+}, {
+"duration": 1.0,
+"texture": SubResource("f23")
+}],
+"loop": 1,
+"name": &"spin",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f20")
+}, {
+"duration": 1.0,
+"texture": SubResource("f21")
+}, {
+"duration": 1.0,
+"texture": SubResource("f22")
+}, {
+"duration": 1.0,
+"texture": SubResource("f23")
+}],
+"loop": 1,
+"name": &"up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f00")
+}, {
+"duration": 1.0,
+"texture": SubResource("f01")
+}, {
+"duration": 1.0,
+"texture": SubResource("f02")
+}, {
+"duration": 1.0,
+"texture": SubResource("f03")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 8.0
+}]

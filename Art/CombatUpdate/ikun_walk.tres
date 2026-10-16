@@ -1,0 +1,117 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://matseumo3gfk"]
+
+[ext_resource type="Texture2D" uid="uid://biuvhjag5iw6q" path="res://Art/CombatUpdate/ikun_walk.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="f0"]
+atlas = ExtResource("1")
+region = Rect2(45, 24, 260, 330)
+margin = Rect2(6.5, 7, 13, 12)
+
+[sub_resource type="AtlasTexture" id="f1"]
+atlas = ExtResource("1")
+region = Rect2(417, 30, 255, 322)
+margin = Rect2(9, 15, 18, 20)
+
+[sub_resource type="AtlasTexture" id="f2"]
+atlas = ExtResource("1")
+region = Rect2(763, 30, 261, 324)
+margin = Rect2(6, 13, 12, 18)
+
+[sub_resource type="AtlasTexture" id="f3"]
+atlas = ExtResource("1")
+region = Rect2(1137, 32, 254, 320)
+margin = Rect2(9.5, 17, 19, 22)
+
+[sub_resource type="AtlasTexture" id="f4"]
+atlas = ExtResource("1")
+region = Rect2(58, 388, 255, 318)
+margin = Rect2(9, 19, 18, 24)
+
+[sub_resource type="AtlasTexture" id="f5"]
+atlas = ExtResource("1")
+region = Rect2(425, 386, 250, 321)
+margin = Rect2(11.5, 16, 23, 21)
+
+[sub_resource type="AtlasTexture" id="f6"]
+atlas = ExtResource("1")
+region = Rect2(779, 390, 252, 317)
+margin = Rect2(10.5, 20, 21, 25)
+
+[sub_resource type="AtlasTexture" id="f7"]
+atlas = ExtResource("1")
+region = Rect2(1145, 387, 259, 320)
+margin = Rect2(7, 17, 14, 22)
+
+[sub_resource type="AtlasTexture" id="f8"]
+atlas = ExtResource("1")
+region = Rect2(53, 732, 255, 323)
+margin = Rect2(9, 14, 18, 19)
+
+[sub_resource type="AtlasTexture" id="f9"]
+atlas = ExtResource("1")
+region = Rect2(418, 733, 255, 321)
+margin = Rect2(9, 16, 18, 21)
+
+[sub_resource type="AtlasTexture" id="f10"]
+atlas = ExtResource("1")
+region = Rect2(779, 731, 254, 324)
+margin = Rect2(9.5, 13, 19, 18)
+
+[sub_resource type="AtlasTexture" id="f11"]
+atlas = ExtResource("1")
+region = Rect2(1142, 730, 255, 325)
+margin = Rect2(9, 12, 18, 17)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f0")
+}, {
+"duration": 1.0,
+"texture": SubResource("f1")
+}, {
+"duration": 1.0,
+"texture": SubResource("f2")
+}, {
+"duration": 1.0,
+"texture": SubResource("f3")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("f5")
+}, {
+"duration": 1.0,
+"texture": SubResource("f6")
+}, {
+"duration": 1.0,
+"texture": SubResource("f7")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("f8")
+}, {
+"duration": 1.0,
+"texture": SubResource("f9")
+}, {
+"duration": 1.0,
+"texture": SubResource("f10")
+}, {
+"duration": 1.0,
+"texture": SubResource("f11")
+}],
+"loop": 1,
+"name": &"up",
+"speed": 9.0
+}]

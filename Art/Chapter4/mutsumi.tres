@@ -1,0 +1,47 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://NextPlayer/睦子米精灵图.png" id="tex"]
+[sub_resource type="AtlasTexture" id="f0_0"]
+atlas = ExtResource("tex")
+region = Rect2(0.0, 0.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f0_1"]
+atlas = ExtResource("tex")
+region = Rect2(362.0, 0.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f0_2"]
+atlas = ExtResource("tex")
+region = Rect2(724.0, 0.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f0_3"]
+atlas = ExtResource("tex")
+region = Rect2(1086.0, 0.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f1_0"]
+atlas = ExtResource("tex")
+region = Rect2(0.0, 362.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f1_1"]
+atlas = ExtResource("tex")
+region = Rect2(362.0, 362.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f1_2"]
+atlas = ExtResource("tex")
+region = Rect2(724.0, 362.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f1_3"]
+atlas = ExtResource("tex")
+region = Rect2(1086.0, 362.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f2_0"]
+atlas = ExtResource("tex")
+region = Rect2(0.0, 724.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f2_1"]
+atlas = ExtResource("tex")
+region = Rect2(362.0, 724.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f2_2"]
+atlas = ExtResource("tex")
+region = Rect2(724.0, 724.0, 362.0, 362.0)
+[sub_resource type="AtlasTexture" id="f2_3"]
+atlas = ExtResource("tex")
+region = Rect2(1086.0, 724.0, 362.0, 362.0)
+[resource]
+animations = [{"name":&"idle","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]},
+{"name":&"down","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"up","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_3")}, {"duration":1.0,"texture":SubResource("f1_3")}, {"duration":1.0,"texture":SubResource("f0_3")}, {"duration":1.0,"texture":SubResource("f2_3")}]},
+{"name":&"left","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_2")}, {"duration":1.0,"texture":SubResource("f1_2")}, {"duration":1.0,"texture":SubResource("f0_2")}, {"duration":1.0,"texture":SubResource("f2_2")}]},
+{"name":&"walk","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"attack","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"hurt","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]},
+{"name":&"death","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]}]

@@ -1,0 +1,59 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://Art/Chapter4/anon_glasses_transparent.png" id="tex"]
+[sub_resource type="AtlasTexture" id="f0_0"]
+atlas = ExtResource("tex")
+region = Rect2(73, 7, 265, 394)
+margin = Rect2(68.5, 8, 137, 8)
+[sub_resource type="AtlasTexture" id="f0_1"]
+atlas = ExtResource("tex")
+region = Rect2(417, 7, 290, 394)
+margin = Rect2(56.0, 8, 112, 8)
+[sub_resource type="AtlasTexture" id="f0_2"]
+atlas = ExtResource("tex")
+region = Rect2(783, 7, 268, 394)
+margin = Rect2(67.0, 8, 134, 8)
+[sub_resource type="AtlasTexture" id="f0_3"]
+atlas = ExtResource("tex")
+region = Rect2(1096, 7, 273, 394)
+margin = Rect2(64.5, 8, 129, 8)
+[sub_resource type="AtlasTexture" id="f1_0"]
+atlas = ExtResource("tex")
+region = Rect2(61, 401, 275, 349)
+margin = Rect2(63.5, 53, 127, 53)
+[sub_resource type="AtlasTexture" id="f1_1"]
+atlas = ExtResource("tex")
+region = Rect2(415, 401, 289, 349)
+margin = Rect2(56.5, 53, 113, 53)
+[sub_resource type="AtlasTexture" id="f1_2"]
+atlas = ExtResource("tex")
+region = Rect2(787, 401, 269, 349)
+margin = Rect2(66.5, 53, 133, 53)
+[sub_resource type="AtlasTexture" id="f1_3"]
+atlas = ExtResource("tex")
+region = Rect2(1090, 402, 296, 348)
+margin = Rect2(53.0, 54, 106, 54)
+[sub_resource type="AtlasTexture" id="f2_0"]
+atlas = ExtResource("tex")
+region = Rect2(68, 750, 268, 334)
+margin = Rect2(67.0, 68, 134, 68)
+[sub_resource type="AtlasTexture" id="f2_1"]
+atlas = ExtResource("tex")
+region = Rect2(420, 750, 278, 334)
+margin = Rect2(62.0, 68, 124, 68)
+[sub_resource type="AtlasTexture" id="f2_2"]
+atlas = ExtResource("tex")
+region = Rect2(787, 750, 269, 330)
+margin = Rect2(66.5, 72, 133, 72)
+[sub_resource type="AtlasTexture" id="f2_3"]
+atlas = ExtResource("tex")
+region = Rect2(1086, 750, 288, 336)
+margin = Rect2(57.0, 66, 114, 66)
+[resource]
+animations = [{"name":&"idle","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]},
+{"name":&"down","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"up","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_3")}, {"duration":1.0,"texture":SubResource("f1_3")}, {"duration":1.0,"texture":SubResource("f0_3")}, {"duration":1.0,"texture":SubResource("f2_3")}]},
+{"name":&"left","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_2")}, {"duration":1.0,"texture":SubResource("f1_2")}, {"duration":1.0,"texture":SubResource("f0_2")}, {"duration":1.0,"texture":SubResource("f2_2")}]},
+{"name":&"walk","speed":8.0,"loop":true,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f0_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"attack","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f1_1")}, {"duration":1.0,"texture":SubResource("f2_1")}]},
+{"name":&"hurt","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]},
+{"name":&"death","speed":8.0,"loop":false,"frames":[{"duration":1.0,"texture":SubResource("f0_1")}]}]

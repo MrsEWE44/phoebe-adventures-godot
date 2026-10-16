@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" format=3]
+[ext_resource type="Shader" path="res://Art/Chapter5/paper.gdshader" id="s"]
+[resource]
+shader = ExtResource("s")
+shader_parameter/remove_white = true
+shader_parameter/grayscale = false
