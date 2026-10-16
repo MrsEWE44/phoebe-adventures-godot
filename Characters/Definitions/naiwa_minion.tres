@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter3/naiwa.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/naiwa.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "naiwa_minion"
+display_name = "奶娃幼体"
+character_type = 1
+max_health = 140
+movement_speed = 65
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.10714285714285714,0.10714285714285714)
+sprite_offset = Vector2(0,-15.0)
+reaction_scale = Vector2(0.10714285714285714,0.10714285714285714)
+reaction_offset = Vector2(0,-15.0)
+ultimate_scale = Vector2(0.10714285714285714,0.10714285714285714)
+ultimate_offset = Vector2(0,-15.0)
+hurtbox_size = Vector2(19.5,28.2)
+hurtbox_offset = Vector2(0,-14.399999999999999)
+foot_size = Vector2(10.5,10)
+home_biome = "snow"

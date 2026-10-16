@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" format=3]
+[ext_resource type="Texture2D" path="res://Art/Chapter2/aquatic.png" id="1"]
+[sub_resource type="AtlasTexture" id="r0c0"]
+atlas = ExtResource("1")
+region = Rect2(0.0, 342, 317.25, 205)
+[sub_resource type="AtlasTexture" id="r0c1"]
+atlas = ExtResource("1")
+region = Rect2(317.25, 342, 317.25, 205)
+[sub_resource type="AtlasTexture" id="r0c2"]
+atlas = ExtResource("1")
+region = Rect2(634.5, 342, 317.25, 205)
+[sub_resource type="AtlasTexture" id="r0c3"]
+atlas = ExtResource("1")
+region = Rect2(951.75, 342, 317.25, 205)
+[resource]
+animations = [{"name": &"default", "loop": true, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"idle", "loop": true, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"walk", "loop": true, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"attack", "loop": true, "speed": 10, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"hit", "loop": false, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"death", "loop": false, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]},
+{"name": &"ultimate", "loop": true, "speed": 6, "frames": [{"duration": 1.0, "texture": SubResource("r0c0")}, {"duration": 1.0, "texture": SubResource("r0c1")}, {"duration": 1.0, "texture": SubResource("r0c2")}, {"duration": 1.0, "texture": SubResource("r0c3")}]}]

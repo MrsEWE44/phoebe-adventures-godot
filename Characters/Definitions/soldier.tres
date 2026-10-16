@@ -1,0 +1,20 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/soldier.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/soldier.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "soldier"
+display_name = "遗迹守望者"
+character_type = 2
+max_health = 100
+max_energy = 100
+movement_speed = 0
+default_weapon = "sun_spear"
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(1.6,1.6)
+sprite_offset = Vector2(0,-12.8)
+
+hurtbox_size = Vector2(25, 35)
+hurtbox_offset = Vector2(0, -16)

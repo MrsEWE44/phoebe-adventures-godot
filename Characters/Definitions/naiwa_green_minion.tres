@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/naiwa_green.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[ext_resource type="Resource" path="res://Characters/Voices/naiwa.tres" id="v"]
+[resource]
+script = ExtResource("s")
+character_id = "naiwa_green_minion"
+display_name = "奶娃铁壁幼体"
+character_type = 1
+max_health = 100
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.10850439882697947,0.10850439882697947)
+sprite_offset = Vector2(0,-18.065982404692082)
+reaction_scale = Vector2(0.10850439882697947,0.10850439882697947)
+reaction_offset = Vector2(0,-18.065982404692082)
+ultimate_scale = Vector2(0.10850439882697947,0.10850439882697947)
+ultimate_offset = Vector2(0,-18.065982404692082)
+hurtbox_size = Vector2(23.68,30.34)
+hurtbox_offset = Vector2(0,-17.39)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+voice_profile = ExtResource("v")
+faces_right = true

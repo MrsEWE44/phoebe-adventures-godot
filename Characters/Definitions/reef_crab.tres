@@ -1,0 +1,24 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/reef_crab.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "reef_crab"
+display_name = "珊瑚钳蟹"
+character_type = 1
+max_health = 58
+movement_speed = 52.0
+aquatic = true
+ranged_attack = false
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.11347517730496454,0.11347517730496454)
+sprite_offset = Vector2(0.0000, -12.7660)
+hurtbox_size = Vector2(30.9575, 25.2837)
+hurtbox_offset = Vector2(0.2837, -12.6525)
+foot_size = Vector2(14.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-14.1738, -25.2943, 29.9362, 24.7163), Rect2(-13.8333, -25.1808, 28.8014, 23.9220), Rect2(-15.1950, -24.8404, 30.6170, 23.9220), Rect2(-14.2872, -25.2943, 28.5745, 25.2837)], "walk": [Rect2(-14.1738, -25.2943, 29.9362, 24.7163), Rect2(-13.8333, -25.1808, 28.8014, 23.9220), Rect2(-15.1950, -24.8404, 30.6170, 23.9220), Rect2(-14.2872, -25.2943, 28.5745, 25.2837)], "default": [Rect2(-14.1738, -25.2943, 29.9362, 24.7163), Rect2(-13.8333, -25.1808, 28.8014, 23.9220), Rect2(-15.1950, -24.8404, 30.6170, 23.9220), Rect2(-14.2872, -25.2943, 28.5745, 25.2837)]}
+
+home_biome = "ocean"

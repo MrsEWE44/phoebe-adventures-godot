@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+display_name = "守护祈愿"
+mode = "support"
+damage = 35
+radius = 95
+weapon_id = "sun_spear"
+cooldown = 12

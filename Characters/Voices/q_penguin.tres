@@ -1,0 +1,34 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="script"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/idle.wav" id="idle"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/battle.wav" id="battle"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/hurt.wav" id="hurt"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/death.wav" id="death"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/angry.wav" id="angry"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/afraid.wav" id="afraid"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/terrified.wav" id="terrified"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/proud.wav" id="proud"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/skill.wav" id="skill"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/ultimate.wav" id="ultimate"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/victory.wav" id="victory"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/exhausted.wav" id="exhausted"]
+[ext_resource type="AudioStream" path="res://Audio/Chapter3Combat/q_penguin/dialogue.wav" id="dialogue"]
+[resource]
+script = ExtResource("script")
+volume_db = 0.0
+max_duration = 0.0
+shared_cooldown = 1.8
+event_cooldowns = {"idle":12.0,"battle":8.0,"hurt":2.8,"death":3.0,"angry":7.0,"afraid":9.0,"terrified":10.0,"proud":8.0,"skill":4.0,"ultimate":6.0,"victory":6.0,"exhausted":7.0,"dialogue":3.0}
+idle = Array[AudioStream]([ExtResource("idle")])
+battle = Array[AudioStream]([ExtResource("battle")])
+hurt = Array[AudioStream]([ExtResource("hurt")])
+death = Array[AudioStream]([ExtResource("angry")])
+angry = Array[AudioStream]([ExtResource("angry")])
+afraid = Array[AudioStream]([ExtResource("afraid")])
+terrified = Array[AudioStream]([ExtResource("terrified")])
+proud = Array[AudioStream]([ExtResource("proud")])
+skill = Array[AudioStream]([ExtResource("skill")])
+ultimate = Array[AudioStream]([ExtResource("ultimate")])
+victory = Array[AudioStream]([ExtResource("victory")])
+exhausted = Array[AudioStream]([ExtResource("exhausted")])
+dialogue = Array[AudioStream]([ExtResource("dialogue")])

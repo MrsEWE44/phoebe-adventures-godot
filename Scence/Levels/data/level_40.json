@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 3,
+  "name": "红白巫女的消息",
+  "map": "Maps/Level5/5-3.png",
+  "waves": 8,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

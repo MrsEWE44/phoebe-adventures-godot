@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/orc.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/orc.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "drowned_guard"
+display_name = "溺水遗迹卫士"
+character_type = 1
+max_health = 100
+max_energy = 100
+movement_speed = 52
+default_weapon = "bronze_blade"
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(1.8,1.8)
+sprite_offset = Vector2(0.0000, -14.4000)
+
+hurtbox_size = Vector2(40.6000, 31.6000)
+hurtbox_offset = Vector2(9.0000, -15.3000)
+
+aquatic = true
+foot_size = Vector2(14.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -31.1000, 40.6000, 29.8000), Rect2(-11.3000, -31.1000, 40.6000, 29.8000), Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -29.3000, 40.6000, 28.0000)], "walk": [Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -31.1000, 40.6000, 28.0000), Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -27.5000, 40.6000, 26.2000), Rect2(-11.3000, -29.3000, 40.6000, 28.0000), Rect2(-11.3000, -31.1000, 40.6000, 29.8000), Rect2(-11.3000, -29.3000, 40.6000, 29.8000), Rect2(-11.3000, -27.5000, 40.6000, 26.2000)]}
+
+home_biome = "ocean"

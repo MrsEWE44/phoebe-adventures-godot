@@ -1,0 +1,92 @@
+[gd_scene format=3]
+[ext_resource type="Texture2D" path="res://Maps/Level4/哥特沼泽遗迹传送之路.png" id="bg"]
+[ext_resource type="Script" path="res://Scence/Chapter4/arena.gd" id="script"]
+[ext_resource type="Script" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="PackedScene" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38,24)
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42,20)
+[node name="Arena4_1" type="Node2D"]
+script = ExtResource("script")
+level_index = 28
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("bg")
+centered = false
+[node name="Terrain" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+[node name="RoadBoundary" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(67, 480, 92, 447, 184, 447, 209, 442, 385, 450, 585, 452, 660, 400, 719, 381, 794, 343, 794, 226, 769, 207, 769, 132, 819, 113, 895, 136, 920, 179, 861, 216, 861, 343, 936, 386, 1020, 419, 1078, 450, 1455, 447, 1488, 438, 1588, 470, 1605, 513, 1563, 536, 1491, 522, 1446, 499, 1078, 503, 1020, 555, 886, 612, 878, 659, 803, 659, 803, 607, 719, 569, 635, 516, 585, 503, 393, 503, 217, 489, 184, 522, 142, 555, 84, 541)
+[node name="Navigation" type="Node2D" parent="."]
+script = ExtResource("nav")
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(276, 475)
+[node name="ArenaCenter" type="Marker2D" parent="."]
+position = Vector2(836, 461)
+[node name="RescuePosition" type="Marker2D" parent="."]
+position = Vector2(719, 518)
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector2(276, 475)
+[node name="Portals" type="Node2D" parent="."]
+[node name="Exit" type="Area2D" parent="Portals"]
+position = Vector2(1542, 480)
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("gate")
+portal_id = &"Exit"
+level_index = 28
+target_chapter = -1
+portal_color = Color(0.3, 1.0, 0.7, 1.0)
+visual_offset = Vector2(0,-35)
+visual_radius = 20.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit"]
+shape = SubResource("Gate")
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit"]
+collision_layer = 2
+collision_mask = 0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier"]
+shape = SubResource("Barrier")
+disabled = true
+[node name="LockedEntrance" type="Area2D" parent="Portals"]
+position = Vector2(117, 466)
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("gate")
+portal_id = &"LockedEntrance"
+level_index = 28
+target_chapter = -2
+portal_color = Color(0.7, 0.25, 1.0, 1.0)
+visual_offset = Vector2(0,-35)
+visual_radius = 20.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance"]
+shape = SubResource("Gate")
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance"]
+collision_layer = 2
+collision_mask = 0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier"]
+shape = SubResource("Barrier")
+disabled = true
+[node name="EnemySpawns" type="Node2D" parent="."]
+[node name="Spawn_0" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(727, 461)
+[node name="Spawn_1" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(936, 461)
+[node name="Spawn_2" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(836, 386)
+[node name="Spawn_3" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(836, 532)
+[node name="Spawn_4" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(786, 489)
+[node name="Spawn_5" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(903, 438)
+[node name="Doors" type="Node2D" parent="."]
+[node name="Switches" type="Node2D" parent="."]
+[node name="Chests" type="Node2D" parent="."]
+[node name="Supply" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(368, 475)
+chest_id = "music_supply"
+reward = "health_large"

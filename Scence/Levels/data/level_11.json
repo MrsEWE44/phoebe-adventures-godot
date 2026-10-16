@@ -1,0 +1,88 @@
+{
+  "index": 11,
+  "chapter": 2,
+  "number": 4,
+  "name": "旋涡迷庭",
+  "map": "res://Maps/Level2/2-4.png",
+  "floor_sample": [
+    816,
+    450,
+    24,
+    24
+  ],
+  "adventure": {
+    "intro": "2-4 · 旋涡迷庭：离开复活圈，清怪、解谜，靠近门按 E 开启新遭遇。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "tide_sorcerer",
+    "enemies": [
+      "reef_shark",
+      "jellyfish",
+      "reef_crab",
+      "drowned_guard",
+      "tide_hunter",
+      "storm_jelly"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "hold",
+        "seconds": 3.3,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。"
+      },
+      "rune_2": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_3": {
+        "mode": "memory",
+        "sequence": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "clue": "铭文从左向右：水 → 风 → 水 → 风",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "ocean"
+}

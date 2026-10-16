@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="res://Art/Creatures/desert_creatures.png" id="1_jws6g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7p84"]
+atlas = ExtResource("1_jws6g")
+region = Rect2(24, 426, 328, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7h4d"]
+atlas = ExtResource("1_jws6g")
+region = Rect2(386, 426, 328, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pptmy"]
+atlas = ExtResource("1_jws6g")
+region = Rect2(748, 426, 328, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffs8v"]
+atlas = ExtResource("1_jws6g")
+region = Rect2(1110, 426, 328, 240)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7p84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7h4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pptmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffs8v")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 7.0
+}]

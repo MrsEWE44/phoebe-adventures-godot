@@ -1,0 +1,7 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="s"]
+[resource]
+script = ExtResource("s")
+volume_db = 0.0
+shared_cooldown = 7.0
+max_duration = 5.0

@@ -1,0 +1,11 @@
+{
+  "name": "同化的回声",
+  "map": "Maps/Level4/幽暗沼泽中的哥特遗迹秘境.png",
+  "chapter": 4,
+  "number": 5,
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 同化的回声。左门封锁，完成挑战后从右门离开。"
+  }
+}

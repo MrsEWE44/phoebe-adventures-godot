@@ -1,0 +1,141 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bf3yiwl21fbhh"]
+
+[ext_resource type="Texture2D" uid="uid://cskhxns2irv6r" path="res://Art/Chapter2/aquatic.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="r0c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 881, 317.25, 325)
+
+[sub_resource type="AtlasTexture" id="r0c1"]
+atlas = ExtResource("1")
+region = Rect2(317.25, 881, 317.25, 325)
+
+[sub_resource type="AtlasTexture" id="r0c2"]
+atlas = ExtResource("1")
+region = Rect2(634.5, 881, 317.25, 325)
+
+[sub_resource type="AtlasTexture" id="r0c3"]
+atlas = ExtResource("1")
+region = Rect2(951.75, 881, 317.25, 325)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 0,
+"name": &"hit",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"ultimate",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 6.0
+}]

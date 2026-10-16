@@ -1,0 +1,4807 @@
+[
+  {
+    "time": "2026-10-07T16:44:53.4008812+08:00",
+    "files": [
+      {
+        "path": ".godot/999-sweep.log",
+        "bytes": 242,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor_bounds.json",
+        "bytes": 11703,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-adventure.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-final-0.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-final-1.log",
+        "bytes": 397,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-final-2.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-import.log",
+        "bytes": 8328,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-regression-0.log",
+        "bytes": 319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-regression-1.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-regression-2.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-regression-3.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-regression-4.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-test-0.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-test-1.log",
+        "bytes": 255,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actor-audio-test-2.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/actors-combat.log",
+        "bytes": 2318,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_audio_settings.png",
+        "bytes": 566099,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_defeat.png",
+        "bytes": 314410,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_encounter.png",
+        "bytes": 588487,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_hurtboxes.png",
+        "bytes": 587465,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_npc_hint.png",
+        "bytes": 229649,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_puzzle.png",
+        "bytes": 245224,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-chapter2.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-final2.log",
+        "bytes": 489,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-final3.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-inventory.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-rect.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_smoke-release.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_test_save.json",
+        "bytes": 55426,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure_test_save.json.bak",
+        "bytes": 43166,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure-smoke.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/adventure.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio_verify.gd",
+        "bytes": 1102,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-change-0.log",
+        "bytes": 255,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-change-1.log",
+        "bytes": 254,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-change-2.log",
+        "bytes": 231,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-change-3.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-check.log",
+        "bytes": 196,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-main-paced.log",
+        "bytes": 3786,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-minimal.log",
+        "bytes": 664,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-verify.log",
+        "bytes": 455,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/audio-victory.log",
+        "bytes": 253,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/author-creatures.log",
+        "bytes": 196,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/author-encounters.log",
+        "bytes": 399,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-chapter3.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-combat.log",
+        "bytes": 243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-defeat.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-expedition.log",
+        "bytes": 642,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-first.log",
+        "bytes": 403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-inventory.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-migration-save.json",
+        "bytes": 5335,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-migration-save.json.bak",
+        "bytes": 5335,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-migration.log",
+        "bytes": 287,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-progression.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-transitions.log",
+        "bytes": 560,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/balance-weapons.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/baseline-verbose.log",
+        "bytes": 3417,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/baseline.log",
+        "bytes": 585,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/boundary_navigation_before.json",
+        "bytes": 583162,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/boundary_report.json",
+        "bytes": 2449,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/boundary-after.log",
+        "bytes": 1224,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/boundary-before.log",
+        "bytes": 1221,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/bounds-audit.log",
+        "bytes": 8700,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_smoke-adventure.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_smoke-chapter2.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_smoke-current.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_smoke-spawn.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_smoke.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_test_save.json",
+        "bytes": 583,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign_test_save.json.bak",
+        "bytes": 585,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign-smoke.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign-tests.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/campaign-verbose.log",
+        "bytes": 55243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture_preview.gd",
+        "bytes": 871,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture-campaign.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture-chapter2.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture-dialogue.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture-inventory.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/capture-weapons.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/ch3-load.log",
+        "bytes": 309,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/ch3-rules.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter-pools.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_basketball_skill.png",
+        "bytes": 810774,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_combat_smoke-chapter2.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_combat_smoke-release.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_01.png",
+        "bytes": 2365484,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_02.png",
+        "bytes": 2388087,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_03.png",
+        "bytes": 2359511,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_04.png",
+        "bytes": 2368989,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_05.png",
+        "bytes": 2371703,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_06.png",
+        "bytes": 2411485,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_07.png",
+        "bytes": 2367499,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_08.png",
+        "bytes": 2439408,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_09.png",
+        "bytes": 2414151,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_floor_10.png",
+        "bytes": 2407186,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_hub_roads.png",
+        "bytes": 2346142,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_hub.png",
+        "bytes": 746098,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_ikun_combat.png",
+        "bytes": 820378,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_ikun_ultimate.png",
+        "bytes": 818495,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_route_map.png",
+        "bytes": 1542695,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_smoke-chapter2-final.log",
+        "bytes": 522,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_smoke-inventory.log",
+        "bytes": 522,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_smoke-rect.log",
+        "bytes": 522,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_smoke-release.log",
+        "bytes": 522,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_transition_smoke-final.log",
+        "bytes": 3472,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_transition_smoke-rect.log",
+        "bytes": 3472,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_transition_smoke-release.log",
+        "bytes": 3472,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2_weapon_shop.png",
+        "bytes": 361749,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-combat-check.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-combat-regression.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-combat.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-partial-save.json",
+        "bytes": 21299,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-partial-save.json.bak",
+        "bytes": 17954,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-smoke.log",
+        "bytes": 522,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-test-save.json",
+        "bytes": 21498,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-test-save.json.bak",
+        "bytes": 20728,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-transition.log",
+        "bytes": 3472,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter2-transitions.log",
+        "bytes": 3472,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_boss_combat.png",
+        "bytes": 836636,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_boss_flying_kick.png",
+        "bytes": 837206,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_boss_kick_windup.png",
+        "bytes": 831054,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_counter_chain_critical.png",
+        "bytes": 830376,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_counter_reward_inventory.png",
+        "bytes": 226486,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_doro_four_minutes.png",
+        "bytes": 761898,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_doro_rescue.png",
+        "bytes": 787850,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_editable_collision.png",
+        "bytes": 151805,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_enemy_volume_options.png",
+        "bytes": 728336,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_experience_item.png",
+        "bytes": 72996,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_experience_used.png",
+        "bytes": 75301,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_00.png",
+        "bytes": 2454898,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_01.png",
+        "bytes": 2380261,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_02.png",
+        "bytes": 2507952,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_03.png",
+        "bytes": 2470778,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_04.png",
+        "bytes": 2467658,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_05.png",
+        "bytes": 2466161,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_06.png",
+        "bytes": 2507868,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_07.png",
+        "bytes": 2449359,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_08.png",
+        "bytes": 2462647,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_09.png",
+        "bytes": 2457628,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_floor_10.png",
+        "bytes": 2461110,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_gugu_cage.png",
+        "bytes": 798816,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_gugu_fixed_stone.png",
+        "bytes": 231518,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_gugu_flying_kick.png",
+        "bytes": 802149,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_gugu.png",
+        "bytes": 876791,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_mercenary_combat.png",
+        "bytes": 785998,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_mercenary_hire.png",
+        "bytes": 426300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_mercenary_inventory.png",
+        "bytes": 258436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_npc_merchant.png",
+        "bytes": 210535,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_npc_services.png",
+        "bytes": 501518,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_orange_blossom.png",
+        "bytes": 878862,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_q_penguin.png",
+        "bytes": 883217,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_q_player_combat.png",
+        "bytes": 804424,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_q_player_inventory.png",
+        "bytes": 251707,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_resonance_counter.png",
+        "bytes": 811481,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_revival_defeat.png",
+        "bytes": 478340,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_revival_hub.png",
+        "bytes": 403762,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_revival_inventory.png",
+        "bytes": 266365,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_revival_shop.png",
+        "bytes": 297898,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_choice_reply.png",
+        "bytes": 260431,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_cipher.png",
+        "bytes": 235084,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_false_voice.png",
+        "bytes": 295157,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_fear_reply.png",
+        "bytes": 304468,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_gugu_reply.png",
+        "bytes": 424527,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_guide.png",
+        "bytes": 208656,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_hint.png",
+        "bytes": 188441,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_ice_guide.png",
+        "bytes": 380967,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_journal.png",
+        "bytes": 236242,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_next_chapter.png",
+        "bytes": 422063,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_reunion.png",
+        "bytes": 445220,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_riddle.png",
+        "bytes": 206211,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_story_tutorial.png",
+        "bytes": 268892,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_test_save.json",
+        "bytes": 2315,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_test_save.json.bak",
+        "bytes": 3206,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_thunder_sweep.png",
+        "bytes": 930128,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_victory_video_choice.png",
+        "bytes": 482917,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_victory_video_muted.png",
+        "bytes": 778929,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3_victory_video.png",
+        "bytes": 836694,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-capture.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-combat.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-import.log",
+        "bytes": 6223,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-routes.log",
+        "bytes": 235,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-rules.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chapter3-transitions.log",
+        "bytes": 469,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_death_preview.png",
+        "bytes": 483729,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_dialogue_smoke-adventure.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_dialogue_smoke-chapter2-final.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_dialogue_smoke-current.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_dialogue_smoke.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_interaction_preview.png",
+        "bytes": 202667,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_system_smoke-adventure.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_system_smoke-chapter2.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_system_smoke-final.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character_system_smoke-inventory.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character-dialogue-final.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character-dialogue.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/character-system.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/characters_chest_upward.png",
+        "bytes": 607143,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chest_alignment.png",
+        "bytes": 747319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/chest_disappeared.png",
+        "bytes": 603677,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-campaign_smoke.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-campaign.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-character_dialogue_smoke.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-combat_smoke.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-map_smoke.log",
+        "bytes": 1090,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-navigation_audit.log",
+        "bytes": 548,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-player_smoke.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-portal_map_smoke.log",
+        "bytes": 6156,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-portal_smoke.log",
+        "bytes": 1367,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-transition_smoke.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/collision-verbose.log",
+        "bytes": 20229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat_smoke-adventure.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat_smoke-current.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat_smoke.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-current.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-update-check.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-update-import.log",
+        "bytes": 3074,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-update-parse.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-update-smoke.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/combat-update-test.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-load.log",
+        "bytes": 309,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-regression-0.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-regression-1.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-regression-2.log",
+        "bytes": 339,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-regression-3.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-regression-4.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-survival-save.json",
+        "bytes": 6457,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-survival-save.json.bak",
+        "bytes": 6454,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/counter-survival.log",
+        "bytes": 1780,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat_flow_smoke-chapter2-final.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat_flow_smoke-final3.log",
+        "bytes": 730,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat_flow_smoke-inventory.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat_flow_smoke-release.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat_flow_smoke-spawn.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat-flow.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/defeat-regression.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/density-test.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/dialogue-compile.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/edited_collision_test.tscn",
+        "bytes": 33641,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor_collision_smoke-chapter2-final.log",
+        "bytes": 239,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor_collision_smoke-current.log",
+        "bytes": 239,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor_collision_smoke-final3.log",
+        "bytes": 239,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor_collision_smoke-rect.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor-check.log",
+        "bytes": 4950,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor-collision-smoke.log",
+        "bytes": 239,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/editor-collision-test.log",
+        "bytes": 239,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/enemy_alignment.png",
+        "bytes": 100752,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition_circuit_dialogue.png",
+        "bytes": 249104,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition_npc_upgrade.png",
+        "bytes": 214684,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition_safe_circle.png",
+        "bytes": 504243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-ai.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-regression.log",
+        "bytes": 642,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-routes.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-rules-test.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-rules.log",
+        "bytes": 237,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-smoke.log",
+        "bytes": 642,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/expedition-test.log",
+        "bytes": 642,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/final-options-0.log",
+        "bytes": 253,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/final-options-1.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/flying-kick.log",
+        "bytes": 231,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/game-preview.png",
+        "bytes": 632640,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/gameplay-parse.log",
+        "bytes": 3084,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/hub-query.log",
+        "bytes": 634,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/ikun_dribble_gameplay.png",
+        "bytes": 606446,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/ikun_new_walk.png",
+        "bytes": 592758,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/ikun_weapon_restriction.png",
+        "bytes": 198319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inspect_hub.gd",
+        "bytes": 615,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inspect-scene.log",
+        "bytes": 1483,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory_0.png",
+        "bytes": 182187,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory_1.png",
+        "bytes": 182084,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory_2.png",
+        "bytes": 210012,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory_3.png",
+        "bytes": 217662,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory_collision_smoke-spawn.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory-collision-smoke.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory-parse.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory-regression.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory-smoke.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/inventory-test.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/item-ui-import.log",
+        "bytes": 3969,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/item-ui-save.json",
+        "bytes": 874,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/item-ui-save.json.bak",
+        "bytes": 863,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/item-ui-test.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/items-combat.log",
+        "bytes": 243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/items-inventory.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_01_collision.png",
+        "bytes": 1617104,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_01_preview.png",
+        "bytes": 591436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_04_collision.png",
+        "bytes": 1638038,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_04_preview.png",
+        "bytes": 616670,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_05_collision.png",
+        "bytes": 1627530,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_05_preview.png",
+        "bytes": 582817,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_07_collision.png",
+        "bytes": 1750440,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_07_map.png",
+        "bytes": 1429444,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/level_07_preview.png",
+        "bytes": 668722,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-audio-import.log",
+        "bytes": 11315,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-audio-rescue.log",
+        "bytes": 319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-extra-0.log",
+        "bytes": 394,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-extra-1.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-final-0.log",
+        "bytes": 319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-final-1.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-final-2.log",
+        "bytes": 1678,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-final-3.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-smoke-0.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-smoke-1.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-smoke-2.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/loot-voice-regression.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/map_smoke-final.log",
+        "bytes": 1090,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/map_smoke.log",
+        "bytes": 1090,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/map-preview.png",
+        "bytes": 1905927,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/map-smoke.log",
+        "bytes": 1090,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-chapter2.log",
+        "bytes": 236,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-combat.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-load.log",
+        "bytes": 1111,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-regression-0.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-regression-1.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-regression-2.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-regression-3.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-regression-4.log",
+        "bytes": 373,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-rescue-save.json",
+        "bytes": 1980,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-rescue-save.json.bak",
+        "bytes": 1969,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-rescue.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/mercenary-rules.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/migrate-collisions.log",
+        "bytes": 548,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nav-after.log",
+        "bytes": 1221,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nav-audit.log",
+        "bytes": 2230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nav-baseline.log",
+        "bytes": 6243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/navigation_after.json",
+        "bytes": 583165,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/navigation_baseline.json",
+        "bytes": 465401,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/new-weapons-campaign_smoke.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/new-weapons-character_dialogue_smoke.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc_dialogue_preview.png",
+        "bytes": 220487,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc_dialogue_reply.png",
+        "bytes": 236001,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-final.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-integration.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-regression-0.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-regression-1.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-regression-2.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-service-0.log",
+        "bytes": 246,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/npc-service-1.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nuonuo_death.png",
+        "bytes": 598319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nuonuo_hit.png",
+        "bytes": 599354,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nuonuo_hurt.png",
+        "bytes": 598034,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nuonuo_new_walk.png",
+        "bytes": 601330,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/nuonuo_ultimate.png",
+        "bytes": 626480,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_death.png",
+        "bytes": 592824,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_hit.png",
+        "bytes": 597925,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_hurt.png",
+        "bytes": 597172,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_ultimate.png",
+        "bytes": 615801,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_voice_smoke-adventure.log",
+        "bytes": 272,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_voice_smoke-current.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe_voice_smoke-final3.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe-campaign_smoke.log",
+        "bytes": 229,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe-character_dialogue_smoke.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe-combat_smoke.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/phoebe-voice.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/place-chests.log",
+        "bytes": 675,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player_smoke-adventure.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player_smoke-current.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player_smoke-final.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player_smoke.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player-check.log",
+        "bytes": 73,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player-scene-check.log",
+        "bytes": 196,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/player-smoke.log",
+        "bytes": 1304,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/pool-regression-0.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/pool-regression-1.log",
+        "bytes": 339,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal_map_smoke-final.log",
+        "bytes": 6156,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal_map_smoke.log",
+        "bytes": 6156,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal_smoke.log",
+        "bytes": 1367,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal-map-smoke.log",
+        "bytes": 6156,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal-map.log",
+        "bytes": 6432,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal-parse.log",
+        "bytes": 196,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/portal-smoke.log",
+        "bytes": 1367,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_destroy_confirmation.png",
+        "bytes": 265440,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_element_combat.png",
+        "bytes": 779615,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_equipment.png",
+        "bytes": 248804,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_level_stats.png",
+        "bytes": 243411,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_medicines.png",
+        "bytes": 244276,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_quick_medicines.png",
+        "bytes": 784756,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_shop_elements.png",
+        "bytes": 306423,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_shop_medicines.png",
+        "bytes": 338996,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_shop.png",
+        "bytes": 331836,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression_weapon_upgrades.png",
+        "bytes": 256209,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-capture.log",
+        "bytes": 180,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-chapter3-rules.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-cleanup.log",
+        "bytes": 111027,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-combat.log",
+        "bytes": 243,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-defeat.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-expedition.log",
+        "bytes": 642,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-import.log",
+        "bytes": 4019,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-inventory.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-load.log",
+        "bytes": 309,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-save.json",
+        "bytes": 507,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-save.json.bak",
+        "bytes": 507,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-test.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-transitions.log",
+        "bytes": 560,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-weapons.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/project-check.log",
+        "bytes": 196,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-defeat-flow.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-final-0.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-final-1.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-final-2.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-loot-audio-test.log",
+        "bytes": 319,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-persistence-test.log",
+        "bytes": 247,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-player-import.log",
+        "bytes": 6071,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-player-load.log",
+        "bytes": 309,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-player-revive-save.json",
+        "bytes": 4892,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-player-revive-save.json.bak",
+        "bytes": 4816,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-player-revive.log",
+        "bytes": 943,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-regression-0.log",
+        "bytes": 542,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-regression-1.log",
+        "bytes": 234,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-regression-2.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-regression-3.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-revive-test.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-skill-0.log",
+        "bytes": 235,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/q-skill-1.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/render-check.log",
+        "bytes": 164,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/reset_save_confirmation.png",
+        "bytes": 637526,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/reset-level-one.log",
+        "bytes": 584,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/spawn-parse.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/spawn-reset-final.log",
+        "bytes": 583,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/spawn-reset-smoke.log",
+        "bytes": 583,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/spawn-reset.log",
+        "bytes": 583,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-adventure.log",
+        "bytes": 230,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-character-dialogue.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-check-0.log",
+        "bytes": 262,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-check-1.log",
+        "bytes": 253,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-final-0.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-final-1.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-final-2.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-flow.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-import.log",
+        "bytes": 2709,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-regression-0.log",
+        "bytes": 601,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-regression-1.log",
+        "bytes": 436,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-regression-2.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-regression-3.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-roundtrip.json",
+        "bytes": 1275,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-roundtrip.json.bak",
+        "bytes": 1275,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/thunder_crescent_gameplay.png",
+        "bytes": 671625,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/thunder-sweep.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/transition_smoke-final.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/transition_smoke-final3.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/transition_smoke.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/transitions.log",
+        "bytes": 2403,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/video-sound-fix.log",
+        "bytes": 253,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/walk_frames_review.png",
+        "bytes": 428579,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_animation_smoke-chapter2.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_animation_smoke-current.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_animation_smoke-final.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_animation_smoke-final3.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_animation_smoke-release.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_gameplay.png",
+        "bytes": 595495,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon_inventory.png",
+        "bytes": 573775,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-adventure.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-animation.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-check.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-current.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-final-0.log",
+        "bytes": 254,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-final-1.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapon-regression.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapons-character_dialogue_smoke.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapons-combat_smoke.log",
+        "bytes": 226,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapons-phoebe_voice_smoke.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/weapons-player_smoke.log",
+        "bytes": 1300,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/xp-import.log",
+        "bytes": 2342,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/xp-item.log",
+        "bytes": 249,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": "Art/Chapter3/Previews/boss_flying_kick.png",
+        "bytes": 837206,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/boss_flying_kick.png.import",
+        "bytes": 974,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/boss_kick_windup.png",
+        "bytes": 831054,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/boss_kick_windup.png.import",
+        "bytes": 974,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/counter_chain_critical.png",
+        "bytes": 830376,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/counter_chain_critical.png.import",
+        "bytes": 992,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/counter_reward_inventory.png",
+        "bytes": 226486,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/counter_reward_inventory.png.import",
+        "bytes": 997,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/doro_four_minutes.png",
+        "bytes": 761898,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/doro_four_minutes.png.import",
+        "bytes": 977,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/doro_rescue.png",
+        "bytes": 783846,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/doro_rescue.png.import",
+        "bytes": 959,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/editable_collision.png",
+        "bytes": 151805,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/editable_collision.png.import",
+        "bytes": 980,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/enemy_volume_options.png",
+        "bytes": 728336,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/enemy_volume_options.png.import",
+        "bytes": 986,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_cage.png",
+        "bytes": 791138,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_cage.png.import",
+        "bytes": 953,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_fixed_stone.png",
+        "bytes": 231518,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_fixed_stone.png.import",
+        "bytes": 973,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_flying_kick.png",
+        "bytes": 802149,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/gugu_flying_kick.png.import",
+        "bytes": 973,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/hiring.png",
+        "bytes": 258472,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/hiring.png.import",
+        "bytes": 944,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/mercenary.png",
+        "bytes": 783550,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/mercenary.png.import",
+        "bytes": 953,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/q_player_combat.png",
+        "bytes": 804424,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/q_player_combat.png.import",
+        "bytes": 971,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/q_player_inventory.png",
+        "bytes": 251707,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/q_player_inventory.png.import",
+        "bytes": 979,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/resonance_counter.png",
+        "bytes": 811481,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/resonance_counter.png.import",
+        "bytes": 977,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_defeat.png",
+        "bytes": 478340,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_defeat.png.import",
+        "bytes": 967,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_hub.png",
+        "bytes": 403762,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_hub.png.import",
+        "bytes": 958,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_inventory.png",
+        "bytes": 266365,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_inventory.png.import",
+        "bytes": 977,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_shop.png",
+        "bytes": 297898,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/revival_shop.png.import",
+        "bytes": 962,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/thunder_sweep.png",
+        "bytes": 930128,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/thunder_sweep.png.import",
+        "bytes": 965,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/victory_video_choice.png",
+        "bytes": 482917,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/victory_video_choice.png.import",
+        "bytes": 985,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/victory_video_muted.png",
+        "bytes": 778929,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/Previews/victory_video_muted.png.import",
+        "bytes": 983,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/bag_items_preview.png",
+        "bytes": 244276,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/bag_items_preview.png.import",
+        "bytes": 971,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/balance_preview.png",
+        "bytes": 242732,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/balance_preview.png.import",
+        "bytes": 965,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/inventory_preview.png",
+        "bytes": 252865,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/inventory_preview.png.import",
+        "bytes": 970,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/quick_items_preview.png",
+        "bytes": 784756,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/quick_items_preview.png.import",
+        "bytes": 977,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/shop_items_preview.png",
+        "bytes": 338996,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/shop_items_preview.png.import",
+        "bytes": 974,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/shop_preview.png",
+        "bytes": 308423,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Progression/shop_preview.png.import",
+        "bytes": 955,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/cipher.png",
+        "bytes": 231782,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/cipher.png.import",
+        "bytes": 937,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/false_voice.png",
+        "bytes": 294855,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/false_voice.png.import",
+        "bytes": 951,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/journal.png",
+        "bytes": 230114,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/journal.png.import",
+        "bytes": 940,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/next_chapter.png",
+        "bytes": 423562,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/next_chapter.png.import",
+        "bytes": 955,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_guide.png",
+        "bytes": 208656,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_guide.png.import",
+        "bytes": 946,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_merchant.png",
+        "bytes": 210535,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_merchant.png.import",
+        "bytes": 955,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_services.png",
+        "bytes": 501518,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/npc_services.png.import",
+        "bytes": 955,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/reunion.png",
+        "bytes": 446240,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/reunion.png.import",
+        "bytes": 940,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/tutorial.png",
+        "bytes": 268892,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Story/Previews/tutorial.png.import",
+        "bytes": 943,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Tests/capture_campaign.gd",
+        "bytes": 1504,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_campaign.gd.uid",
+        "bytes": 19,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_chapter2.gd",
+        "bytes": 4531,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_chapter2.gd.uid",
+        "bytes": 20,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_combat_update.gd",
+        "bytes": 2827,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_combat_update.gd.uid",
+        "bytes": 19,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_dialogue.gd",
+        "bytes": 2078,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_dialogue.gd.uid",
+        "bytes": 20,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_inventory.gd",
+        "bytes": 2980,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_inventory.gd.uid",
+        "bytes": 19,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_progression.gd",
+        "bytes": 3175,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_progression.gd.uid",
+        "bytes": 20,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_weapons.gd",
+        "bytes": 3084,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/capture_weapons.gd.uid",
+        "bytes": 19,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/Chapter3/capture.gd",
+        "bytes": 12427,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/Chapter3/capture.gd.uid",
+        "bytes": 20,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/Story/capture.gd",
+        "bytes": 2561,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Tests/Story/capture.gd.uid",
+        "bytes": 20,
+        "reason": "obsolete_capture_script"
+      },
+      {
+        "path": "Weapons/Definitions/bronze_shotgun.gd",
+        "bytes": 515,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/bronze_shotgun.gd.uid",
+        "bytes": 19,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/dusk_sniper.gd",
+        "bytes": 487,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/dusk_sniper.gd.uid",
+        "bytes": 20,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/ember_launcher.gd",
+        "bytes": 517,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/ember_launcher.gd.uid",
+        "bytes": 19,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/moon_blade.gd",
+        "bytes": 436,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/moon_blade.gd.uid",
+        "bytes": 20,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/pulse_smg.gd",
+        "bytes": 495,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/pulse_smg.gd.uid",
+        "bytes": 19,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/ranger_rifle.gd",
+        "bytes": 475,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/ranger_rifle.gd.uid",
+        "bytes": 19,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/sand_bow.gd",
+        "bytes": 468,
+        "reason": "retired_weapon"
+      },
+      {
+        "path": "Weapons/Definitions/sand_bow.gd.uid",
+        "bytes": 20,
+        "reason": "retired_weapon"
+      }
+    ]
+  },
+  {
+    "time": "2026-10-07T16:53:13.4175366+08:00",
+    "files": [
+      {
+        "path": ".godot/cleanup-check-0.log",
+        "bytes": 249,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-check-1.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-check-2.log",
+        "bytes": 233,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-check-3.log",
+        "bytes": 855,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-check-4.log",
+        "bytes": 532,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-final-0.log",
+        "bytes": 241,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-final-1.log",
+        "bytes": 227,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-final-2.log",
+        "bytes": 584,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-final-3.log",
+        "bytes": 238,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/experience-final.log",
+        "bytes": 249,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/item-ui-save.json",
+        "bytes": 874,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/progression-save.json",
+        "bytes": 616,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/story-roundtrip.json",
+        "bytes": 1275,
+        "reason": "temporary_debug_output"
+      }
+    ]
+  },
+  {
+    "time": "2026-10-08T09:21:01.0328487+08:00",
+    "files": [
+      {
+        "path": ".godot/audio_repro/project.godot",
+        "bytes": 116,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/audio_repro/run.gd",
+        "bytes": 469,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Chapter2.tscn",
+        "bytes": 50315,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_01.tscn",
+        "bytes": 24044,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_02.tscn",
+        "bytes": 46839,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_03.tscn",
+        "bytes": 35537,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_04.tscn",
+        "bytes": 52096,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_05.tscn",
+        "bytes": 45633,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_06.tscn",
+        "bytes": 38903,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_07.tscn",
+        "bytes": 45963,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_08.tscn",
+        "bytes": 20484,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_09.tscn",
+        "bytes": 36098,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_10.tscn",
+        "bytes": 41603,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_11.tscn",
+        "bytes": 51594,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_12.tscn",
+        "bytes": 38461,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_13.tscn",
+        "bytes": 21922,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_14.tscn",
+        "bytes": 36270,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_15.tscn",
+        "bytes": 38030,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_16.tscn",
+        "bytes": 41074,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/boundary_backups/Scence/Levels/level_17.tscn",
+        "bytes": 35988,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Chapter2.tscn",
+        "bytes": 122451,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_01.tscn",
+        "bytes": 44953,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_02.tscn",
+        "bytes": 85200,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_03.tscn",
+        "bytes": 66868,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_04.tscn",
+        "bytes": 83003,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_05.tscn",
+        "bytes": 83820,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_06.tscn",
+        "bytes": 77679,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_07.tscn",
+        "bytes": 85957,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_08.tscn",
+        "bytes": 56618,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_09.tscn",
+        "bytes": 94816,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_10.tscn",
+        "bytes": 128542,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_11.tscn",
+        "bytes": 158178,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_12.tscn",
+        "bytes": 80576,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_13.tscn",
+        "bytes": 65828,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_14.tscn",
+        "bytes": 100898,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_15.tscn",
+        "bytes": 103197,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_16.tscn",
+        "bytes": 107155,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/collision_backups/Scence/Levels/level_17.tscn",
+        "bytes": 104019,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": ".godot/imported/#U7cef#U7cef.png-041916e66ff66aedff16e122eb9c3b21.ctex",
+        "bytes": 547550,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/#U7cef#U7cef.png-041916e66ff66aedff16e122eb9c3b21.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/#U83f2#U6bd42.png-50cc4f0818ce14599a63bf6251a2c00f.ctex",
+        "bytes": 500858,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/#U83f2#U6bd42.png-50cc4f0818ce14599a63bf6251a2c00f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/00_Hub_preview.png-43aa5d3ccbf1b37472cfadeeec4fc183.ctex",
+        "bytes": 1978240,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/00_Hub_preview.png-43aa5d3ccbf1b37472cfadeeec4fc183.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/00_Hub.png-7508969af064f096412fa73088b3c0ea.ctex",
+        "bytes": 1989324,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/00_Hub.png-7508969af064f096412fa73088b3c0ea.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/01_Entrance_preview.png-c60973194acdc10f40bcc6eab6983706.ctex",
+        "bytes": 1883104,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/01_Entrance_preview.png-c60973194acdc10f40bcc6eab6983706.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/01_Entrance.png-c04ff2ea7d941c3de04f1d10e3aedacc.ctex",
+        "bytes": 1872662,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/01_Entrance.png-c04ff2ea7d941c3de04f1d10e3aedacc.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/02_Necropolis_preview.png-3fe56bbd78be84d15ff790761efbb36c.ctex",
+        "bytes": 1911344,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/02_Necropolis_preview.png-3fe56bbd78be84d15ff790761efbb36c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/02_Necropolis.png-70e8841e5aa83dfa30870471c058d2eb.ctex",
+        "bytes": 1974020,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/02_Necropolis.png-70e8841e5aa83dfa30870471c058d2eb.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/03_Crypt_preview.png-59bd7ec80ec2a5f1c2f98fe83183cd4b.ctex",
+        "bytes": 1883696,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/03_Crypt_preview.png-59bd7ec80ec2a5f1c2f98fe83183cd4b.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/03_Crypt.png-b0e52491cd935ab4efa8dc9f0979faf2.ctex",
+        "bytes": 1947974,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/03_Crypt.png-b0e52491cd935ab4efa8dc9f0979faf2.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/04_Tomb_preview.png-362d36a1e30d9d64900cb84e46b53326.ctex",
+        "bytes": 1851252,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/04_Tomb_preview.png-362d36a1e30d9d64900cb84e46b53326.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/04_Tomb.png-f06afc395195991ba663e529b1532af5.ctex",
+        "bytes": 1916784,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/04_Tomb.png-f06afc395195991ba663e529b1532af5.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/05_Final_preview.png-3122a57816a82995db569be58f4283d7.ctex",
+        "bytes": 1924286,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/05_Final_preview.png-3122a57816a82995db569be58f4283d7.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/05_Final.png-97bedc284d540de5b7921c00530f25a2.ctex",
+        "bytes": 1987848,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/05_Final.png-97bedc284d540de5b7921c00530f25a2.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/拆分图片用于Godot游戏地图.jpeg-bba5cbb26babdbde10dd9e20e20c4944.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比.png-d3dbcf71c6248e4ca850bb24485cbce7.ctex",
+        "bytes": 505938,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比.png-d3dbcf71c6248e4ca850bb24485cbce7.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比2.png-c4f678a6939f42243626dcd570583eda.ctex",
+        "bytes": 500858,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比2.png-c4f678a6939f42243626dcd570583eda.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比低皮质醇.mp3-adac4364265dc6f2ba162a071ec6d241.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比低皮质醇.mp3-adac4364265dc6f2ba162a071ec6d241.mp3str",
+        "bytes": 401627,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比低皮质醇.ogg-d23cdc1e17e6fdaed43f5b245fd2b5c7.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比电话铃声.mp3-35d24abff564988dd4cca89a297e4881.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比电话铃声.mp3-35d24abff564988dd4cca89a297e4881.mp3str",
+        "bytes": 604755,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比电话铃声.ogg-ac9c1a58efb3e2f3810d453bf0be12df.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比人鱼湾.mp3-92d8a3a11ab9e56b9b23407fe1bc458e.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比人鱼湾.mp3-92d8a3a11ab9e56b9b23407fe1bc458e.mp3str",
+        "bytes": 753967,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/菲比人鱼湾.ogg-7d4520ed8149c629dc71117728d59068.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤你干嘛哎哟.mp3-b5e45bf25851612ee18823d9b9ab3a06.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤你干嘛哎哟.mp3-b5e45bf25851612ee18823d9b9ab3a06.mp3str",
+        "bytes": 80007,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤你干嘛哎哟完整.mp3-0b126c6aca3cb6d2017eb3e2259b6fa9.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤你干嘛哎哟完整.mp3-0b126c6aca3cb6d2017eb3e2259b6fa9.mp3str",
+        "bytes": 185959,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤amagi.mp3-a558cc9d5229f7e072afdd9379224eaf.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/坤坤amagi.mp3-a558cc9d5229f7e072afdd9379224eaf.mp3str",
+        "bytes": 21075,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/你干嘛哎哟.ogg-02d5310fb3659dcbab9d2b07ba188b7a.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/你干嘛哎哟完整.ogg-033fbef51f75778511a42cd7be31d3bb.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/afraid.wav-0a2256480b179432dbd453111c538d64.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/afraid.wav-0a2256480b179432dbd453111c538d64.sample",
+        "bytes": 31695,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/amagi.ogg-90ffaa5782f171436c15baf7454fac46.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/angry.wav-f82d038a8c0253d8e2962fb1ff7ddf53.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/angry.wav-f82d038a8c0253d8e2962fb1ff7ddf53.sample",
+        "bytes": 20375,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/anti_tank.png-a6d8f5678faeaa12ec63b957c9ed9a06.ctex",
+        "bytes": 22494,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/anti_tank.png-a6d8f5678faeaa12ec63b957c9ed9a06.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/anubis_statue.png-b904fece5a917ad7bcdcc8a0db3ae44d.ctex",
+        "bytes": 84566,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/anubis_statue.png-b904fece5a917ad7bcdcc8a0db3ae44d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/bag_items_preview.png-a9486c35be1b63899191e0eeb84bc23a.ctex",
+        "bytes": 156820,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/bag_items_preview.png-a9486c35be1b63899191e0eeb84bc23a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/balance_preview.png-eca4e09b8020b64c052f8b9a95777578.ctex",
+        "bytes": 151376,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/balance_preview.png-eca4e09b8020b64c052f8b9a95777578.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/banners_torches.png-48ca7577686c3fd510cc054bf79a45a6.ctex",
+        "bytes": 89218,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/banners_torches.png-48ca7577686c3fd510cc054bf79a45a6.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/barrels_crates.png-4a85953e9c9de3261b16aefb7faa3df3.ctex",
+        "bytes": 89050,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/barrels_crates.png-4a85953e9c9de3261b16aefb7faa3df3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boats.png-eda07a43378e241ccdc3f5eb08cc0ad8.ctex",
+        "bytes": 107050,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boats.png-eda07a43378e241ccdc3f5eb08cc0ad8.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boss_flying_kick.png-ec90bea7e28ab4d755cc31c703b10d6e.ctex",
+        "bytes": 621906,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boss_flying_kick.png-ec90bea7e28ab4d755cc31c703b10d6e.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boss_kick_windup.png-861692e161c002989783ae7b0e03400a.ctex",
+        "bytes": 619856,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/boss_kick_windup.png-861692e161c002989783ae7b0e03400a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/camp_fire.png-6d07044c35c647ed1fd4bde8e84c8699.ctex",
+        "bytes": 49678,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/camp_fire.png-6d07044c35c647ed1fd4bde8e84c8699.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月12日 13_15_41.png-0600f7a113cbaa9dffe6b97370483aa6.ctex",
+        "bytes": 691568,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月12日 13_15_41.png-0600f7a113cbaa9dffe6b97370483aa6.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 15_50_46.png-de32d4af1c52d167d5d963852b5d249e.ctex",
+        "bytes": 2470018,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 15_50_46.png-de32d4af1c52d167d5d963852b5d249e.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 15_55_02.png-e231048b9f20509a912a503c9be96371.ctex",
+        "bytes": 2604768,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 15_55_02.png-e231048b9f20509a912a503c9be96371.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 19_21_24.png-eecef45a227f72f4f64bde3be8fcb7fe.ctex",
+        "bytes": 2625580,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ChatGPT Image 2026年9月13日 19_21_24.png-eecef45a227f72f4f64bde3be8fcb7fe.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/cipher.png-4c6c682cc66e58eafefed6bfc37ff554.ctex",
+        "bytes": 158536,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/cipher.png-4c6c682cc66e58eafefed6bfc37ff554.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_atlas.png-d332394ff58d7ca8895dbce96bcbd41c.ctex",
+        "bytes": 1431234,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_atlas.png-d332394ff58d7ca8895dbce96bcbd41c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_preview.png-6562ff02f2d35bc9b5f3f78069450260.ctex",
+        "bytes": 1538924,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_preview.png-6562ff02f2d35bc9b5f3f78069450260.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_preview.png-7d1b0f683af51e7736b0bf30b5855eea.ctex",
+        "bytes": 1529072,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_preview.png-7d1b0f683af51e7736b0bf30b5855eea.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_tile.png-86c88ebdb63f821a2d27356731d3c9f5.ctex",
+        "bytes": 90,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_tile.png-86c88ebdb63f821a2d27356731d3c9f5.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_tile.png-c5cf7de07e118794c277c4f62fdcaca9.ctex",
+        "bytes": 92,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/collision_tile.png-c5cf7de07e118794c277c4f62fdcaca9.md5",
+        "bytes": 46,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/counter_chain_critical.png-29956a97e64179099449050af269ad33.ctex",
+        "bytes": 623228,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/counter_chain_critical.png-29956a97e64179099449050af269ad33.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/counter_reward_inventory.png-48f0a9a7b2a7f3f73c3b70ba332faeac.ctex",
+        "bytes": 139500,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/counter_reward_inventory.png-48f0a9a7b2a7f3f73c3b70ba332faeac.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/death.wav-eb3e8e82584ef7148555d883f349f032.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/death.wav-eb3e8e82584ef7148555d883f349f032.sample",
+        "bytes": 26479,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/dialogue.wav-170d8896773bcf8eeee3d58b4749f5a3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/dialogue.wav-170d8896773bcf8eeee3d58b4749f5a3.sample",
+        "bytes": 31535,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/dock.png-24f6f813715061330a156a58c07d5924.ctex",
+        "bytes": 138676,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/dock.png-24f6f813715061330a156a58c07d5924.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/door_ruin.png-957f1267d03b4a61fd0e0223010348c3.ctex",
+        "bytes": 70952,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/door_ruin.png-957f1267d03b4a61fd0e0223010348c3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/doro_four_minutes.png-dc270d4975d8211a77d73cb6525b9846.ctex",
+        "bytes": 569170,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/doro_four_minutes.png-dc270d4975d8211a77d73cb6525b9846.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/doro_rescue.png-651c702ee1427142ab1e94e828511ae3.ctex",
+        "bytes": 585590,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/doro_rescue.png-651c702ee1427142ab1e94e828511ae3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/editable_collision.png-9313fb7bad68839bdcbefc6f9c67bd31.ctex",
+        "bytes": 97360,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/editable_collision.png-9313fb7bad68839bdcbefc6f9c67bd31.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/enemy_volume_options.png-ffc1c40040863b967a01cad6b9249bf9.ctex",
+        "bytes": 529104,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/enemy_volume_options.png-ffc1c40040863b967a01cad6b9249bf9.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/exhausted.wav-eae7bba84a9544d71cb1edb306cedc4d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/exhausted.wav-eae7bba84a9544d71cb1edb306cedc4d.sample",
+        "bytes": 28319,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/false_voice.png-fc6ee7e12dd7c4bce2ebce52801d845f.ctex",
+        "bytes": 200492,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/false_voice.png-fc6ee7e12dd7c4bce2ebce52801d845f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gameplay_preview.png-84cb875486139e93a68af1a50f3c25bb.ctex",
+        "bytes": 627444,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gameplay_preview.png-84cb875486139e93a68af1a50f3c25bb.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid_map_v9.png-9277fc2fb98857b37081688bf7de30b6.ctex",
+        "bytes": 1696984,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid_map_v9.png-9277fc2fb98857b37081688bf7de30b6.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid_map.png-3bb6e3c89046dab0dca4b12cf44250dc.ctex",
+        "bytes": 1696984,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid_map.png-3bb6e3c89046dab0dca4b12cf44250dc.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid.png-9bb66f80dbdd793fb4bb275a0d999fdf.ctex",
+        "bytes": 1632038,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/grid.png-9bb66f80dbdd793fb4bb275a0d999fdf.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_cage.png-5c26f3c5f8f2bf68b59612fc37a2f7e4.ctex",
+        "bytes": 593640,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_cage.png-5c26f3c5f8f2bf68b59612fc37a2f7e4.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_fixed_stone.png-d05afabf58afa6406940828bcc831bf4.ctex",
+        "bytes": 140550,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_fixed_stone.png-d05afabf58afa6406940828bcc831bf4.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_flying_kick.png-4a355aab764dbdeb8e19cdcae92e55fd.ctex",
+        "bytes": 598492,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/gugu_flying_kick.png-4a355aab764dbdeb8e19cdcae92e55fd.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/hiring.png-7f69286d5217b48f241599b4ef2cd683.ctex",
+        "bytes": 160232,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/hiring.png-7f69286d5217b48f241599b4ef2cd683.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/hurt.wav-af9849be8c5a5b7f113b6bd7b9f37ffa.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/hurt.wav-af9849be8c5a5b7f113b6bd7b9f37ffa.sample",
+        "bytes": 26839,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/idle.wav-2ef68678fbe0ccc54bf66781012cdabf.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/idle.wav-2ef68678fbe0ccc54bf66781012cdabf.sample",
+        "bytes": 30959,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_1.wav-dfa0c92e061c843b8e7c2bd84dc4413e.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_1.wav-dfa0c92e061c843b8e7c2bd84dc4413e.sample",
+        "bytes": 32127,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_2.wav-63b879fbc4e5e2801c9c0512f699cfe3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_2.wav-63b879fbc4e5e2801c9c0512f699cfe3.sample",
+        "bytes": 30335,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_3.wav-1116bcb748e91b09a8194cd387b4b3e6.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/interaction_3.wav-1116bcb748e91b09a8194cd387b4b3e6.sample",
+        "bytes": 36583,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/inventory_preview.png-d1760cfb8d6065413810528d92086f6a.ctex",
+        "bytes": 156258,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/inventory_preview.png-d1760cfb8d6065413810528d92086f6a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/journal.png-706cef7bcfc352d1febfd25a3e061b83.ctex",
+        "bytes": 142322,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/journal.png-706cef7bcfc352d1febfd25a3e061b83.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_1280.png-8fe218732845f741fdcd961d6499a1f1.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_1280.png-8fe218732845f741fdcd961d6499a1f1.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_atlas.png-76b7fb2d3f4e125f52e896befc0c0ed4.ctex",
+        "bytes": 1680348,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_atlas.png-76b7fb2d3f4e125f52e896befc0c0ed4.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_background_source_1280x720.png-8138c28efb0e5413840704131b09f71f.ctex",
+        "bytes": 1644080,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_background_source_1280x720.png-8138c28efb0e5413840704131b09f71f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_atlas.png-5b9143e63bd0975adcffb4228185d46b.ctex",
+        "bytes": 1263516,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_atlas.png-5b9143e63bd0975adcffb4228185d46b.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_shapes_atlas.png-3b590010f4c2cf9cd0215fd876a1ed4d.ctex",
+        "bytes": 90,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_shapes_atlas.png-3b590010f4c2cf9cd0215fd876a1ed4d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_source_1280x720.png-d57207e063a73728827e222840ac6ae5.ctex",
+        "bytes": 1223158,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_collision_source_1280x720.png-d57207e063a73728827e222840ac6ae5.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_generated_tileset_reference.png-726275d6a41dec1b47599852c7776f28.ctex",
+        "bytes": 2141848,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_generated_tileset_reference.png-726275d6a41dec1b47599852c7776f28.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_ground_atlas.png-c89bee0e582e1de6b322e2678cd6eb69.ctex",
+        "bytes": 15174,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_ground_atlas.png-c89bee0e582e1de6b322e2678cd6eb69.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_map_atlas.png-45199e9e6f25bdf7a6c8f6d50e53da34.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_map_atlas.png-45199e9e6f25bdf7a6c8f6d50e53da34.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_map.png-a90768e0aff92601b7e03b0f46e60bda.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_map.png-a90768e0aff92601b7e03b0f46e60bda.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_reference.png-b8c4c960df273c09dad5b6ffde1605ff.ctex",
+        "bytes": 2604768,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/level1_reference.png-b8c4c960df273c09dad5b6ffde1605ff.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/light_breeze_sprite_64x48.png-980156aee178457f0c39b10e58684812.ctex",
+        "bytes": 7306,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/light_breeze_sprite_64x48.png-980156aee178457f0c39b10e58684812.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map_1280.png-e328242f2e513bf5a0c18efcfdfc7762.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map_1280.png-e328242f2e513bf5a0c18efcfdfc7762.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map_atlas_16x16.png-9cd78c90581a488b5d9b95f8a4fbda4b.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map_atlas_16x16.png-9cd78c90581a488b5d9b95f8a4fbda4b.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map.png-3ec3a75c2e160f0a5396e6e7fba188af.ctex",
+        "bytes": 3376,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/map.png-3ec3a75c2e160f0a5396e6e7fba188af.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/mercenary.png-34cde1da6958b583146c2bfc9c2e2dbe.ctex",
+        "bytes": 588406,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/mercenary.png-34cde1da6958b583146c2bfc9c2e2dbe.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/next_chapter.png-7a5fc10468ec246dd6a49462d9102c4f.ctex",
+        "bytes": 298228,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/next_chapter.png-7a5fc10468ec246dd6a49462d9102c4f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_guide.png-2b13300f7d57a1fdddfc2947062987b8.ctex",
+        "bytes": 137780,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_guide.png-2b13300f7d57a1fdddfc2947062987b8.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_merchant.png-3e17ebff9e06c91bc767b25a750036c2.ctex",
+        "bytes": 131870,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_merchant.png-3e17ebff9e06c91bc767b25a750036c2.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_services.png-51b2d10287614f3f34d1552a581f3952.ctex",
+        "bytes": 372778,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/npc_services.png-51b2d10287614f3f34d1552a581f3952.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/objects.png-a29c207562fdcf94d7ea5b01681927db.ctex",
+        "bytes": 1403070,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/objects.png-a29c207562fdcf94d7ea5b01681927db.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/palms.png-483445277c70f602edd40869c44534e3.ctex",
+        "bytes": 112492,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/palms.png-483445277c70f602edd40869c44534e3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/player_sprite.png-597ba75506e188082d52dc5b80ecf3ea.ctex",
+        "bytes": 500858,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/player_sprite.png-597ba75506e188082d52dc5b80ecf3ea.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/player.png-e0de26b393baa489289b0e229c9561a8.ctex",
+        "bytes": 500858,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/player.png-e0de26b393baa489289b0e229c9561a8.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/proud.wav-3da299c77702395b51107fa83051ac90.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/proud.wav-3da299c77702395b51107fa83051ac90.sample",
+        "bytes": 30351,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/pyramid_walkable_collision_preview_sheet.png-7ca8908be6049a3ba787e5ae247ee909.ctex",
+        "bytes": 11499872,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/pyramid_walkable_collision_preview_sheet.png-7ca8908be6049a3ba787e5ae247ee909.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/q_player_combat.png-46c1ec7279661233e4b7cf35c4342a2d.ctex",
+        "bytes": 601124,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/q_player_combat.png-46c1ec7279661233e4b7cf35c4342a2d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/q_player_inventory.png-484d200f68e584c91e9a6b35ecf3a531.ctex",
+        "bytes": 158026,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/q_player_inventory.png-484d200f68e584c91e9a6b35ecf3a531.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_传送门位置_v9.png-ee118baeb784300c29b023c6f1b77bfa.ctex",
+        "bytes": 1631050,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_传送门位置_v9.png-ee118baeb784300c29b023c6f1b77bfa.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_传送门位置.png-561a6ae2280e6f2cf4cd86524016654f.ctex",
+        "bytes": 1631066,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_传送门位置.png-561a6ae2280e6f2cf4cd86524016654f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_物理碰撞范围_v9.png-fe07143cbf0aee265ad12fd4a1099980.ctex",
+        "bytes": 1529072,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_物理碰撞范围_v9.png-fe07143cbf0aee265ad12fd4a1099980.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_物理碰撞范围.png-afa40a7255b9303aab1292890517e659.ctex",
+        "bytes": 1535952,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_物理碰撞范围.png-afa40a7255b9303aab1292890517e659.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_最终合成_v9.png-7d62a681eab610f7e81eccb67c71521a.ctex",
+        "bytes": 1631372,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_最终合成_v9.png-7d62a681eab610f7e81eccb67c71521a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_最终合成.png-3b16224c9ec7f9fe86488f86c5af6c34.ctex",
+        "bytes": 1596872,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/QA_最终合成.png-3b16224c9ec7f9fe86488f86c5af6c34.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/quick_items_preview.png-126924391e6c1c3ecb55952d3fe9d0d6.ctex",
+        "bytes": 591976,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/quick_items_preview.png-126924391e6c1c3ecb55952d3fe9d0d6.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/rebuilt_map_preview.png-2bf827b8d0c73de2ac4a53791a30334c.ctex",
+        "bytes": 1361190,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/rebuilt_map_preview.png-2bf827b8d0c73de2ac4a53791a30334c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/resonance_counter.png-e06b9878cf126879d85a478b23836378.ctex",
+        "bytes": 607580,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/resonance_counter.png-e06b9878cf126879d85a478b23836378.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/reunion.png-f86f932b45852dc6541e3f2c7de6c74c.ctex",
+        "bytes": 311302,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/reunion.png-f86f932b45852dc6541e3f2c7de6c74c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_defeat.png-64166e900645903ff4af9e35be04e1ca.ctex",
+        "bytes": 341872,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_defeat.png-64166e900645903ff4af9e35be04e1ca.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_hub.png-35e9bb17ff5ee2589935a7abd39d3936.ctex",
+        "bytes": 288948,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_hub.png-35e9bb17ff5ee2589935a7abd39d3936.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_inventory.png-f9a82cc0f5e9b81557188056cd47ee6c.ctex",
+        "bytes": 170878,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_inventory.png-f9a82cc0f5e9b81557188056cd47ee6c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_shop.png-b71fac1e822f47c165883b51615b1584.ctex",
+        "bytes": 198574,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/revival_shop.png-b71fac1e822f47c165883b51615b1584.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/rocks_vegetation.png-c342d4fc20d8a91df3e06ad87e876689.ctex",
+        "bytes": 276932,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/rocks_vegetation.png-c342d4fc20d8a91df3e06ad87e876689.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/sandbag_bunker.png-c2b92f6f566c3390652cfb988aea1f56.ctex",
+        "bytes": 53370,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/sandbag_bunker.png-c2b92f6f566c3390652cfb988aea1f56.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/shop_items_preview.png-e77411cb5f476bbce7f1a9f1d77eee99.ctex",
+        "bytes": 227996,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/shop_items_preview.png-e77411cb5f476bbce7f1a9f1d77eee99.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/shop_preview.png-deaa2282ef92f39d4c5e2e4f1a3f5306.ctex",
+        "bytes": 205536,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/shop_preview.png-deaa2282ef92f39d4c5e2e4f1a3f5306.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/skill.wav-9136f26da5398dbe96e06df10b9f57e3.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/skill.wav-9136f26da5398dbe96e06df10b9f57e3.sample",
+        "bytes": 23319,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/stone_columns.png-f5beb490bc61504c813503d599a31e1a.ctex",
+        "bytes": 196138,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/stone_columns.png-f5beb490bc61504c813503d599a31e1a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tank.png-bd643eda363dd800519ef6ff3ed4b723.ctex",
+        "bytes": 29964,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tank.png-bd643eda363dd800519ef6ff3ed4b723.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/temple_main.png-4008553d0095adf3647a38d48dc94410.ctex",
+        "bytes": 154192,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/temple_main.png-4008553d0095adf3647a38d48dc94410.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tent.png-b9fb3039cd3fe1d5107c6515f8b9ae5c.ctex",
+        "bytes": 67382,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tent.png-b9fb3039cd3fe1d5107c6515f8b9ae5c.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrain_atlas.png-af510cfafeeb8bff8d0d9d298238d4f0.ctex",
+        "bytes": 228442,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrain_atlas.png-af510cfafeeb8bff8d0d9d298238d4f0.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrain.png-ee14febf08f836f4ec1c8aa13871fe74.ctex",
+        "bytes": 257836,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrain.png-ee14febf08f836f4ec1c8aa13871fe74.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrified.wav-185aa4d07cc8d286fd8027ba90386700.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/terrified.wav-185aa4d07cc8d286fd8027ba90386700.sample",
+        "bytes": 23543,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/thunder_sweep.png-ff9e1b3d51f69c80cdd16bb00b689cb8.ctex",
+        "bytes": 689928,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/thunder_sweep.png-ff9e1b3d51f69c80cdd16bb00b689cb8.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-693b3a7e261920bed7d27ad7ad0a640b.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-77d38ed222cb38df6649c65ccfc7cf0d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-7f742f7757ae10ee96b9acc40f79cb9a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-829ecacbf4f4b6aaa1efa54af4986fa2.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-bed2b725c9918083ed2ea8771a60980f.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-d6713180b432bb542b11781c650eb799.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tilemap.csv-fc45336344de9df87f1998d15399a123.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/truck.png-e75d1967046f8dd0a1824d7c7b1fc1d5.ctex",
+        "bytes": 33436,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/truck.png-e75d1967046f8dd0a1824d7c7b1fc1d5.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tutorial.png-8f5bed8aca929ec102c95c823219ad5b.ctex",
+        "bytes": 171780,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/tutorial.png-8f5bed8aca929ec102c95c823219ad5b.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ultimate.wav-52fad6241942e8d2dc162e3edc13bcd8.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ultimate.wav-52fad6241942e8d2dc162e3edc13bcd8.sample",
+        "bytes": 26279,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory_video_choice.png-38d51b5cfa93d0493d18dbebaae28288.ctex",
+        "bytes": 342016,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory_video_choice.png-38d51b5cfa93d0493d18dbebaae28288.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory_video_muted.png-d13788a4a02a054bf4e2f9f01a02f4df.ctex",
+        "bytes": 462748,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory_video_muted.png-d13788a4a02a054bf4e2f9f01a02f4df.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory.wav-37063efc9dd5e12653f0ed69c751837d.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/victory.wav-37063efc9dd5e12653f0ed69c751837d.sample",
+        "bytes": 32255,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_long.png-a539d051713a606366597ffe09b423ba.ctex",
+        "bytes": 48580,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_long.png-a539d051713a606366597ffe09b423ba.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_section.png-b2a1e0e340f11f403daf9ce95f28ab53.ctex",
+        "bytes": 40598,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_section.png-b2a1e0e340f11f403daf9ce95f28ab53.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_small.png-ddd6c3492884de03df90af9fae0f694a.ctex",
+        "bytes": 33982,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/wall_small.png-ddd6c3492884de03df90af9fae0f694a.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/watchtower.png-89ea7664894b0ca268ba3c74c2011497.ctex",
+        "bytes": 33942,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/watchtower.png-89ea7664894b0ca268ba3c74c2011497.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ΦÅ▓µ»ö2.png-0737bc078e37d2f05efb02e1337d3fc4.ctex",
+        "bytes": 500858,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".godot/imported/ΦÅ▓µ»ö2.png-0737bc078e37d2f05efb02e1337d3fc4.md5",
+        "bytes": 91,
+        "reason": "orphan_import_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/__pycache__/__init__.cpython-313.pyc",
+        "bytes": 478,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/__pycache__/_definitions.cpython-313.pyc",
+        "bytes": 2131,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/__pycache__/_io.cpython-313.pyc",
+        "bytes": 27684,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/__pycache__/_parsing.cpython-313.pyc",
+        "bytes": 9597,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/__pycache__/_utils.cpython-313.pyc",
+        "bytes": 5557,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": ".tools/python/imageio_ffmpeg/binaries/__pycache__/__init__.cpython-313.pyc",
+        "bytes": 195,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": "Art/Chapter3/gameplay_preview.png",
+        "bytes": 836636,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Art/Chapter3/gameplay_preview.png.import",
+        "bytes": 965,
+        "reason": "obsolete_preview"
+      },
+      {
+        "path": "Audio/__pycache__/build_chapter3_combat_voices.cpython-313.pyc",
+        "bytes": 7025,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": "Audio/糯糯/Generated/afraid.wav",
+        "bytes": 154630,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/afraid.wav.import",
+        "bytes": 498,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/angry.wav",
+        "bytes": 98764,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/angry.wav.import",
+        "bytes": 496,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/death.wav",
+        "bytes": 128900,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/death.wav.import",
+        "bytes": 496,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/dialogue.wav",
+        "bytes": 153844,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/dialogue.wav.import",
+        "bytes": 505,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/exhausted.wav",
+        "bytes": 138006,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/exhausted.wav.import",
+        "bytes": 508,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/generate_voices.ps1",
+        "bytes": 1939,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/hurt.wav",
+        "bytes": 130706,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/hurt.wav.import",
+        "bytes": 493,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/idle.wav",
+        "bytes": 151052,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/idle.wav.import",
+        "bytes": 492,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_1.wav",
+        "bytes": 156800,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_1.wav.import",
+        "bytes": 520,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_2.wav",
+        "bytes": 147936,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_2.wav.import",
+        "bytes": 520,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_3.wav",
+        "bytes": 178836,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/interaction_3.wav.import",
+        "bytes": 520,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/lines.json",
+        "bytes": 827,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/proud.wav",
+        "bytes": 148040,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/proud.wav.import",
+        "bytes": 496,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/README.md",
+        "bytes": 1126,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/skill.wav",
+        "bytes": 113224,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/skill.wav.import",
+        "bytes": 496,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/terrified.wav",
+        "bytes": 114350,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/terrified.wav.import",
+        "bytes": 508,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/ultimate.wav",
+        "bytes": 127902,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/ultimate.wav.import",
+        "bytes": 505,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/victory.wav",
+        "bytes": 157412,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Audio/糯糯/Generated/victory.wav.import",
+        "bytes": 502,
+        "reason": "retired_generated_output"
+      },
+      {
+        "path": "Tools/__pycache__/author_chapter2_maps.cpython-313.pyc",
+        "bytes": 43297,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": "Tools/__pycache__/author_chapter3_assets.cpython-313.pyc",
+        "bytes": 14353,
+        "reason": "python_bytecode_cache"
+      },
+      {
+        "path": "Tools/__pycache__/simplify_terrain.cpython-313.pyc",
+        "bytes": 5645,
+        "reason": "python_bytecode_cache"
+      }
+    ]
+  },
+  {
+    "time": "2026-10-08T09:21:32.4585438+08:00",
+    "files": [
+      {
+        "path": ".godot/cleanup-scene-check.log",
+        "bytes": 309,
+        "reason": "temporary_debug_output"
+      },
+      {
+        "path": ".godot/cleanup-voice-check.log",
+        "bytes": 240,
+        "reason": "temporary_debug_output"
+      }
+    ]
+  }
+]

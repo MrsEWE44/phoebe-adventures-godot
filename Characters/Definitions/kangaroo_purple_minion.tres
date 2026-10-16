@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/kangaroo_purple.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "kangaroo_purple_minion"
+display_name = "袋鼠狗幽咒幼体"
+character_type = 1
+max_health = 100
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.10511363636363637,0.10511363636363637)
+sprite_offset = Vector2(0,-18.079545454545453)
+reaction_scale = Vector2(0.10511363636363637,0.10511363636363637)
+reaction_offset = Vector2(0,-18.079545454545453)
+ultimate_scale = Vector2(0.10511363636363637,0.10511363636363637)
+ultimate_offset = Vector2(0,-18.079545454545453)
+hurtbox_size = Vector2(23.68,30.34)
+hurtbox_offset = Vector2(0,-17.39)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+faces_right = true

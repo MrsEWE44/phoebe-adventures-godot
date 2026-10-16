@@ -1,0 +1,78 @@
+{
+  "index": 9,
+  "chapter": 2,
+  "number": 2,
+  "name": "环礁双环",
+  "map": "res://Maps/Level2/2-2.png",
+  "floor_sample": [
+    816,
+    450,
+    24,
+    24
+  ],
+  "adventure": {
+    "intro": "2-2 · 环礁双环：离开复活圈，清怪、解谜，靠近门按 E 开启新遭遇。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "abyss_king",
+    "enemies": [
+      "reef_crab",
+      "reef_shark",
+      "tide_hunter",
+      "storm_jelly"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "direction",
+        "target": 1,
+        "clue": "镜面必须朝东；左右旋转后提交方向。"
+      },
+      "rune_2": {
+        "mode": "balance",
+        "target": 11,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。"
+      },
+      "rune_3": {
+        "mode": "hold",
+        "seconds": 2.5,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_5": {
+        "mode": "memory",
+        "sequence": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "clue": "铭文从左向右：水 → 风 → 水 → 风"
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "ocean"
+}

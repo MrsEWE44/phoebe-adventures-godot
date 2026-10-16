@@ -1,0 +1,11 @@
+{
+  "name": "看清杂音",
+  "map": "Maps/Level4/幽光沼泽中的双重传送门.png",
+  "chapter": 4,
+  "number": 4,
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 看清杂音。左门封锁，完成挑战后从右门离开。"
+  }
+}

@@ -1,0 +1,93 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ckix1vk54r0vk"]
+
+[ext_resource type="Texture2D" uid="uid://c51fyluak1fdt" path="res://Player/Phoebe2.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Frame0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame1"]
+atlas = ExtResource("1")
+region = Rect2(286, 0, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame2"]
+atlas = ExtResource("1")
+region = Rect2(572, 0, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame3"]
+atlas = ExtResource("1")
+region = Rect2(0, 257, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame4"]
+atlas = ExtResource("1")
+region = Rect2(286, 257, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame5"]
+atlas = ExtResource("1")
+region = Rect2(572, 257, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame6"]
+atlas = ExtResource("1")
+region = Rect2(0, 514, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame7"]
+atlas = ExtResource("1")
+region = Rect2(286, 514, 286, 257)
+
+[sub_resource type="AtlasTexture" id="Frame8"]
+atlas = ExtResource("1")
+region = Rect2(572, 514, 286, 257)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame0")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame1")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame0")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame2")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame3")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame4")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame3")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame5")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame6")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame7")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame6")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame8")
+}],
+"loop": 1,
+"name": &"up",
+"speed": 5.0
+}]

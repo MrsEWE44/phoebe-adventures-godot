@@ -1,0 +1,258 @@
+[gd_scene format=3 uid="uid://cciofq5evr4kg"]
+
+[ext_resource type="Texture2D" uid="uid://tji56ejo0dal" path="res://Maps/ChatGPT Image 2026#U5e749#U670813#U65e5 15_55_02.png" id="1_background"]
+[ext_resource type="Script" uid="uid://bekrfsu0cbipb" path="res://Scence/portal.gd" id="2_portal"]
+
+[ext_resource type="Script" path="res://Scence/ocean_entry.gd" id="ocean_entry"]
+
+[sub_resource type="RectangleShape2D" id="PortalShape_temple"]
+size = Vector2(80, 122)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_north_west"]
+size = Vector2(36, 44)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_north_east"]
+size = Vector2(36, 44)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_west_arch"]
+size = Vector2(36, 31)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_west_wall"]
+size = Vector2(36, 44)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_east_arch"]
+size = Vector2(36, 44)
+
+[sub_resource type="RectangleShape2D" id="PortalShape_south_west"]
+size = Vector2(36, 44)
+
+[node name="Level1" type="Node2D" unique_id=345460628]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=442532089]
+texture = ExtResource("1_background")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=87002814]
+collision_layer = 2
+
+[node name="NorthBoundary" type="CollisionPolygon2D" parent="Terrain" unique_id=240913088]
+polygon = PackedVector2Array(-32, -32, 1704, -32, 1704, 0, -32, 0)
+
+[node name="WestBoundary" type="CollisionPolygon2D" parent="Terrain" unique_id=542791943]
+polygon = PackedVector2Array(-32, 0, 0, 0, 0, 972, -32, 972)
+
+[node name="EastBoundary" type="CollisionPolygon2D" parent="Terrain" unique_id=925051380]
+polygon = PackedVector2Array(1672, 0, 1704, 0, 1704, 972, 1672, 972)
+
+[node name="SouthBoundary" type="CollisionPolygon2D" parent="Terrain" unique_id=1389197182]
+polygon = PackedVector2Array(0, 940, 1672, 940, 1672, 972, 0, 972)
+
+[node name="WestWater" type="CollisionPolygon2D" parent="Terrain" unique_id=1513442598]
+polygon = PackedVector2Array(0, 706, 73, 719, 147, 713, 186, 711, 206, 705, 262, 656, 303, 661, 347, 703, 386, 684, 428, 695, 481, 709, 543, 710, 609, 731, 661, 718, 705, 705, 758, 713, 758, 940, 0, 940)
+
+[node name="EastWater" type="CollisionPolygon2D" parent="Terrain" unique_id=1907462794]
+polygon = PackedVector2Array(916, 714, 971, 715, 1007, 730, 1061, 729, 1100, 720, 1165, 725, 1207, 713, 1282, 722, 1282, 758, 1325, 758, 1325, 711, 1369, 716, 1410, 707, 1471, 719, 1520, 731, 1571, 709, 1621, 714, 1672, 699, 1672, 940, 916, 940)
+
+[node name="MainPierWestRail" type="CollisionPolygon2D" parent="Terrain" unique_id=1363634819]
+polygon = PackedVector2Array(763, 638, 782, 638, 782, 940, 756, 940)
+
+[node name="MainPierEastRail" type="CollisionPolygon2D" parent="Terrain" unique_id=224883691]
+polygon = PackedVector2Array(892, 638, 911, 638, 923, 940, 891, 940)
+
+[node name="ShortPierWestRail" type="CollisionPolygon2D" parent="Terrain" unique_id=1413901549]
+polygon = PackedVector2Array(1260, 672, 1281, 672, 1282, 756, 1269, 756)
+
+[node name="ShortPierEastRail" type="CollisionPolygon2D" parent="Terrain" unique_id=642693699]
+polygon = PackedVector2Array(1326, 670, 1345, 670, 1336, 756, 1326, 756)
+
+[node name="TempleFacade" type="CollisionPolygon2D" parent="Terrain" unique_id=244843662]
+polygon = PackedVector2Array(574, 0, 1118, 0, 1118, 220, 890, 220, 890, 120, 785, 120, 785, 220, 574, 220)
+
+[node name="TempleWestPlinth" type="CollisionPolygon2D" parent="Terrain" unique_id=1297693057]
+polygon = PackedVector2Array(600, 207, 766, 207, 772, 275, 737, 295, 630, 290, 630, 251, 600, 251)
+
+[node name="TempleEastPlinth" type="CollisionPolygon2D" parent="Terrain" unique_id=1179690325]
+polygon = PackedVector2Array(909, 205, 1116, 205, 1113, 255, 1051, 267, 1045, 286, 925, 291, 909, 268)
+
+[node name="NorthWestRuins" type="CollisionPolygon2D" parent="Terrain" unique_id=1770801440]
+polygon = PackedVector2Array(0, 0, 571, 0, 571, 169, 629, 254, 619, 291, 396, 212, 280, 196, 266, 159, 286, 120, 238, 120, 231, 162, 216, 161, 209, 112, 160, 172, 121, 168, 71, 173, 0, 141)
+
+[node name="NorthEastRuins" type="CollisionPolygon2D" parent="Terrain" unique_id=1771446699]
+polygon = PackedVector2Array(1125, 0, 1672, 0, 1672, 178, 1567, 304, 1575, 227, 1576, 164, 1535, 159, 1534, 120, 1482, 120, 1469, 180, 1431, 183, 1385, 166, 1324, 190, 1269, 192, 1182, 236, 1201, 270, 1135, 253)
+
+[node name="WestArch" type="CollisionPolygon2D" parent="Terrain" unique_id=1478148385]
+polygon = PackedVector2Array(91, 200, 208, 209, 263, 237, 247, 272, 188, 285, 187, 252, 140, 251, 130, 296, 112, 315, 78, 296)
+
+[node name="WestCamp" type="CollisionPolygon2D" parent="Terrain" unique_id=759018018]
+position = Vector2(16, -8)
+polygon = PackedVector2Array(296, 287, 373, 266, 435, 289, 449, 339, 414, 354, 303, 348)
+
+[node name="WestWall" type="CollisionPolygon2D" parent="Terrain" unique_id=470915842]
+polygon = PackedVector2Array(90, 176, 112, 323, 207, 324, 216, 383, 200, 420, 184, 427, 184, 382, 139, 382, 111, 537, 3, 548, 0, 436, -1, 144)
+
+[node name="CourtyardWestWall" type="CollisionPolygon2D" parent="Terrain" unique_id=394219192]
+polygon = PackedVector2Array(483, 351, 608, 351, 617, 365, 662, 359, 667, 405, 655, 432, 609, 443, 512, 430, 485, 414)
+
+[node name="WestPillars" type="CollisionPolygon2D" parent="Terrain" unique_id=2055324341]
+position = Vector2(1, -12)
+polygon = PackedVector2Array(231, 452, 277, 454, 289, 489, 273, 510, 237, 508, 230, 489)
+
+[node name="WestUpperWall" type="CollisionPolygon2D" parent="Terrain" unique_id=342627953]
+position = Vector2(2, -6)
+polygon = PackedVector2Array(312, 445, 405, 445, 406, 478, 438, 478, 441, 514, 406, 524, 346, 519, 341, 489, 310, 482)
+
+[node name="WestCrates" type="CollisionPolygon2D" parent="Terrain" unique_id=357693337]
+polygon = PackedVector2Array(599, 482, 625, 482, 634, 497, 651, 486, 673, 486, 676, 510, 638, 515, 601, 506)
+
+[node name="SouthWestRuins" type="CollisionPolygon2D" parent="Terrain" unique_id=2012432901]
+polygon = PackedVector2Array(0, 552, 178, 538, 187, 553, 265, 553, 269, 576, 247, 604, 197, 603, 187, 629, 170, 632, 170, 586, 114, 586, 114, 638, 70, 641, 0, 627)
+
+[node name="SouthWestCrate" type="CollisionPolygon2D" parent="Terrain" unique_id=816616758]
+polygon = PackedVector2Array(343, 562, 368, 562, 371, 586, 363, 597, 341, 590)
+
+[node name="SouthWestWall" type="CollisionPolygon2D" parent="Terrain" unique_id=1277834861]
+polygon = PackedVector2Array(563, 551, 592, 551, 597, 567, 646, 567, 650, 550, 674, 550, 679, 570, 698, 581, 698, 617, 673, 637, 561, 631)
+
+[node name="EastCamp" type="CollisionPolygon2D" parent="Terrain" unique_id=1580440068]
+polygon = PackedVector2Array(994, 379, 1019, 348, 1066, 329, 1116, 355, 1118, 349, 1143, 349, 1143, 375, 1169, 379, 1171, 409, 1138, 426, 999, 435, 989, 413)
+
+[node name="EastTruck" type="CollisionPolygon2D" parent="Terrain" unique_id=134947524]
+polygon = PackedVector2Array(1233, 312, 1294, 300, 1339, 310, 1340, 360, 1313, 370, 1256, 362, 1215, 345)
+
+[node name="EastArch" type="CollisionPolygon2D" parent="Terrain" unique_id=920365881]
+polygon = PackedVector2Array(1340, 257, 1474, 260, 1493, 312, 1569, 308, 1584, 373, 1496, 415, 1456, 380, 1456, 332, 1398, 332, 1401, 376, 1350, 386, 1337, 369)
+
+[node name="EastColumn" type="CollisionPolygon2D" parent="Terrain" unique_id=2109312310]
+polygon = PackedVector2Array(1593, 282, 1637, 282, 1641, 307, 1619, 323, 1596, 315)
+
+[node name="EastFire" type="CollisionPolygon2D" parent="Terrain" unique_id=118502942]
+position = Vector2(170.20007, -130.74167)
+scale = Vector2(0.9, 1.2513295)
+polygon = PackedVector2Array(1570.8889, 260.31647, 1668.6666, 259.51733, 1672, 478, 1502, 492.86914, 1570.8889, 450.5142)
+
+[node name="EastWall" type="CollisionPolygon2D" parent="Terrain" unique_id=176623235]
+position = Vector2(0, -9)
+polygon = PackedVector2Array(1116, 449, 1218, 452, 1218, 471, 1215, 492, 1113, 492)
+
+[node name="EastWatchtower" type="CollisionPolygon2D" parent="Terrain" unique_id=485462527]
+position = Vector2(-2, -31)
+polygon = PackedVector2Array(1259, 443, 1316, 443, 1318, 516, 1309, 591, 1263, 590)
+
+[node name="SouthEastPillars" type="CollisionPolygon2D" parent="Terrain" unique_id=107445159]
+polygon = PackedVector2Array(1416, 534, 1442, 530, 1452, 547, 1450, 578, 1437, 590, 1413, 583)
+
+[node name="SouthEastRuins" type="CollisionPolygon2D" parent="Terrain" unique_id=343260007]
+polygon = PackedVector2Array(1452, 557, 1538, 549, 1548, 530, 1669, 533, 1664, 702, 1576, 700, 1541, 652, 1517, 634, 1470, 612, 1449, 594)
+
+[node name="SouthEastWall" type="CollisionPolygon2D" parent="Terrain" unique_id=1312914186]
+polygon = PackedVector2Array(1070, 542, 1150, 542, 1160, 553, 1160, 584, 1147, 600, 1070, 588)
+
+[node name="EastLowerWall" type="CollisionPolygon2D" parent="Terrain" unique_id=838564017]
+position = Vector2(1, 121.00001)
+scale = Vector2(1.0000004, 0.7771229)
+polygon = PackedVector2Array(1236, 581, 1347, 581, 1352.9995, 644.68567, 1335.9995, 644.68567, 1232.9995, 645.9724)
+
+[node name="SouthEastCrates" type="CollisionPolygon2D" parent="Terrain" unique_id=1894746032]
+polygon = PackedVector2Array(1075, 631, 1101, 631, 1107, 642, 1155, 642, 1169, 659, 1157, 678, 1080, 670)
+
+[node name="WestBarricade" type="CollisionPolygon2D" parent="Terrain" unique_id=1013270254]
+polygon = PackedVector2Array(499, 526, 519, 511, 548, 534, 540, 550, 500, 550, 493, 539)
+
+[node name="NorthWestBarricade" type="CollisionPolygon2D" parent="Terrain" unique_id=1356459561]
+polygon = PackedVector2Array(718, 401, 741, 391, 762, 411, 758, 431, 717, 430)
+
+[node name="NorthEastBarricade" type="CollisionPolygon2D" parent="Terrain" unique_id=69399361]
+polygon = PackedVector2Array(933, 405, 955, 384, 981, 409, 978, 430, 940, 433)
+
+[node name="SouthEastBarricade" type="CollisionPolygon2D" parent="Terrain" unique_id=2032862536]
+position = Vector2(6, -7)
+polygon = PackedVector2Array(973, 588, 990, 573, 1015, 593, 1006, 610, 981, 616)
+
+[node name="Portals" type="Node2D" parent="." unique_id=208787757]
+
+[node name="Temple" type="Area2D" parent="Portals" unique_id=610904098]
+position = Vector2(836, 180)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"temple"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Temple" unique_id=1799543250]
+position = Vector2(2, -46)
+shape = SubResource("PortalShape_temple")
+
+[node name="NorthWest" type="Area2D" parent="Portals" unique_id=369098484]
+position = Vector2(262, 170)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"north_west_ruins"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/NorthWest" unique_id=687936161]
+position = Vector2(2, -40)
+shape = SubResource("PortalShape_north_west")
+
+[node name="NorthEast" type="Area2D" parent="Portals" unique_id=61053652]
+position = Vector2(1508, 165)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"north_east_ruins"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/NorthEast" unique_id=1548583882]
+position = Vector2(-1, -28)
+shape = SubResource("PortalShape_north_east")
+
+[node name="WestArch" type="Area2D" parent="Portals" unique_id=958563572]
+position = Vector2(165, 296)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"west_arch"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/WestArch" unique_id=1145904361]
+position = Vector2(0, -25.5)
+shape = SubResource("PortalShape_west_arch")
+
+[node name="WestWall" type="Area2D" parent="Portals" unique_id=297320930]
+position = Vector2(161, 419)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"west_wall"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/WestWall" unique_id=1664860582]
+position = Vector2(1, -14)
+shape = SubResource("PortalShape_west_wall")
+
+[node name="EastArch" type="Area2D" parent="Portals" unique_id=1955396987]
+position = Vector2(1427, 367)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"east_arch"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/EastArch" unique_id=1251262022]
+position = Vector2(2, -22)
+shape = SubResource("PortalShape_east_arch")
+
+[node name="SouthWest" type="Area2D" parent="Portals" unique_id=97770344]
+position = Vector2(142, 620)
+collision_layer = 32
+script = ExtResource("2_portal")
+portal_id = &"south_west_ruins"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/SouthWest" unique_id=1629595688]
+position = Vector2(6, -22)
+shape = SubResource("PortalShape_south_west")
+
+[node name="OceanEntry" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("ocean_entry")
+
+[node name="WestWaterContact" type="CollisionPolygon2D" parent="OceanEntry"]
+polygon = PackedVector2Array(0.0,697.0,73.0,710.0,147.0,704.0,186.0,702.0,206.0,696.0,262.0,647.0,303.0,652.0,347.0,694.0,386.0,675.0,428.0,686.0,481.0,700.0,543.0,701.0,609.0,722.0,661.0,709.0,705.0,696.0,758.0,704.0,758.0,931.0,0.0,931.0)
+
+[node name="EastWaterContact" type="CollisionPolygon2D" parent="OceanEntry"]
+polygon = PackedVector2Array(916.0,705.0,971.0,706.0,1007.0,721.0,1061.0,720.0,1100.0,711.0,1165.0,716.0,1207.0,704.0,1282.0,713.0,1282.0,749.0,1325.0,749.0,1325.0,702.0,1369.0,707.0,1410.0,698.0,1471.0,710.0,1520.0,722.0,1571.0,700.0,1621.0,705.0,1672.0,690.0,1672.0,931.0,916.0,931.0)
+
+[node name="SeaSign" type="Label" parent="."]
+offset_left = 943.0
+offset_top = 675.0
+text = "触碰海水 · 潮汐遗迹 / 第二章"
+theme_override_font_sizes/font_size = 15

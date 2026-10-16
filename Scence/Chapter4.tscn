@@ -1,0 +1,276 @@
+[gd_scene format=3 uid="uid://kpkc3r5x3fd0"]
+
+[ext_resource type="Texture2D" uid="uid://cu1wmi3clfb0q" path="res://Maps/Level4/4.png" id="bg"]
+[ext_resource type="Script" uid="uid://cdyjyh6hhiad3" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://cso6iuxdt5cyh" path="res://Scence/Chapter4/hub.gd" id="script"]
+
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38, 24)
+
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42, 20)
+
+[node name="Chapter4" type="Node2D" unique_id=1789950921]
+script = ExtResource("script")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1737526425]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=1257796736]
+collision_layer = 2
+collision_mask = 0
+
+[node name="RoadBoundary_0" type="CollisionPolygon2D" parent="Terrain" unique_id=303812858]
+build_mode = 1
+polygon = PackedVector2Array(956, 95, 1009, 67, 1032, 82, 1054, 134, 1116, 174, 1176, 180, 1333, 178, 1327, 18, 1456, 10, 1459, 156, 1436, 172, 1436, 184, 1424, 192, 1428, 204, 1416, 224, 1408, 224, 1404, 232, 1360, 232, 1354, 225, 1111, 213, 1037, 180, 1044, 249, 1095, 270, 1091, 213, 1150, 224, 1200, 291, 1154, 316, 1064, 304, 1022, 289, 987, 298, 853, 301, 828, 314, 743, 321, 744, 340, 770, 362, 801, 377, 860, 419, 961, 421, 992, 371, 1028, 369, 1080, 437, 1024, 472, 936, 468, 897, 452, 784, 452, 673, 496, 704, 538, 744, 562, 764, 536, 795, 556, 856, 604, 940, 560, 1014, 565, 1110, 562, 1182, 548, 1212, 608, 1262, 659, 1280, 704, 1296, 667, 1371, 730, 1292, 764, 1108, 768, 932, 792, 928, 920, 876, 920, 880, 792, 864, 780, 868, 760, 856, 752, 856, 744, 844, 736, 844, 728, 832, 720, 832, 712, 820, 704, 820, 696, 796, 668, 772, 656, 744, 652, 732, 640, 728, 624, 720, 624, 700, 604, 692, 604, 660, 576, 640, 568, 632, 556, 612, 548, 596, 528, 592, 500, 568, 496, 566, 470, 584, 412, 621, 390, 673, 450, 759, 417, 716, 388, 676, 348, 680, 316, 654, 288, 708, 217, 756, 228, 816, 265, 957, 262, 991, 250, 987, 177, 877, 184, 820, 174, 802, 157, 640, 164, 593, 135, 614, 95, 647, 64, 672, 54, 718, 89, 727, 117, 825, 120, 868, 148, 952, 146)
+
+[node name="RoadBoundary_2" type="CollisionPolygon2D" parent="Terrain" unique_id=1945938825]
+build_mode = 1
+polygon = PackedVector2Array(1076, 605, 980, 609, 919, 634, 952, 682, 1029, 728, 1102, 731, 1179, 698, 1168, 680, 1152, 632)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1627360171]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1762728138]
+position = Vector2(903, 831)
+
+[node name="Player" parent="." unique_id=1592130627 instance=ExtResource("player")]
+position = Vector2(903, 831)
+
+[node name="Portals" type="Node2D" parent="." unique_id=882630928]
+
+[node name="Gate_01" type="Area2D" parent="Portals" unique_id=1819736139]
+position = Vector2(905, 722)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_01"
+level_index = 28
+portal_color = Color(1, 0.2, 0.3, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_01" unique_id=722033044]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_01" unique_id=663011346]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_01/Barrier" unique_id=1281889682]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_02" type="Area2D" parent="Portals" unique_id=338503384]
+position = Vector2(1278, 699)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_02"
+level_index = 29
+portal_color = Color(1, 0.5, 0.1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_02" unique_id=1889859006]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_02" unique_id=1578874656]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_02/Barrier" unique_id=1245227719]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_03" type="Area2D" parent="Portals" unique_id=1088228306]
+position = Vector2(771, 590)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_03"
+level_index = 30
+portal_color = Color(1, 0.8, 0.2, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_03" unique_id=1833748528]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_03" unique_id=1808402520]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_03/Barrier" unique_id=849464916]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_04" type="Area2D" parent="Portals" unique_id=2145167105]
+position = Vector2(1162, 567)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_04"
+level_index = 31
+portal_color = Color(0.4, 1, 0.2, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_04" unique_id=2031943831]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_04" unique_id=283808131]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_04/Barrier" unique_id=338955792]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_05" type="Area2D" parent="Portals" unique_id=1258795286]
+position = Vector2(620, 447)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_05"
+level_index = 32
+portal_color = Color(0.2, 1, 1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_05" unique_id=1124779568]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_05" unique_id=2072543361]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_05/Barrier" unique_id=43699951]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_06" type="Area2D" parent="Portals" unique_id=1743465730]
+position = Vector2(1015, 423)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_06"
+level_index = 33
+portal_color = Color(0.2, 0.5, 1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_06" unique_id=1839278750]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_06" unique_id=1138277627]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_06/Barrier" unique_id=1930205155]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_07" type="Area2D" parent="Portals" unique_id=1288941271]
+position = Vector2(716, 266)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_07"
+level_index = 34
+portal_color = Color(0.7, 0.2, 1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_07" unique_id=160624802]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_07" unique_id=1966421680]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_07/Barrier" unique_id=1539554551]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_08" type="Area2D" parent="Portals" unique_id=34469528]
+position = Vector2(1132, 267)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_08"
+level_index = 35
+portal_color = Color(1, 0.2, 0.8, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_08" unique_id=1695412067]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_08" unique_id=1698980293]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_08/Barrier" unique_id=1468888616]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_09" type="Area2D" parent="Portals" unique_id=269462418]
+position = Vector2(664, 111)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_09"
+level_index = 36
+portal_color = Color(0.9, 0.9, 1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_09" unique_id=1332622385]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_09" unique_id=19121289]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_09/Barrier" unique_id=1092904592]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Gate_10" type="Area2D" parent="Portals" unique_id=382769501]
+position = Vector2(1014, 119)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"music_10"
+level_index = 37
+portal_color = Color(0.6, 0.1, 1, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_10" unique_id=1674214925]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Gate_10" unique_id=1785877947]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Gate_10/Barrier" unique_id=458038419]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="EnterChapter5" type="Area2D" parent="Portals" unique_id=1674786665]
+position = Vector2(1390, 94)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"ReturnChapter3"
+target_chapter = 5
+portal_color = Color(0.3, 1, 0.7, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/EnterChapter5" unique_id=104493651]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/EnterChapter5" unique_id=163087331]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/EnterChapter5/Barrier" unique_id=234512479]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="NPCs" type="Node2D" parent="." unique_id=321183098]

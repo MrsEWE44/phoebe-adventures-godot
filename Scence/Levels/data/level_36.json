@@ -1,0 +1,11 @@
+{
+  "name": "被操纵的真相",
+  "map": "Maps/Level4/紫色封印至绿色传送门的幽暗沼泽墓园.png",
+  "chapter": 4,
+  "number": 9,
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 被操纵的真相。左门封锁，完成挑战后从右门离开。"
+  }
+}

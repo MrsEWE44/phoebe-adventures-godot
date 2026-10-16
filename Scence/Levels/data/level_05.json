@@ -1,0 +1,149 @@
+{
+  "index": 5,
+  "name": "诅咒机关廊",
+  "folder": "level_05_cursed_traps",
+  "floor_sample": [
+    803,
+    559,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "demon",
+    "enemies": [
+      "orc",
+      "snake",
+      "jackal",
+      "sand_guard",
+      "thorn_shaman"
+    ],
+    "puzzles": {
+      "west_plate": {
+        "mode": "riddle",
+        "clue": "不在嘴上，在心上；不用锁链，常相伴。迷路时记得彼此，重逢时一个不少。",
+        "options": [
+          "金币",
+          "朋友",
+          "王冠",
+          "牢笼"
+        ],
+        "answer": 1,
+        "hints": [
+          "这是人与人之间的关系。",
+          "菲比正在寻找的不是宝物。",
+          "谜底是朋友。"
+        ],
+        "explanation": "彼此牵挂的朋友，才是这次冒险的目标。"
+      },
+      "north_mirror": {
+        "mode": "cipher",
+        "clue": "糯糯的约定：先找两人同行的记号，再找缺一角的点心，最后回到同行的记号。",
+        "options": [
+          "单月",
+          "双月",
+          "整饼",
+          "缺角饼"
+        ],
+        "sequence": [
+          1,
+          3,
+          1
+        ],
+        "hints": [
+          "两人对应双月。",
+          "点心不是完整的。",
+          "顺序：双月 → 缺角饼 → 双月。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "east_torch": {
+        "mode": "memory",
+        "sequence": [
+          3,
+          0,
+          3,
+          0
+        ],
+        "clue": "铭文从左向右：土 → 火 → 土 → 火",
+        "requires_switches": [
+          "west_plate"
+        ]
+      },
+      "west_safety_lever": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "southwest_wheel": {
+        "mode": "direction",
+        "target": 1,
+        "clue": "镜面必须朝东；左右旋转后提交方向。"
+      },
+      "southeast_plate": {
+        "mode": "balance",
+        "target": 11,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。",
+        "requires_switches": [
+          "west_safety_lever"
+        ]
+      },
+      "north_torch_w": {
+        "mode": "hold",
+        "seconds": 3.3,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。"
+      },
+      "north_torch_e": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "east_safety_lever": {
+        "mode": "memory",
+        "sequence": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "clue": "铭文从左向右：水 → 风 → 水 → 风",
+        "requires_switches": [
+          "north_torch_w"
+        ]
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "land"
+}

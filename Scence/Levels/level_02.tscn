@@ -1,0 +1,983 @@
+[gd_scene format=3 uid="uid://5u1sunk26nyp"]
+
+[ext_resource type="Script" uid="uid://dfthwwdmwyuhk" path="res://Scence/Levels/level.gd" id="1_mjkgi"]
+[ext_resource type="Texture2D" uid="uid://bvs8vqjyfkal" path="res://Maps/Level1/level_02_collapsed_ruins/map.png" id="2_p5n3f"]
+[ext_resource type="Script" uid="uid://7f7iqveda4c1" path="res://Scence/Levels/mechanism.gd" id="3_yv7a6"]
+[ext_resource type="Script" uid="uid://chqbmiswujewv" path="res://Scence/Levels/trap.gd" id="4_swdts"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="5_hcfcg"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="Chest_scene"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xopc"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpbwx"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 25, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5u8j"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 32, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h31ky"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 25, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rm8gd"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 5, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfkus"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 32, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f253w"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 5, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnk77"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 4, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqr2f"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 32, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drm6u"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 4, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afocb"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 26, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lx4mm"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 26, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrnhw"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 30, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mctoi"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 30, 4)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfte3"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 32, 9)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uklho"]
+atlas = ExtResource("2_p5n3f")
+region = Rect2(805, 824, 4, 9)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nfepf"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6t1c"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8llg6"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lb32k"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uja7r"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1wbvd"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8ho6"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_84cr7"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvisy"]
+resource_local_to_scene = true
+size = Vector2(26, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5cd0"]
+resource_local_to_scene = true
+size = Vector2(48, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfuar"]
+resource_local_to_scene = true
+size = Vector2(42, 33)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e4w0v"]
+resource_local_to_scene = true
+radius = 24.0
+
+[node name="Level2" type="Node2D" unique_id=823621879]
+script = ExtResource("1_mjkgi")
+level_index = 2
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2081709160]
+show_behind_parent = true
+texture_filter = 1
+texture = ExtResource("2_p5n3f")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=89407788]
+editor_description = "在这里直接编辑墙边、柱脚与障碍物碰撞；运行时不会重新生成或覆盖。"
+collision_layer = 2
+collision_mask = 0
+
+[node name="FloorBoundary_0" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(535, 45, 586, 45, 586, 96, 588, 96, 588, 97, 589, 97, 589, 98, 591, 98, 591, 99, 593, 99, 593, 100, 594, 100, 594, 101, 596, 101, 596, 102, 598, 102, 598, 103, 599, 103, 599, 104, 601, 104, 601, 105, 603, 105, 603, 106, 604, 106, 604, 107, 606, 107, 606, 108, 608, 108, 608, 109, 609, 109, 609, 110, 611, 110, 611, 112, 612, 112, 612, 115, 613, 115, 613, 117, 614, 117, 614, 120, 615, 120, 615, 123, 616, 123, 616, 126, 617, 126, 617, 128, 618, 128, 618, 131, 619, 131, 619, 134, 620, 134, 620, 137, 621, 137, 621, 139, 622, 139, 622, 142, 623, 142, 623, 145, 624, 145, 624, 148, 625, 148, 625, 150, 626, 150, 626, 153, 627, 153, 627, 156, 628, 156, 628, 159, 629, 159, 629, 161, 630, 161, 630, 164, 631, 164, 631, 166, 636, 166, 636, 167, 642, 167, 642, 168, 647, 168, 647, 138, 783, 138, 783, 136, 784, 136, 784, 74, 788, 74, 788, 76, 841, 76, 841, 410, 865, 410, 865, 434, 1087, 434, 1087, 432, 1088, 432, 1088, 186, 1238, 186, 1238, 199, 1241, 199, 1241, 202, 1289, 202, 1289, 226, 1471, 226, 1471, 224, 1472, 224, 1472, 210, 1479, 210, 1479, 114, 1553, 114, 1553, 202, 1616, 202, 1616, 270, 1567, 270, 1567, 262, 1223, 262, 1223, 222, 1153, 222, 1153, 224, 1150, 224, 1150, 262, 1145, 262, 1145, 450, 1184, 450, 1184, 528, 1185, 528, 1185, 530, 1199, 530, 1199, 528, 1200, 528, 1200, 368, 1199, 368, 1199, 366, 1167, 366, 1167, 266, 1225, 266, 1225, 290, 1233, 290, 1233, 304, 1232, 304, 1232, 528, 1233, 528, 1233, 530, 1359, 530, 1359, 528, 1360, 528, 1360, 512, 1359, 512, 1359, 498, 1407, 498, 1407, 442, 1472, 442, 1472, 496, 1473, 496, 1473, 498, 1537, 498, 1537, 638, 1497, 638, 1497, 642, 1496, 642, 1496, 644, 1480, 644, 1480, 804, 1489, 804, 1489, 818, 1568, 818, 1568, 862, 1377, 862, 1377, 864, 1376, 864, 1376, 878, 1120, 878, 1120, 864, 1119, 864, 1119, 862, 1040, 862, 1040, 800, 1039, 800, 1039, 798, 865, 798, 865, 800, 864, 800, 864, 816, 865, 816, 865, 818, 896, 818, 896, 878, 752, 878, 752, 800, 751, 800, 751, 798, 576, 798, 576, 768, 575, 768, 575, 766, 384, 766, 384, 706, 575, 706, 575, 704, 576, 704, 576, 610, 608, 610, 608, 736, 609, 736, 609, 738, 799, 738, 799, 736, 800, 736, 800, 496, 799, 496, 799, 494, 783, 494, 783, 470, 781, 470, 781, 469, 751, 469, 751, 454, 749, 454, 749, 453, 691, 453, 691, 454, 689, 454, 689, 469, 607, 469, 607, 467, 609, 467, 609, 441, 607, 441, 607, 438, 560, 438, 560, 382, 527, 382, 527, 374, 503, 374, 503, 358, 449, 358, 449, 446, 167, 446, 167, 355, 225, 355, 225, 394, 375, 394, 375, 393, 377, 393, 377, 389, 393, 389, 393, 274, 472, 274, 472, 338, 617, 338, 617, 354, 656, 354, 656, 416, 657, 416, 657, 418, 799, 418, 799, 416, 800, 416, 800, 354, 807, 354, 807, 352, 809, 352, 809, 240, 807, 240, 807, 223, 810, 223, 810, 207, 807, 207, 807, 206, 761, 206, 761, 207, 759, 207, 759, 222, 703, 222, 703, 206, 700, 206, 700, 204, 695, 204, 695, 207, 696, 207, 696, 209, 692, 209, 692, 210, 689, 210, 689, 211, 685, 211, 685, 212, 682, 212, 682, 213, 678, 213, 678, 214, 675, 214, 675, 215, 671, 215, 671, 216, 668, 216, 668, 217, 665, 217, 665, 222, 647, 222, 647, 223, 646, 223, 646, 222, 593, 222, 593, 189, 590, 189, 590, 188, 587, 188, 587, 187, 584, 187, 584, 186, 581, 186, 581, 185, 578, 185, 578, 184, 575, 184, 575, 183, 572, 183, 572, 182, 569, 182, 569, 181, 566, 181, 566, 180, 562, 180, 562, 179, 559, 179, 559, 178, 556, 178, 556, 177, 553, 177, 553, 176, 550, 176, 550, 175, 549, 175, 549, 174, 548, 174, 548, 173, 547, 173, 547, 172, 546, 172, 546, 171, 545, 171, 545, 170, 544, 170, 544, 169, 543, 169, 543, 168, 542, 168, 542, 167, 541, 167, 541, 166, 540, 166, 540, 165, 539, 165, 539, 164, 538, 164, 538, 162, 537, 162, 537, 161, 536, 161, 536, 160, 535, 160, 535, 159, 534, 159, 534, 158, 533, 158, 533, 157, 532, 157, 532, 156, 531, 156, 531, 155, 530, 155, 530, 154, 529, 154, 529, 153, 528, 153, 528, 152, 527, 152, 527, 151, 526, 151, 526, 137, 527, 137, 527, 109, 528, 109, 528, 92, 529, 92, 529, 85, 530, 85, 530, 78, 531, 78, 531, 71, 532, 71, 532, 63, 533, 63, 533, 56, 534, 56, 534, 49, 535, 49)
+
+[node name="FloorBoundary_1" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(1409, 602, 1413, 602, 1413, 603, 1488, 603, 1488, 532, 1413, 532, 1413, 534, 1409, 534)
+
+[node name="FloorBoundary_2" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(1034, 690, 1097, 690, 1097, 802, 1135, 802, 1135, 800, 1136, 800, 1136, 786, 1167, 786, 1167, 784, 1168, 784, 1168, 592, 1167, 592, 1167, 590, 1152, 590, 1152, 560, 1151, 560, 1151, 558, 1104, 558, 1104, 496, 1103, 496, 1103, 494, 1088, 494, 1088, 480, 1087, 480, 1087, 478, 881, 478, 881, 480, 880, 480, 880, 494, 849, 494, 849, 496, 848, 496, 848, 736, 849, 736, 849, 738, 1031, 738, 1031, 736, 1034, 736)
+
+[node name="FloorBoundary_3" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(1216, 800, 1217, 800, 1217, 802, 1232, 802, 1232, 837, 1344, 837, 1344, 821, 1343, 821, 1343, 818, 1423, 818, 1423, 816, 1424, 816, 1424, 800, 1423, 800, 1423, 644, 1407, 644, 1407, 638, 1360, 638, 1360, 592, 1359, 592, 1359, 590, 1217, 590, 1217, 592, 1216, 592)
+
+[node name="FloorBoundary_4" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(784, 816, 785, 816, 785, 818, 799, 818, 799, 816, 800, 816, 800, 800, 799, 800, 799, 798, 785, 798, 785, 800, 784, 800)
+
+[node name="Bridges" type="Node2D" parent="." unique_id=1976432677]
+
+[node name="Bridge_01" type="Node2D" parent="Bridges" unique_id=1049835695]
+position = Vector2(863, 438)
+metadata/size = Vector2(249, 36)
+
+[node name="@Sprite2D@492" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=814629534]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@493" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=326105863]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@494" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=1926443775]
+position = Vector2(64, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@495" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=142827614]
+position = Vector2(96, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@496" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=2131657040]
+position = Vector2(128, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@497" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=2003554093]
+position = Vector2(160, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@498" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=26694458]
+position = Vector2(192, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@499" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=1441832046]
+position = Vector2(224, 0)
+texture = SubResource("AtlasTexture_wpbwx")
+centered = false
+
+[node name="@Sprite2D@500" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=1345426022]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@501" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=130593492]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@502" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=199733493]
+position = Vector2(64, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@503" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=112049144]
+position = Vector2(96, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@504" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=450189728]
+position = Vector2(128, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@505" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=431439452]
+position = Vector2(160, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@506" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=283031640]
+position = Vector2(192, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@507" type="Sprite2D" parent="Bridges/Bridge_01" unique_id=1393556820]
+position = Vector2(224, 32)
+texture = SubResource("AtlasTexture_h31ky")
+centered = false
+
+[node name="Bridge_02" type="Node2D" parent="Bridges" unique_id=1103667203]
+position = Vector2(1111, 454)
+metadata/size = Vector2(69, 99)
+
+[node name="@Sprite2D@508" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1315013869]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@509" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1483015011]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@510" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1555312439]
+position = Vector2(64, 0)
+texture = SubResource("AtlasTexture_rm8gd")
+centered = false
+
+[node name="@Sprite2D@511" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1545799867]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@512" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=838597223]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@513" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1072283093]
+position = Vector2(64, 32)
+texture = SubResource("AtlasTexture_rm8gd")
+centered = false
+
+[node name="@Sprite2D@514" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1244900889]
+position = Vector2(0, 64)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@515" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=982980266]
+position = Vector2(32, 64)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@516" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=48886609]
+position = Vector2(64, 64)
+texture = SubResource("AtlasTexture_rm8gd")
+centered = false
+
+[node name="@Sprite2D@517" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1870098746]
+position = Vector2(0, 96)
+texture = SubResource("AtlasTexture_pfkus")
+centered = false
+
+[node name="@Sprite2D@518" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=1740845257]
+position = Vector2(32, 96)
+texture = SubResource("AtlasTexture_pfkus")
+centered = false
+
+[node name="@Sprite2D@519" type="Sprite2D" parent="Bridges/Bridge_02" unique_id=170840809]
+position = Vector2(64, 96)
+texture = SubResource("AtlasTexture_f253w")
+centered = false
+
+[node name="Bridge_03" type="Node2D" parent="Bridges" unique_id=1371581656]
+position = Vector2(1197, 350)
+metadata/size = Vector2(36, 203)
+
+[node name="@Sprite2D@520" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1085524045]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@521" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=2098883090]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@522" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1190162834]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@523" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=995085872]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@524" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1698056685]
+position = Vector2(0, 64)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@525" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1028971687]
+position = Vector2(32, 64)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@526" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1472241672]
+position = Vector2(0, 96)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@527" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=511262882]
+position = Vector2(32, 96)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@528" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=59782710]
+position = Vector2(0, 128)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@529" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1748273314]
+position = Vector2(32, 128)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@530" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1711260268]
+position = Vector2(0, 160)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@531" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=1653401781]
+position = Vector2(32, 160)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@532" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=362463889]
+position = Vector2(0, 192)
+texture = SubResource("AtlasTexture_rqr2f")
+centered = false
+
+[node name="@Sprite2D@533" type="Sprite2D" parent="Bridges/Bridge_03" unique_id=833387384]
+position = Vector2(32, 192)
+texture = SubResource("AtlasTexture_drm6u")
+centered = false
+
+[node name="Bridge_04" type="Node2D" parent="Bridges" unique_id=1182785576]
+position = Vector2(1225, 228)
+metadata/size = Vector2(282, 36)
+
+[node name="@Sprite2D@534" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=43978720]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@535" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=810221833]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@536" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=800621939]
+position = Vector2(64, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@537" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1668001277]
+position = Vector2(96, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@538" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=2056777659]
+position = Vector2(128, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@539" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=98206446]
+position = Vector2(160, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@540" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1233858162]
+position = Vector2(192, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@541" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=61713679]
+position = Vector2(224, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@542" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1573461360]
+position = Vector2(256, 0)
+texture = SubResource("AtlasTexture_afocb")
+centered = false
+
+[node name="@Sprite2D@543" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=2061038790]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@544" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=517053117]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@545" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1911161098]
+position = Vector2(64, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@546" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1677183461]
+position = Vector2(96, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@547" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1049406839]
+position = Vector2(128, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@548" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=962583734]
+position = Vector2(160, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@549" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=2034250785]
+position = Vector2(192, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@550" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=1045231821]
+position = Vector2(224, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@551" type="Sprite2D" parent="Bridges/Bridge_04" unique_id=2099581255]
+position = Vector2(256, 32)
+texture = SubResource("AtlasTexture_lx4mm")
+centered = false
+
+[node name="Bridge_05" type="Node2D" parent="Bridges" unique_id=378471023]
+position = Vector2(1121, 840)
+metadata/size = Vector2(254, 36)
+
+[node name="@Sprite2D@552" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1036601071]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@553" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1501688567]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@554" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=331629582]
+position = Vector2(64, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@555" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=372655172]
+position = Vector2(96, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@556" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1577674638]
+position = Vector2(128, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@557" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1962177725]
+position = Vector2(160, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@558" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=52614590]
+position = Vector2(192, 0)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@559" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=760421772]
+position = Vector2(224, 0)
+texture = SubResource("AtlasTexture_lrnhw")
+centered = false
+
+[node name="@Sprite2D@560" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=144219714]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@561" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1109338618]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@562" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1384678454]
+position = Vector2(64, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@563" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=558529480]
+position = Vector2(96, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@564" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1812470194]
+position = Vector2(128, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@565" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=670458275]
+position = Vector2(160, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@566" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1813164420]
+position = Vector2(192, 32)
+texture = SubResource("AtlasTexture_w5u8j")
+centered = false
+
+[node name="@Sprite2D@567" type="Sprite2D" parent="Bridges/Bridge_05" unique_id=1985033440]
+position = Vector2(224, 32)
+texture = SubResource("AtlasTexture_mctoi")
+centered = false
+
+[node name="Bridge_06" type="Node2D" parent="Bridges" unique_id=662418912]
+position = Vector2(1171, 564)
+metadata/size = Vector2(36, 265)
+
+[node name="@Sprite2D@568" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=228322559]
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@569" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1421655922]
+position = Vector2(32, 0)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@570" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=922405887]
+position = Vector2(0, 32)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@571" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1495424013]
+position = Vector2(32, 32)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@572" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1040527077]
+position = Vector2(0, 64)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@573" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1416586622]
+position = Vector2(32, 64)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@574" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1258989522]
+position = Vector2(0, 96)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@575" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=980849458]
+position = Vector2(32, 96)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@576" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1619520035]
+position = Vector2(0, 128)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@577" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=671869414]
+position = Vector2(32, 128)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@578" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1521131563]
+position = Vector2(0, 160)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@579" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=926958765]
+position = Vector2(32, 160)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@580" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1274407633]
+position = Vector2(0, 192)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@581" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=2086933804]
+position = Vector2(32, 192)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@582" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=24050416]
+position = Vector2(0, 224)
+texture = SubResource("AtlasTexture_7xopc")
+centered = false
+
+[node name="@Sprite2D@583" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1368775749]
+position = Vector2(32, 224)
+texture = SubResource("AtlasTexture_tnk77")
+centered = false
+
+[node name="@Sprite2D@584" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=81632507]
+position = Vector2(0, 256)
+texture = SubResource("AtlasTexture_cfte3")
+centered = false
+
+[node name="@Sprite2D@585" type="Sprite2D" parent="Bridges/Bridge_06" unique_id=1661752118]
+position = Vector2(32, 256)
+texture = SubResource("AtlasTexture_uklho")
+centered = false
+
+[node name="Switches" type="Node2D" parent="." unique_id=974491286]
+
+[node name="rune_1" type="Node2D" parent="Switches" unique_id=2012707565]
+position = Vector2(624, 197)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_1",
+"label": "连锁灯阵 1",
+"steps": 1.0,
+"type": "wheel"
+}
+
+[node name="rune_2" type="Node2D" parent="Switches" unique_id=861908113]
+position = Vector2(823, 341)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_2",
+"label": "定向镜 2",
+"steps": 1.0,
+"type": "mirror"
+}
+
+[node name="rune_3" type="Node2D" parent="Switches" unique_id=463585353]
+position = Vector2(1106, 335)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_3",
+"label": "压力阀 3",
+"steps": 3.0,
+"type": "lever"
+}
+
+[node name="rune_4" type="Node2D" parent="Switches" unique_id=1602334401]
+position = Vector2(1374, 245)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_4",
+"label": "蓄能踏板 4",
+"steps": 1.0,
+"type": "plate"
+}
+
+[node name="rune_5" type="Node2D" parent="Switches" unique_id=597301158]
+position = Vector2(1548, 233)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_5",
+"label": "连锁灯阵 5",
+"steps": 3.0,
+"type": "wheel"
+}
+
+[node name="rune_6" type="Node2D" parent="Switches" unique_id=1071544774]
+position = Vector2(1534, 624)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_6",
+"label": "铭文碑 6",
+"steps": 1.0,
+"type": "torch"
+}
+
+[node name="rune_7" type="Node2D" parent="Switches" unique_id=833936019]
+position = Vector2(565, 751)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_7",
+"label": "连锁灯阵 7",
+"steps": 1.0,
+"type": "wheel"
+}
+
+[node name="rune_8" type="Node2D" parent="Switches" unique_id=1024549155]
+position = Vector2(1010, 760)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_8",
+"label": "定向镜 8",
+"steps": 3.0,
+"type": "mirror"
+}
+
+[node name="rune_9" type="Node2D" parent="Switches" unique_id=1254110280]
+position = Vector2(1103, 842)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "rune_9",
+"label": "压力阀 9",
+"steps": 1.0,
+"type": "lever"
+}
+
+[node name="Doors" type="Node2D" parent="." unique_id=88393292]
+
+[node name="seal_1" type="Node2D" parent="Doors" unique_id=1715530473]
+position = Vector2(562, 64)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_1",
+"label": "封印门 1",
+"requires": ["rune_1"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_1" unique_id=76372791]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_1/Barrier" unique_id=263714844]
+shape = SubResource("RectangleShape2D_nfepf")
+
+[node name="seal_2" type="Node2D" parent="Doors" unique_id=2001935657]
+position = Vector2(816, 115)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_2",
+"label": "封印门 2",
+"requires": ["rune_2"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_2" unique_id=15520693]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_2/Barrier" unique_id=76395782]
+shape = SubResource("RectangleShape2D_p6t1c")
+
+[node name="seal_3" type="Node2D" parent="Doors" unique_id=864509360]
+position = Vector2(1190, 303)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_3",
+"label": "封印门 3",
+"requires": ["rune_3"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_3" unique_id=611259824]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_3/Barrier" unique_id=821414651]
+shape = SubResource("RectangleShape2D_8llg6")
+
+[node name="seal_4" type="Node2D" parent="Doors" unique_id=2076995471]
+position = Vector2(1525, 160)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_4",
+"label": "封印门 4",
+"requires": ["rune_4"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_4" unique_id=359153225]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_4/Barrier" unique_id=353068056]
+shape = SubResource("RectangleShape2D_lb32k")
+
+[node name="seal_5" type="Node2D" parent="Doors" unique_id=1135879883]
+position = Vector2(1586, 228)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_5",
+"label": "封印门 5",
+"requires": ["rune_5"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_5" unique_id=1360117790]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_5/Barrier" unique_id=1475210692]
+shape = SubResource("RectangleShape2D_uja7r")
+
+[node name="seal_6" type="Node2D" parent="Doors" unique_id=1872868819]
+position = Vector2(1440, 468)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_6",
+"label": "封印门 6",
+"requires": ["rune_6"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_6" unique_id=1743367974]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_6/Barrier" unique_id=1120275439]
+shape = SubResource("RectangleShape2D_1wbvd")
+
+[node name="seal_7" type="Node2D" parent="Doors" unique_id=156844334]
+position = Vector2(184, 378)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_7",
+"label": "封印门 7",
+"requires": ["rune_7"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_7" unique_id=2063112270]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_7/Barrier" unique_id=2132272180]
+shape = SubResource("RectangleShape2D_e8ho6")
+
+[node name="seal_8" type="Node2D" parent="Doors" unique_id=282050833]
+position = Vector2(1071, 714)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_8",
+"label": "封印门 8",
+"requires": ["rune_8"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_8" unique_id=371098783]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_8/Barrier" unique_id=189862735]
+shape = SubResource("RectangleShape2D_84cr7")
+
+[node name="seal_9" type="Node2D" parent="Doors" unique_id=9236776]
+position = Vector2(1163, 807)
+script = ExtResource("3_yv7a6")
+config = {
+"id": "seal_9",
+"label": "封印门 9",
+"requires": ["rune_9"],
+&"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/seal_9" unique_id=180197536]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/seal_9/Barrier" unique_id=1169294165]
+shape = SubResource("RectangleShape2D_uvisy")
+
+[node name="Traps" type="Node2D" parent="." unique_id=464878011]
+
+[node name="trap_1" type="Area2D" parent="Traps" unique_id=673164519]
+position = Vector2(304, 412)
+collision_layer = 0
+script = ExtResource("4_swdts")
+config = {
+"active_time": 1.1,
+"disabled_by": "rune_1",
+"id": "trap_1",
+"period": 3.6,
+"type": "spikes"
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/trap_1" unique_id=1426290890]
+position = Vector2(24, 14.5)
+shape = SubResource("RectangleShape2D_a5cd0")
+
+[node name="trap_2" type="Area2D" parent="Traps" unique_id=642025909]
+position = Vector2(1145, 817)
+collision_layer = 0
+script = ExtResource("4_swdts")
+config = {
+"active_time": 1.1,
+"disabled_by": "rune_2",
+"id": "trap_2",
+"period": 3.9,
+"type": "arrows"
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/trap_2" unique_id=2112830468]
+position = Vector2(21, 16.5)
+shape = SubResource("RectangleShape2D_sfuar")
+
+[node name="ReturnPortal" type="Area2D" parent="." unique_id=407011162]
+position = Vector2(821, 853)
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReturnPortal" unique_id=1927476460]
+shape = SubResource("CircleShape2D_e4w0v")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1595107517]
+position = Vector2(821, 840)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1114877249]
+script = ExtResource("5_hcfcg")
+
+[node name="Chests" type="Node2D" parent="." unique_id=113906302]
+
+[node name="Chest1" parent="Chests" unique_id=641729965 instance=ExtResource("Chest_scene")]
+position = Vector2(764, 812)
+
+[node name="Chest2" parent="Chests" unique_id=965616406 instance=ExtResource("Chest_scene")]
+position = Vector2(1492, 252)
+chest_id = "chest_2"
+reward = "energy"
+
+[node name="Chest3" parent="Chests" unique_id=2640541 instance=ExtResource("Chest_scene")]
+position = Vector2(1156, 804)
+chest_id = "chest_3"
+reward = "ultimate"
+
+[node name="EncounterSpawns" type="Node2D" parent="." unique_id=2056554158]
+
+[node name="seal_1" type="Marker2D" parent="EncounterSpawns" unique_id=449645639]
+position = Vector2(580, 148)
+
+[node name="seal_2" type="Marker2D" parent="EncounterSpawns" unique_id=1797135555]
+position = Vector2(820, 196)
+
+[node name="seal_3" type="Marker2D" parent="EncounterSpawns" unique_id=868322289]
+position = Vector2(1188, 356)
+
+[node name="seal_4" type="Marker2D" parent="EncounterSpawns" unique_id=1610157358]
+position = Vector2(1492, 212)
+
+[node name="seal_5" type="Marker2D" parent="EncounterSpawns" unique_id=1672622610]
+position = Vector2(1556, 244)
+
+[node name="seal_6" type="Marker2D" parent="EncounterSpawns" unique_id=2124697162]
+position = Vector2(1404, 508)
+
+[node name="seal_7" type="Marker2D" parent="EncounterSpawns" unique_id=1265702249]
+position = Vector2(412, 732)
+
+[node name="seal_8" type="Marker2D" parent="EncounterSpawns" unique_id=1040850532]
+position = Vector2(1020, 780)
+
+[node name="seal_9" type="Marker2D" parent="EncounterSpawns" unique_id=220768848]
+position = Vector2(1116, 820)

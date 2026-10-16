@@ -1,0 +1,40 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="script"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/受伤1.wav" id="clip_0"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/受伤2.wav" id="clip_1"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/大招.wav" id="clip_2"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/害怕.wav" id="clip_3"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/对话1.wav" id="clip_4"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/对话2.wav" id="clip_5"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/待机1.wav" id="clip_6"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/待机2.wav" id="clip_7"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/得意.wav" id="clip_8"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/惊吓.wav" id="clip_9"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/战斗1.wav" id="clip_10"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/战斗2.wav" id="clip_11"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/技能.wav" id="clip_12"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/死亡.wav" id="clip_13"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/生气.wav" id="clip_14"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/疲惫.wav" id="clip_15"]
+[ext_resource type="AudioStream" path="res://Audio/睦子米/胜利.wav" id="clip_16"]
+[resource]
+script = ExtResource("script")
+volume_db = 0.0
+shared_cooldown = 1.8
+max_duration = 0.0
+event_cooldowns = {"idle": 12.0, "battle": 8.0, "hurt": 2.0, "death": 0.0, "angry": 7.0, "afraid": 9.0, "terrified": 10.0, "proud": 8.0, "skill": 4.0, "ultimate": 6.0, "victory": 6.0, "exhausted": 7.0, "dialogue": 3.0, "taunt": 12.0}
+idle = Array[AudioStream]([ExtResource("clip_6"), ExtResource("clip_7")])
+battle = Array[AudioStream]([ExtResource("clip_10"), ExtResource("clip_11")])
+hurt = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+death = Array[AudioStream]([ExtResource("clip_13")])
+angry = Array[AudioStream]([ExtResource("clip_14")])
+afraid = Array[AudioStream]([ExtResource("clip_3")])
+terrified = Array[AudioStream]([ExtResource("clip_9")])
+proud = Array[AudioStream]([ExtResource("clip_8")])
+skill = Array[AudioStream]([ExtResource("clip_12")])
+ultimate = Array[AudioStream]([ExtResource("clip_2")])
+victory = Array[AudioStream]([ExtResource("clip_16")])
+exhausted = Array[AudioStream]([ExtResource("clip_15")])
+dialogue = Array[AudioStream]([ExtResource("clip_4"), ExtResource("clip_5")])
+interaction = Array[AudioStream]([ExtResource("clip_4"), ExtResource("clip_5")])
+event_text = {"idle": ["你怎么不理我呀？我会乖乖等你的。", "我只是想离你近一点，可以吗？"], "battle": ["别担心，我会轻轻地，让它们安静下来。", "你看着就好，这次换我保护你。"], "hurt": ["好疼呀，你会心疼我的，对不对？", "呜，怎么可以欺负我呢？"], "death": ["对不起，我真的，已经很努力了。"], "angry": ["我都没有生气呢，你们怎么还不肯停手呀？"], "afraid": ["这里好暗，你不会丢下我吧？"], "terrified": ["啊！吓到我了，别突然过来呀！"], "proud": ["只是随便拉了一下，你就这么惊讶呀？"], "skill": ["听好了，这段旋律，只送给你。"], "ultimate": ["不许再打扰我们了。终曲，共鸣！"], "victory": ["赢了呢。你最喜欢的，还是我的琴声吧？"], "exhausted": ["让我靠一会儿，好不好？"], "dialogue": ["我没有别的意思，只是有一点担心你。", "谢谢你来救我。以后，也让我陪着你吧。"], "interaction": ["我没有别的意思，只是有一点担心你。", "谢谢你来救我。以后，也让我陪着你吧。"]}

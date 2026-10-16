@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter3/naiwa.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/naiwa.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "naiwa_mini"
+display_name = "奶娃小 BOSS"
+character_type = 3
+max_health = 1300
+movement_speed = 72
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.19642857142857142,0.19642857142857142)
+sprite_offset = Vector2(0,-27.5)
+reaction_scale = Vector2(0.19642857142857142,0.19642857142857142)
+reaction_offset = Vector2(0,-27.5)
+ultimate_scale = Vector2(0.19642857142857142,0.19642857142857142)
+ultimate_offset = Vector2(0,-27.5)
+hurtbox_size = Vector2(35.75,51.699999999999996)
+hurtbox_offset = Vector2(0,-26.4)
+foot_size = Vector2(18,10)
+home_biome = "snow"

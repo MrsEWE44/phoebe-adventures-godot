@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter3/naiwa.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/naiwa.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "naiwa_full"
+display_name = "奶娃完全体"
+character_type = 3
+max_health = 3200
+movement_speed = 60
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.2857142857142857,0.2857142857142857)
+sprite_offset = Vector2(0,-40.0)
+reaction_scale = Vector2(0.2857142857142857,0.2857142857142857)
+reaction_offset = Vector2(0,-40.0)
+ultimate_scale = Vector2(0.2857142857142857,0.2857142857142857)
+ultimate_offset = Vector2(0,-40.0)
+hurtbox_size = Vector2(52.0,75.19999999999999)
+hurtbox_offset = Vector2(0,-38.4)
+foot_size = Vector2(18,10)
+home_biome = "snow"

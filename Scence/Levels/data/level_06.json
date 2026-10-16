@@ -1,0 +1,162 @@
+{
+  "index": 6,
+  "name": "冥影墓城",
+  "folder": "level_06_shadow_necropolis",
+  "floor_sample": [
+    819,
+    836,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "blood_monster",
+    "enemies": [
+      "orc",
+      "snake",
+      "jackal",
+      "sand_guard",
+      "thorn_shaman"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "riddle",
+        "clue": "一人时只有一串，两人时并肩两行；雨后泥上最清楚，方向与脚步相同。",
+        "options": [
+          "回声",
+          "脚印",
+          "月光",
+          "笑声"
+        ],
+        "answer": 1,
+        "hints": [
+          "去看地面，不要只听声音。",
+          "走路后留在泥地里的痕迹。",
+          "谜底是脚印。"
+        ],
+        "explanation": "脚印能说明行走方向，比来历不明的声音可靠。"
+      },
+      "rune_2": {
+        "mode": "cipher",
+        "clue": "纸条写着“结伴归家”：出门向东，见水向北，找到朋友后回头。最后一步与第二步相反。",
+        "options": [
+          "北",
+          "东",
+          "南",
+          "西"
+        ],
+        "sequence": [
+          1,
+          0,
+          2
+        ],
+        "hints": [
+          "按三次方向，不是四次。",
+          "北的反方向是南。",
+          "顺序：东 → 北 → 南。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "rune_3": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "direction",
+        "target": 1,
+        "clue": "镜面必须朝东；左右旋转后提交方向。"
+      },
+      "rune_5": {
+        "mode": "balance",
+        "target": 11,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。"
+      },
+      "rune_6": {
+        "mode": "hold",
+        "seconds": 2.5,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。",
+        "requires_switches": [
+          "rune_4"
+        ]
+      },
+      "rune_7": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_8": {
+        "mode": "memory",
+        "sequence": [
+          1,
+          2,
+          1,
+          2
+        ],
+        "clue": "铭文从左向右：水 → 风 → 水 → 风"
+      },
+      "rune_9": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。",
+        "requires_switches": [
+          "rune_7"
+        ]
+      },
+      "rune_10": {
+        "mode": "direction",
+        "target": 3,
+        "clue": "镜面必须朝西；左右旋转后提交方向。"
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "land"
+}

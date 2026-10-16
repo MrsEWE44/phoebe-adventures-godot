@@ -1,0 +1,144 @@
+{
+  "index": 2,
+  "name": "崩塌遗迹",
+  "folder": "level_02_collapsed_ruins",
+  "floor_sample": [
+    805,
+    824,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "demon",
+    "enemies": [
+      "orc",
+      "snake",
+      "beetle",
+      "sand_guard",
+      "thorn_shaman"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "riddle",
+        "clue": "没有双脚却奔走，没有嘴巴却低语；遇冷能结冰，入海不回头。",
+        "options": [
+          "风",
+          "水",
+          "火",
+          "影子"
+        ],
+        "answer": 1,
+        "hints": [
+          "“结冰”是最关键的条件。",
+          "只有一种选项能成为冰。",
+          "谜底是水。"
+        ],
+        "explanation": "流水会奔流、发声，也能结冰。"
+      },
+      "rune_2": {
+        "mode": "cipher",
+        "clue": "纸条注明“读每句的头”：月下灯未灭；井边绳未收；鸟鸣人已远。",
+        "options": [
+          "鸟",
+          "月",
+          "井",
+          "灯"
+        ],
+        "sequence": [
+          1,
+          2,
+          0
+        ],
+        "hints": [
+          "头指每句的第一个字。",
+          "三句分别用什么字开头？",
+          "顺序：月 → 井 → 鸟。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "rune_3": {
+        "mode": "balance",
+        "target": 12,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "hold",
+        "seconds": 3.3,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。"
+      },
+      "rune_5": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_6": {
+        "mode": "memory",
+        "sequence": [
+          3,
+          0,
+          3,
+          0
+        ],
+        "clue": "铭文从左向右：土 → 火 → 土 → 火",
+        "requires_switches": [
+          "rune_4"
+        ]
+      },
+      "rune_7": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_8": {
+        "mode": "direction",
+        "target": 1,
+        "clue": "镜面必须朝东；左右旋转后提交方向。"
+      },
+      "rune_9": {
+        "mode": "balance",
+        "target": 11,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。",
+        "requires_switches": [
+          "rune_7"
+        ]
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "land"
+}

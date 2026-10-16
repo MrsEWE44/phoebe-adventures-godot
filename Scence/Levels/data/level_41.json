@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 4,
+  "name": "不再返场的巡演",
+  "map": "Maps/Level5/5-4.png",
+  "waves": 10,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

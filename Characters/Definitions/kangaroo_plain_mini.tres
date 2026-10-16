@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/kangaroo_plain.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[ext_resource type="Material" path="res://Art/Chapter5/plain.tres" id="m"]
+[resource]
+script = ExtResource("s")
+character_id = "kangaroo_plain_mini"
+display_name = "袋鼠狗中级体"
+character_type = 3
+max_health = 600
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.17329545454545456,0.17329545454545456)
+sprite_offset = Vector2(0,-29.806818181818183)
+reaction_scale = Vector2(0.17329545454545456,0.17329545454545456)
+reaction_offset = Vector2(0,-29.806818181818183)
+ultimate_scale = Vector2(0.17329545454545456,0.17329545454545456)
+ultimate_offset = Vector2(0,-29.806818181818183)
+hurtbox_size = Vector2(39.04,50.019999999999996)
+hurtbox_offset = Vector2(0,-28.669999999999998)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+sprite_material = ExtResource("m")
+faces_right = true

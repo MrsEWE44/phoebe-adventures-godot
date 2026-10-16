@@ -1,0 +1,24 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/reef_shark.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "reef_shark"
+display_name = "巡游礁鲨"
+character_type = 1
+max_health = 76
+movement_speed = 74.0
+aquatic = true
+ranged_attack = false
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.13238770685579196,0.13238770685579196)
+sprite_offset = Vector2(0.0000, -12.2128)
+hurtbox_size = Vector2(39.1277, 23.7707)
+hurtbox_offset = Vector2(0.1986, -12.9409)
+foot_size = Vector2(20.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-17.9090, -24.1643, 37.6714, 22.0496), Rect2(-17.1147, -24.6939, 36.3475, 22.3144), Rect2(-17.6442, -24.4291, 35.9504, 23.3735), Rect2(-19.3652, -24.8262, 37.4066, 22.3144)], "walk": [Rect2(-17.9090, -24.1643, 37.6714, 22.0496), Rect2(-17.1147, -24.6939, 36.3475, 22.3144), Rect2(-17.6442, -24.4291, 35.9504, 23.3735), Rect2(-19.3652, -24.8262, 37.4066, 22.3144)], "default": [Rect2(-17.9090, -24.1643, 37.6714, 22.0496), Rect2(-17.1147, -24.6939, 36.3475, 22.3144), Rect2(-17.6442, -24.4291, 35.9504, 23.3735), Rect2(-19.3652, -24.8262, 37.4066, 22.3144)]}
+
+home_biome = "ocean"

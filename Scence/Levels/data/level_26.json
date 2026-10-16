@@ -1,0 +1,11 @@
+{
+  "name": "霜白长夜",
+  "chapter": 3,
+  "biome": "snow",
+  "bridges": [],
+  "waves": 5,
+  "survival_seconds": 240,
+  "adventure": {
+    "intro": "坚持240秒并清除全部敌人，解救牢笼中的Doro！通关领取静音共振枪：真伤、暴击、连锁，克制奶娃与凑企鹅。Doro不需要保护。"
+  }
+}

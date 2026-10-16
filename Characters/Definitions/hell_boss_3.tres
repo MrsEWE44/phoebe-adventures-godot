@@ -1,0 +1,23 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/demon.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/demon.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "hell_boss_3"
+display_name = "断翼刽子手"
+character_type = 3
+max_health = 3650
+max_energy = 100
+movement_speed = 42
+default_weapon = "rune_staff"
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(3.54,3.54)
+sprite_offset = Vector2(-12.39, -35.4)
+
+hurtbox_size = Vector2(64,76)
+hurtbox_offset = Vector2(0,-38)
+foot_size = Vector2(20.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+

@@ -1,0 +1,53 @@
+[gd_resource type="Resource" load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="1"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比疑问菲比比.mp3" id="question"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比关心.mp3" id="care"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八不好意思.mp3" id="sorry"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八别打扰我.mp3" id="busy"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八不要.mp3" id="no"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八这样做.mp3" id="method"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八看我的.mp3" id="skill"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八自豪.mp3" id="proud"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲八成功了.mp3" id="success"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比生气.mp3" id="angry"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比害怕.mp3" id="afraid"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比受到惊吓.mp3" id="terrified"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比挨打伤心.mp3" id="hurt"]
+[ext_resource type="AudioStream" path="res://Audio/菲比/菲比沮丧.mp3" id="sad"]
+
+[resource]
+script = ExtResource("1")
+idle = Array[AudioStream]([ExtResource("question"), ExtResource("care")])
+death = Array[AudioStream]([ExtResource("no")])
+interaction = Array[AudioStream]([ExtResource("question"), ExtResource("care"), ExtResource("sorry"), ExtResource("busy"), ExtResource("method")])
+angry = Array[AudioStream]([ExtResource("angry"), ExtResource("busy")])
+afraid = Array[AudioStream]([ExtResource("afraid")])
+terrified = Array[AudioStream]([ExtResource("terrified")])
+proud = Array[AudioStream]([ExtResource("proud")])
+dialogue = Array[AudioStream]([ExtResource("care"), ExtResource("question")])
+hurt = Array[AudioStream]([ExtResource("hurt"), ExtResource("sorry")])
+skill = Array[AudioStream]([ExtResource("skill"), ExtResource("method")])
+battle = Array[AudioStream]([ExtResource("skill"), ExtResource("method"), ExtResource("proud")])
+ultimate = Array[AudioStream]([ExtResource("skill")])
+victory = Array[AudioStream]([ExtResource("success")])
+exhausted = Array[AudioStream]([ExtResource("sad")])
+event_text = {
+"idle": ["（疑惑地呼唤）", "（关心地询问）"],
+"death": ["不要！"],
+"interaction": ["（疑惑地回应）", "（关心地回应）", "不好意思。", "别打扰我。", "这样做。"],
+"angry": ["（生气）", "别打扰我！"],
+"afraid": ["（害怕）"],
+"terrified": ["（受到惊吓）"],
+"proud": ["（自豪）"],
+"dialogue": ["（关心地询问）", "（疑惑地回应）"],
+"hurt": ["（受伤的声音）", "不好意思。"],
+"battle": ["看我的！", "这样做！", "（得意）"],
+"skill": ["看我的！", "这样做！"],
+"ultimate": ["看我的！"],
+"victory": ["成功了！"],
+"exhausted": ["（沮丧）"]
+}
+volume_db = 0.0
+max_duration = 0.0
+event_cooldowns = {"battle": 7.0, "hurt": 2.0, "afraid": 15.0, "terrified": 15.0, "angry": 8.0, "proud": 9.0, "skill": 3.0}

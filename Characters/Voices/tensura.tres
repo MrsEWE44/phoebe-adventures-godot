@@ -1,0 +1,26 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="script"]
+[ext_resource type="AudioStream" path="res://Audio/天素罗/天素罗受伤音效1.mp3" id="clip_0"]
+[ext_resource type="AudioStream" path="res://Audio/天素罗/天素罗受伤音效2.mp3" id="clip_1"]
+[ext_resource type="AudioStream" path="res://Audio/天素罗/天素罗开心.mp3" id="clip_2"]
+[resource]
+script = ExtResource("script")
+volume_db = 0.0
+shared_cooldown = 1.8
+max_duration = 0.0
+event_cooldowns = {"idle": 12.0, "battle": 8.0, "hurt": 2.0, "death": 0.0, "angry": 7.0, "afraid": 9.0, "terrified": 10.0, "proud": 8.0, "skill": 4.0, "ultimate": 6.0, "victory": 6.0, "exhausted": 7.0, "dialogue": 3.0, "taunt": 12.0}
+idle = Array[AudioStream]([ExtResource("clip_2")])
+battle = Array[AudioStream]([ExtResource("clip_2")])
+hurt = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+death = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+angry = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+afraid = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+terrified = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+proud = Array[AudioStream]([ExtResource("clip_2")])
+skill = Array[AudioStream]([ExtResource("clip_2")])
+ultimate = Array[AudioStream]([ExtResource("clip_2")])
+victory = Array[AudioStream]([ExtResource("clip_2")])
+exhausted = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+dialogue = Array[AudioStream]([ExtResource("clip_2")])
+interaction = Array[AudioStream]([ExtResource("clip_2")])
+event_text = {"idle": ["（天素罗开心）"], "battle": ["（天素罗开心）"], "hurt": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "death": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "angry": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "afraid": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "terrified": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "proud": ["（天素罗开心）"], "skill": ["（天素罗开心）"], "ultimate": ["（天素罗开心）"], "victory": ["（天素罗开心）"], "exhausted": ["（天素罗受伤音效1）", "（天素罗受伤音效2）"], "dialogue": ["（天素罗开心）"], "interaction": ["（天素罗开心）"]}

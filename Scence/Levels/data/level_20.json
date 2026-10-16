@@ -1,0 +1,11 @@
+{
+  "name": "紫晶试炼",
+  "chapter": 3,
+  "biome": "snow",
+  "bridges": [],
+  "waves": 4,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "清除当前波次后继续；左下入口封锁，胜利后右上出口开放。"
+  }
+}

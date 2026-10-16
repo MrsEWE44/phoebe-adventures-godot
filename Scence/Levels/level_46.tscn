@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://bdth85trmt2yk"]
+
+[ext_resource type="Texture2D" uid="uid://3t7rd2jnk2g5" path="res://Maps/Level5/5-9.png" id="bg"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" uid="uid://cdyjyh6hhiad3" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://cyo1jay1dckq1" path="res://Scence/Chapter5/arena.gd" id="script"]
+
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38, 24)
+
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42, 20)
+
+[node name="Hell_9" type="Node2D" unique_id=1616789642]
+script = ExtResource("script")
+level_index = 46
+biome = "hell"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2134719488]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=205239140]
+collision_layer = 2
+collision_mask = 0
+
+[node name="StoneRoad_0" type="CollisionPolygon2D" parent="Terrain" unique_id=831142491]
+build_mode = 1
+polygon = PackedVector2Array(797, 121, 898, 176, 988, 211, 956, 228, 912, 228, 858, 203, 850, 216, 797, 220, 751, 212, 752, 404, 760, 404, 760, 408, 788, 408, 788, 412, 804, 412, 804, 416, 820, 416, 820, 420, 844, 424, 844, 428, 884, 444, 888, 452, 896, 452, 908, 468, 916, 468, 924, 476, 924, 484, 936, 492, 1005, 549, 948, 577, 917, 632, 967, 669, 1154, 586, 1199, 559, 1316, 492, 1391, 537, 1380, 572, 1380, 576, 1388, 576, 1388, 580, 1396, 580, 1404, 588, 1404, 604, 1396, 612, 1388, 612, 1380, 620, 1364, 620, 1364, 624, 1234, 615, 976, 747, 877, 701, 832, 688, 820, 692, 766, 750, 777, 808, 817, 883, 889, 916, 978, 986, 917, 1002, 772, 913, 595, 934, 463, 974, 370, 932, 223, 877, 109, 855, 186, 806, 473, 911, 585, 890, 727, 870, 683, 736, 624, 696, 624, 692, 600, 688, 600, 684, 560, 668, 556, 660, 548, 660, 536, 644, 528, 644, 520, 636, 520, 628, 500, 608, 496, 588, 484, 584, 484, 580, 456, 576, 456, 572, 444, 572, 444, 568, 432, 568, 432, 564, 420, 564, 420, 560, 408, 560, 408, 556, 396, 556, 396, 552, 384, 552, 384, 548, 372, 548, 372, 544, 356, 544, 356, 540, 344, 540, 344, 536, 332, 536, 332, 532, 320, 532, 320, 528, 308, 528, 308, 524, 296, 524, 296, 520, 284, 520, 284, 516, 272, 516, 272, 512, 268, 500, 226, 467, 172, 484, 172, 480, 156, 480, 156, 476, 144, 476, 144, 472, 132, 472, 132, 468, 66, 477, 49, 446, 71, 374, 165, 350, 243, 372, 287, 433, 428, 508, 479, 513, 514, 518, 508, 500, 508, 492, 520, 484, 520, 476, 528, 468, 536, 468, 560, 444, 568, 444, 568, 440, 576, 440, 576, 436, 584, 436, 584, 432, 592, 432, 600, 424, 624, 420, 624, 416, 700, 404, 692, 217, 556, 196, 548, 178, 630, 130)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=462862471]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1854024908]
+position = Vector2(193, 445)
+
+[node name="ArenaCenter" type="Marker2D" parent="." unique_id=1141865107]
+position = Vector2(724, 570)
+
+[node name="RescuePosition" type="Marker2D" parent="." unique_id=1619130574]
+position = Vector2(652, 614)
+
+[node name="Player" parent="." unique_id=1352455744 instance=ExtResource("player")]
+position = Vector2(193, 445)
+
+[node name="Portals" type="Node2D" parent="." unique_id=510092555]
+
+[node name="LockedEntrance" type="Area2D" parent="Portals" unique_id=1594540293]
+position = Vector2(129, 440)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"LockedEntrance"
+level_index = 46
+target_chapter = -2
+portal_color = Color(1, 0.15, 0.2, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance" unique_id=855677694]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance" unique_id=1299787500]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier" unique_id=268839928]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Exit" type="Area2D" parent="Portals" unique_id=546582748]
+position = Vector2(1328, 545)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"Exit"
+level_index = 46
+target_chapter = -1
+portal_color = Color(0.3, 1, 0.7, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit" unique_id=1316544677]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit" unique_id=129529246]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier" unique_id=495374343]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="EnemySpawns" type="Node2D" parent="." unique_id=321219164]
+
+[node name="Spawn_0" type="Marker2D" parent="EnemySpawns" unique_id=792244352]
+position = Vector2(594, 570)
+
+[node name="Spawn_1" type="Marker2D" parent="EnemySpawns" unique_id=1968326868]
+position = Vector2(862, 570)
+
+[node name="Spawn_2" type="Marker2D" parent="EnemySpawns" unique_id=88187002]
+position = Vector2(724, 494)
+
+[node name="Spawn_3" type="Marker2D" parent="EnemySpawns" unique_id=734620106]
+position = Vector2(724, 652)
+
+[node name="Spawn_4" type="Marker2D" parent="EnemySpawns" unique_id=1029288017]
+position = Vector2(652, 614)
+
+[node name="Spawn_5" type="Marker2D" parent="EnemySpawns" unique_id=634038091]
+position = Vector2(811, 614)
+
+[node name="Doors" type="Node2D" parent="." unique_id=1219673090]
+
+[node name="Switches" type="Node2D" parent="." unique_id=1471192638]
+
+[node name="Chests" type="Node2D" parent="." unique_id=1931076197]
+
+[node name="Supply" parent="Chests" unique_id=109370616 instance=ExtResource("chest")]
+position = Vector2(840, 592)
+chest_id = "hell_supply"
+reward = "health_large"

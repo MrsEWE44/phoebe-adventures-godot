@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+display_name = "魔焰领域"
+mode = "area"
+damage = 32
+radius = 105
+weapon_id = "rune_staff"
+cooldown = 10
+windup = 1.15

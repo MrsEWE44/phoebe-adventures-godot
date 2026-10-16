@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter3/gugu.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/gugu.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/gugu.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "gugu"
+display_name = "咕咕嘎嘎"
+character_type = 0
+max_health = 150
+movement_speed = 155
+default_weapon = "penguin_rock"
+allowed_weapons = Array[String](["penguin_rock"])
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.16666666666666666,0.16666666666666666)
+sprite_offset = Vector2(0,-23.0)
+reaction_scale = Vector2(0.16666666666666666,0.16666666666666666)
+reaction_offset = Vector2(0,-23.0)
+ultimate_scale = Vector2(0.16666666666666666,0.16666666666666666)
+ultimate_offset = Vector2(0,-23.0)
+hurtbox_size = Vector2(29.900000000000002,43.239999999999995)
+hurtbox_offset = Vector2(0,-22.08)
+foot_size = Vector2(16.099999999999998,10)
+home_biome = "snow"

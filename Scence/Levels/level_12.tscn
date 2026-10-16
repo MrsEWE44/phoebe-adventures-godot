@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://cqarf3q34ofnr"]
+
+[ext_resource type="Texture2D" uid="uid://ca78cque872et" path="res://Maps/Level2/2-5.png" id="bg"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" uid="uid://7f7iqveda4c1" path="res://Scence/Levels/mechanism.gd" id="mech"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" uid="uid://dfthwwdmwyuhk" path="res://Scence/Levels/level.gd" id="script"]
+[ext_resource type="Script" uid="uid://dtkj270ismfpg" path="res://Scence/sea_vent.gd" id="vent"]
+
+[sub_resource type="CircleShape2D" id="Exit"]
+radius = 22.0
+
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(44, 14)
+
+[sub_resource type="RectangleShape2D" id="Vent"]
+size = Vector2(24, 22)
+
+[node name="Level2_5" type="Node2D" unique_id=96623395]
+script = ExtResource("script")
+level_index = 12
+biome = "ocean"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2069744009]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=462181755]
+collision_layer = 2
+collision_mask = 0
+
+[node name="FloorBoundary_0" type="CollisionPolygon2D" parent="Terrain" unique_id=1280332272]
+build_mode = 1
+polygon = PackedVector2Array(309, 109, 358, 113, 394, 185, 748, 400, 823, 398, 931, 381, 1303, 178, 1352, 120, 1411, 125, 1415, 189, 1381, 204, 1001, 414, 967, 436, 962, 492, 1483, 807, 1451, 850, 1380, 868, 1292, 785, 1248, 768, 1210, 753, 1180, 744, 1162, 726, 1165, 703, 1084, 647, 930, 543, 899, 514, 889, 593, 782, 596, 766, 520, 625, 616, 399, 751, 320, 824, 220, 856, 171, 770, 308, 728, 396, 667, 704, 488, 705, 436, 575, 363, 560, 380, 517, 335, 506, 319, 280, 190)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=996255911]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=23832924]
+position = Vector2(834, 502)
+
+[node name="Bridges" type="Node2D" parent="." unique_id=1191684311]
+
+[node name="ReturnPortal" type="Area2D" parent="." unique_id=517995798]
+position = Vector2(834, 519)
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReturnPortal" unique_id=951068410]
+shape = SubResource("Exit")
+
+[node name="Label" type="Label" parent="ReturnPortal" unique_id=1670683641]
+offset_left = -42.0
+offset_top = 15.0
+text = "通关后 E 返回"
+
+[node name="Doors" type="Node2D" parent="." unique_id=1997537317]
+
+[node name="door_1" type="Node2D" parent="Doors" unique_id=414043080]
+position = Vector2(330, 166)
+script = ExtResource("mech")
+config = {
+"id": "door_1",
+"label": "潮封门 1",
+"requires": ["rune_1"],
+"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_1" unique_id=173038059]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_1/Barrier" unique_id=947444426]
+shape = SubResource("Door")
+
+[node name="door_2" type="Node2D" parent="Doors" unique_id=888063329]
+position = Vector2(1368, 166)
+script = ExtResource("mech")
+config = {
+"id": "door_2",
+"label": "潮封门 2",
+"requires": ["rune_2"],
+"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_2" unique_id=1518417115]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_2/Barrier" unique_id=182065768]
+shape = SubResource("Door")
+
+[node name="door_3" type="Node2D" parent="Doors" unique_id=782108056]
+position = Vector2(248, 816)
+script = ExtResource("mech")
+config = {
+"id": "door_3",
+"label": "潮封门 3",
+"requires": ["rune_3"],
+"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_3" unique_id=1654643971]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_3/Barrier" unique_id=114050402]
+shape = SubResource("Door")
+
+[node name="door_4" type="Node2D" parent="Doors" unique_id=1487790777]
+position = Vector2(1397, 818)
+script = ExtResource("mech")
+config = {
+"id": "door_4",
+"label": "潮封门 4",
+"requires": ["rune_4"],
+"type": "door"
+}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_4" unique_id=1388932923]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_4/Barrier" unique_id=1276858436]
+shape = SubResource("Door")
+
+[node name="Switches" type="Node2D" parent="." unique_id=474899265]
+
+[node name="rune_1" type="Node2D" parent="Switches" unique_id=808449011]
+position = Vector2(545, 323)
+script = ExtResource("mech")
+config = {
+"id": "rune_1",
+"label": "连锁灯阵 1",
+"type": "wheel"
+}
+
+[node name="rune_2" type="Node2D" parent="Switches" unique_id=1139837601]
+position = Vector2(1131, 318)
+script = ExtResource("mech")
+config = {
+"id": "rune_2",
+"label": "铭文碑 2",
+"type": "torch"
+}
+
+[node name="rune_3" type="Node2D" parent="Switches" unique_id=1941393777]
+position = Vector2(445, 708)
+script = ExtResource("mech")
+config = {
+"id": "rune_3",
+"label": "连锁灯阵 3",
+"type": "wheel"
+}
+
+[node name="rune_4" type="Node2D" parent="Switches" unique_id=175094330]
+position = Vector2(1194, 704)
+script = ExtResource("mech")
+config = {
+"id": "rune_4",
+"label": "定向镜 4",
+"type": "mirror"
+}
+
+[node name="EncounterSpawns" type="Node2D" parent="." unique_id=1399188769]
+
+[node name="door_1" type="Marker2D" parent="EncounterSpawns" unique_id=1225094659]
+position = Vector2(330, 206)
+
+[node name="door_2" type="Marker2D" parent="EncounterSpawns" unique_id=348184355]
+position = Vector2(1366, 206)
+
+[node name="door_3" type="Marker2D" parent="EncounterSpawns" unique_id=216202253]
+position = Vector2(246, 858)
+
+[node name="door_4" type="Marker2D" parent="EncounterSpawns" unique_id=1056407946]
+position = Vector2(1398, 858)
+
+[node name="Chests" type="Node2D" parent="." unique_id=1440711234]
+
+[node name="Supply_0" parent="Chests" unique_id=798231627 instance=ExtResource("chest")]
+position = Vector2(854, 494)
+chest_id = "sea5_supply_0"
+
+[node name="Supply_1" parent="Chests" unique_id=1518025537 instance=ExtResource("chest")]
+position = Vector2(546, 346)
+chest_id = "sea5_supply_1"
+reward = "energy"
+
+[node name="Supply_2" parent="Chests" unique_id=1089344539 instance=ExtResource("chest")]
+position = Vector2(1198, 726)
+chest_id = "sea5_supply_2"
+reward = "coral_trident"
+
+[node name="Traps" type="Node2D" parent="." unique_id=377019227]
+
+[node name="PressureVent_0" type="Area2D" parent="Traps" unique_id=1191614604]
+position = Vector2(554, 354)
+collision_layer = 0
+script = ExtResource("vent")
+period = 4.25
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_0" unique_id=1521587053]
+shape = SubResource("Vent")
+
+[node name="PressureVent_3" type="Area2D" parent="Traps" unique_id=120431773]
+position = Vector2(1210, 734)
+collision_layer = 0
+script = ExtResource("vent")
+disabled_by = "rune_4"
+period = 4.25
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_3" unique_id=1510707501]
+shape = SubResource("Vent")

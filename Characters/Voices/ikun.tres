@@ -1,0 +1,23 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="1"]
+[ext_resource type="AudioStream" path="res://Audio/坤坤/Gameplay/voice_1.wav" id="v0"]
+[ext_resource type="AudioStream" path="res://Audio/坤坤/Gameplay/voice_2.wav" id="v1"]
+[ext_resource type="AudioStream" path="res://Audio/坤坤/Gameplay/voice_3.wav" id="v2"]
+[resource]
+script = ExtResource("1")
+volume_db = 0.0
+max_duration = 5.0
+idle = Array[AudioStream]([ExtResource("v0"), ExtResource("v1"), ExtResource("v2")])
+hurt = Array[AudioStream]([ExtResource("v0"), ExtResource("v1")])
+death = Array[AudioStream]([ExtResource("v0"), ExtResource("v1")])
+battle = Array[AudioStream]([ExtResource("v2")])
+angry = Array[AudioStream]([ExtResource("v1")])
+afraid = Array[AudioStream]([ExtResource("v0")])
+terrified = Array[AudioStream]([ExtResource("v1")])
+proud = Array[AudioStream]([ExtResource("v2")])
+skill = Array[AudioStream]([ExtResource("v2")])
+ultimate = Array[AudioStream]([ExtResource("v2")])
+victory = Array[AudioStream]([ExtResource("v2")])
+exhausted = Array[AudioStream]([ExtResource("v0")])
+event_cooldowns = {"hurt": 3.0, "battle": 12.0, "skill": 8.0, "angry": 10.0}
+event_text = {"idle":["（即兴哼唱）"],"hurt":["你干嘛，哎哟！"],"death":["哎哟……"],"ultimate":["（篮球绝杀！）"],"skill":["（传球，突破！）"]}

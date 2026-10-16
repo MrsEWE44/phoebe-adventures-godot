@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/miku.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/miku.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "miku"
+display_name = "初音未来"
+character_type = 0
+max_health = 210
+movement_speed = 150
+default_weapon = "leek_wave"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.1949685534591195,0.1949685534591195)
+sprite_offset = Vector2(0,-30.22012578616352)
+reaction_scale = Vector2(0.1949685534591195,0.1949685534591195)
+reaction_offset = Vector2(0,-30.22012578616352)
+ultimate_scale = Vector2(0.1949685534591195,0.1949685534591195)
+ultimate_offset = Vector2(0,-30.22012578616352)
+hurtbox_size = Vector2(39.68,50.839999999999996)
+hurtbox_offset = Vector2(0,-29.139999999999997)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+allowed_weapons = Array[String](["leek_wave"])

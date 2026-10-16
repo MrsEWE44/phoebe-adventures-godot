@@ -1,0 +1,30 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter4/soyo.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/tensura.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/soyo.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "soyo"
+display_name = "soyo狸"
+character_type = 0
+max_health = 180
+movement_speed = 145
+damage_multiplier = 1.6
+default_weapon = "ivory_cello"
+allowed_weapons = Array[String](["ivory_cello","music_drums","conductor"])
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.16574585635359115,0.16574585635359115)
+sprite_offset = Vector2(0,-30.0)
+reaction_scale = Vector2(0.16574585635359115,0.16574585635359115)
+reaction_offset = Vector2(0,-30.0)
+ultimate_scale = Vector2(0.16574585635359115,0.16574585635359115)
+ultimate_offset = Vector2(0,-30.0)
+hurtbox_size = Vector2(42.0,54.0)
+hurtbox_offset = Vector2(0,-28.799999999999997)
+foot_size = Vector2(18,10)
+home_biome = "swamp"

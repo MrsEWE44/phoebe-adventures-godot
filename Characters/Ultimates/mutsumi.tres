@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="s"]
+[resource]
+script = ExtResource("s")
+display_name = "回响·环形共鸣"
+damage = 900.0
+radius = 240.0
+cooldown = 12.0
+weapon_id = "pink_cello"

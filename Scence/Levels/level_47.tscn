@@ -1,0 +1,99 @@
+[gd_scene format=3]
+[ext_resource type="Texture2D" path="res://Maps/Level5/5-10.png" id="bg"]
+[ext_resource type="Script" path="res://Scence/Chapter5/arena.gd" id="script"]
+[ext_resource type="Script" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="PackedScene" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38,24)
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42,20)
+[node name="Hell_10" type="Node2D"]
+script = ExtResource("script")
+biome = "hell"
+level_index = 47
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("bg")
+centered = false
+[node name="Terrain" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+[node name="StoneRoad_0" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(660, 120, 832, 124, 832, 128, 860, 128, 860, 132, 896, 136, 896, 140, 920, 144, 920, 148, 928, 148, 928, 152, 936, 152, 944, 160, 944, 176, 936, 184, 928, 184, 920, 192, 908, 192, 908, 196, 896, 196, 896, 200, 860, 204, 860, 208, 832, 208, 832, 212, 752, 216, 752, 512, 852, 516, 852, 520, 888, 520, 888, 524, 916, 524, 920, 528, 928, 508, 932, 508, 932, 500, 936, 500, 936, 492, 940, 492, 940, 484, 944, 484, 944, 476, 948, 476, 948, 468, 952, 468, 952, 460, 956, 460, 960, 444, 976, 444, 984, 436, 996, 436, 996, 432, 1004, 432, 1004, 428, 1012, 428, 1012, 424, 1020, 424, 1028, 416, 1040, 416, 1040, 412, 1048, 412, 1048, 408, 1056, 408, 1056, 404, 1064, 404, 1064, 400, 1072, 400, 1080, 392, 1092, 392, 1092, 388, 1100, 388, 1100, 384, 1108, 384, 1108, 380, 1116, 380, 1124, 372, 1144, 368, 1144, 360, 1156, 352, 1156, 344, 1176, 324, 1176, 316, 1192, 308, 1192, 300, 1204, 300, 1204, 296, 1216, 296, 1224, 288, 1236, 288, 1248, 276, 1256, 276, 1264, 268, 1280, 268, 1280, 264, 1328, 264, 1328, 268, 1344, 268, 1344, 272, 1352, 272, 1352, 276, 1360, 276, 1368, 284, 1368, 300, 1360, 308, 1352, 308, 1344, 316, 1328, 316, 1328, 320, 1288, 320, 1280, 328, 1268, 328, 1268, 332, 1244, 336, 1236, 344, 1224, 344, 1224, 348, 1216, 348, 1208, 356, 1200, 376, 1172, 404, 1164, 404, 1156, 412, 1144, 412, 1144, 416, 1136, 416, 1136, 420, 1128, 420, 1128, 424, 1120, 424, 1112, 432, 1100, 432, 1100, 436, 1092, 436, 1092, 440, 1084, 440, 1084, 444, 1076, 444, 1076, 448, 1068, 448, 1060, 456, 1048, 456, 1048, 460, 1040, 460, 1040, 464, 1032, 464, 1032, 468, 1024, 468, 1016, 476, 1004, 476, 996, 484, 996, 492, 992, 492, 992, 500, 988, 500, 988, 508, 984, 508, 984, 516, 980, 516, 972, 536, 976, 540, 992, 540, 992, 544, 1008, 544, 1008, 548, 1024, 548, 1024, 552, 1036, 552, 1036, 556, 1048, 556, 1048, 560, 1068, 564, 1068, 568, 1108, 584, 1112, 592, 1120, 592, 1152, 624, 1152, 632, 1160, 640, 1160, 668, 1156, 668, 1152, 684, 1144, 688, 1144, 696, 1136, 704, 1128, 704, 1120, 716, 1112, 716, 1108, 724, 1100, 724, 1100, 728, 1092, 728, 1092, 732, 1084, 732, 1084, 736, 1076, 736, 1068, 744, 1056, 744, 1056, 748, 1024, 756, 1024, 760, 1008, 760, 1008, 764, 992, 764, 992, 768, 976, 768, 976, 772, 960, 772, 960, 776, 940, 776, 940, 780, 888, 784, 888, 788, 752, 796, 752, 964, 808, 972, 808, 976, 828, 980, 840, 992, 840, 1000, 828, 1012, 788, 1024, 764, 1024, 764, 1028, 684, 1028, 684, 1024, 656, 1024, 656, 1020, 628, 1016, 628, 1012, 620, 1012, 608, 1000, 608, 992, 620, 980, 628, 980, 628, 976, 656, 972, 656, 968, 700, 964, 700, 796, 568, 788, 568, 784, 516, 780, 516, 776, 496, 776, 496, 772, 432, 760, 432, 756, 408, 752, 400, 744, 388, 744, 388, 740, 348, 724, 328, 704, 320, 704, 312, 696, 312, 688, 304, 684, 304, 676, 296, 668, 296, 640, 300, 640, 304, 624, 312, 620, 312, 612, 320, 604, 328, 604, 336, 592, 344, 592, 348, 584, 356, 584, 356, 580, 364, 580, 364, 576, 372, 576, 372, 572, 380, 572, 388, 564, 400, 564, 408, 556, 472, 540, 468, 528, 464, 528, 464, 516, 456, 508, 452, 488, 432, 480, 432, 476, 420, 476, 412, 468, 400, 468, 392, 460, 380, 460, 372, 452, 360, 452, 352, 444, 340, 444, 332, 436, 320, 436, 312, 428, 300, 428, 292, 420, 280, 420, 276, 408, 272, 412, 264, 408, 264, 400, 252, 392, 252, 384, 240, 376, 240, 368, 228, 360, 228, 352, 212, 336, 200, 336, 200, 332, 188, 332, 188, 328, 172, 328, 172, 324, 160, 324, 160, 320, 108, 316, 108, 312, 100, 312, 100, 308, 92, 308, 84, 300, 84, 284, 92, 276, 100, 276, 108, 268, 124, 268, 124, 264, 168, 264, 168, 268, 184, 268, 184, 272, 192, 272, 192, 276, 200, 276, 208, 284, 244, 292, 248, 300, 260, 304, 260, 312, 272, 320, 272, 328, 284, 336, 284, 344, 296, 352, 296, 360, 308, 368, 308, 376, 320, 376, 328, 384, 340, 384, 348, 392, 360, 392, 368, 400, 380, 400, 388, 408, 400, 408, 408, 416, 420, 416, 428, 424, 440, 424, 448, 432, 480, 440, 496, 456, 524, 528, 568, 524, 568, 520, 604, 520, 604, 516, 700, 512, 700, 216, 660, 216, 660, 212, 616, 212, 616, 208, 568, 204, 568, 200, 552, 200, 552, 196, 528, 192, 528, 188, 520, 188, 520, 184, 512, 184, 504, 176, 504, 160, 512, 152, 528, 148, 528, 144, 540, 144, 540, 140, 552, 140, 552, 136, 568, 136, 568, 132, 588, 132, 588, 128, 660, 124)
+[node name="StoneRoad_1" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(504, 620, 500, 620, 500, 672, 540, 672, 544, 672, 544, 620)
+[node name="StoneRoad_2" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(908, 620, 904, 620, 904, 672, 944, 672, 948, 672, 948, 620)
+[node name="Navigation" type="Node2D" parent="."]
+script = ExtResource("nav")
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(209, 295)
+[node name="ArenaCenter" type="Marker2D" parent="."]
+position = Vector2(724, 652)
+[node name="RescuePosition" type="Marker2D" parent="."]
+position = Vector2(652, 695)
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector2(209, 295)
+[node name="Portals" type="Node2D" parent="."]
+[node name="LockedEntrance" type="Area2D" parent="Portals"]
+position = Vector2(145, 290)
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("gate")
+portal_id = &"LockedEntrance"
+level_index = 47
+target_chapter = -2
+portal_color = Color(1.0, 0.15, 0.2, 1.0)
+visual_offset = Vector2(0,-35)
+visual_radius = 20.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance"]
+shape = SubResource("Gate")
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance"]
+collision_layer = 2
+collision_mask = 0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier"]
+shape = SubResource("Barrier")
+disabled = true
+[node name="Exit" type="Area2D" parent="Portals"]
+position = Vector2(1303, 290)
+collision_layer = 32
+collision_mask = 1
+script = ExtResource("gate")
+portal_id = &"Exit"
+level_index = 47
+target_chapter = -1
+portal_color = Color(0.3, 1.0, 0.7, 1.0)
+visual_offset = Vector2(0,-35)
+visual_radius = 20.0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit"]
+shape = SubResource("Gate")
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit"]
+collision_layer = 2
+collision_mask = 0
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier"]
+shape = SubResource("Barrier")
+disabled = true
+[node name="EnemySpawns" type="Node2D" parent="."]
+[node name="Spawn_0" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(594, 652)
+[node name="Spawn_1" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(862, 652)
+[node name="Spawn_2" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(724, 576)
+[node name="Spawn_3" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(724, 733)
+[node name="Spawn_4" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(652, 695)
+[node name="Spawn_5" type="Marker2D" parent="EnemySpawns"]
+position = Vector2(811, 695)
+[node name="Doors" type="Node2D" parent="."]
+[node name="Switches" type="Node2D" parent="."]
+[node name="Chests" type="Node2D" parent="."]
+[node name="Supply" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(840, 673)
+chest_id = "hell_supply"
+reward = "health_large"

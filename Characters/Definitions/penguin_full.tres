@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter3/penguin.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/penguin.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "penguin_full"
+display_name = "凑企鹅完全体"
+character_type = 3
+max_health = 18000
+movement_speed = 50
+default_weapon = "penguin_rock"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.31901840490797545,0.31901840490797545)
+sprite_offset = Vector2(0,-52.0)
+reaction_scale = Vector2(0.31901840490797545,0.31901840490797545)
+reaction_offset = Vector2(0,-52.0)
+ultimate_scale = Vector2(0.31901840490797545,0.31901840490797545)
+ultimate_offset = Vector2(0,-52.0)
+hurtbox_size = Vector2(67.60000000000001,97.75999999999999)
+hurtbox_offset = Vector2(0,-49.92)
+foot_size = Vector2(18,10)
+home_biome = "snow"

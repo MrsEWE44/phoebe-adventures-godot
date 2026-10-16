@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/fatkangaroo_green.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "fatkangaroo_green_full"
+display_name = "肥袋鼠狗铁壁完全体"
+character_type = 3
+max_health = 1600
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.42473118279569894,0.42473118279569894)
+sprite_offset = Vector2(0,-37.80107526881721)
+reaction_scale = Vector2(0.42473118279569894,0.42473118279569894)
+reaction_offset = Vector2(0,-37.80107526881721)
+ultimate_scale = Vector2(0.42473118279569894,0.42473118279569894)
+ultimate_offset = Vector2(0,-37.80107526881721)
+hurtbox_size = Vector2(50.56,64.78)
+hurtbox_offset = Vector2(0,-37.129999999999995)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+faces_right = true

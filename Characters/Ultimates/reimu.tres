@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+display_name = "赤月结界 · 三重斩"
+mode = "area"
+damage = 540
+radius = 300
+weapon_id = "crescent_scythe"

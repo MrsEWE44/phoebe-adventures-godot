@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cukcs0onnqj3y"]
+
+[ext_resource type="Texture2D" uid="uid://bff1d80yyxufm" path="res://Maps/Level5/5-6.png" id="bg"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" uid="uid://cdyjyh6hhiad3" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://cyo1jay1dckq1" path="res://Scence/Chapter5/arena.gd" id="script"]
+
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38, 24)
+
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42, 20)
+
+[node name="Hell_6" type="Node2D" unique_id=1790995769]
+script = ExtResource("script")
+level_index = 43
+biome = "hell"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=230483937]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=460335468]
+collision_layer = 2
+collision_mask = 0
+
+[node name="StoneRoad_0" type="CollisionPolygon2D" parent="Terrain" unique_id=1221175300]
+build_mode = 1
+polygon = PackedVector2Array(545, 130, 570, 83, 878, 81, 912, 122, 1073, 173, 1154, 154, 1223, 178, 1257, 240, 1130, 244, 882, 164, 752, 157, 783, 357, 912, 418, 927, 494, 1188, 493, 1234, 468, 1373, 472, 1387, 511, 1352, 631, 1178, 541, 948, 548, 936, 584, 892, 628, 884, 628, 872, 640, 852, 644, 844, 652, 820, 656, 820, 660, 776, 679, 758, 879, 805, 888, 873, 857, 1014, 804, 1082, 777, 1137, 767, 1223, 780, 1206, 862, 1088, 832, 1088, 836, 1072, 836, 1072, 840, 1052, 840, 1052, 844, 1036, 844, 1036, 848, 1020, 848, 1020, 852, 984, 856, 984, 860, 968, 860, 968, 864, 944, 868, 900, 880, 899, 901, 922, 950, 768, 965, 692, 971, 551, 960, 553, 902, 408, 832, 357, 823, 308, 857, 211, 807, 284, 752, 348, 766, 372, 772, 608, 874, 637, 893, 690, 886, 668, 688, 620, 660, 620, 656, 596, 652, 596, 648, 576, 644, 564, 632, 548, 628, 504, 584, 449, 540, 270, 547, 78, 626, 50, 493, 136, 468, 214, 460, 258, 492, 494, 482, 609, 398, 687, 365, 695, 155, 581, 152, 541, 175, 347, 247, 252, 225, 250, 181, 310, 159, 377, 183)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1985461738]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1316659210]
+position = Vector2(158, 527)
+
+[node name="ArenaCenter" type="Marker2D" parent="." unique_id=12160121]
+position = Vector2(724, 532)
+
+[node name="RescuePosition" type="Marker2D" parent="." unique_id=985033383]
+position = Vector2(652, 576)
+
+[node name="Player" parent="." unique_id=2112010444 instance=ExtResource("player")]
+position = Vector2(158, 527)
+
+[node name="Portals" type="Node2D" parent="." unique_id=1297187801]
+
+[node name="LockedEntrance" type="Area2D" parent="Portals" unique_id=1949657909]
+position = Vector2(94, 521)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"LockedEntrance"
+level_index = 43
+target_chapter = -2
+portal_color = Color(1, 0.15, 0.2, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance" unique_id=1816336746]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance" unique_id=1455003140]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier" unique_id=518177953]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Exit" type="Area2D" parent="Portals" unique_id=1647532315]
+position = Vector2(1339, 521)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"Exit"
+level_index = 43
+target_chapter = -1
+portal_color = Color(0.3, 1, 0.7, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit" unique_id=1979310144]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit" unique_id=441413368]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier" unique_id=601819960]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="EnemySpawns" type="Node2D" parent="." unique_id=724008505]
+
+[node name="Spawn_0" type="Marker2D" parent="EnemySpawns" unique_id=1476035913]
+position = Vector2(594, 532)
+
+[node name="Spawn_1" type="Marker2D" parent="EnemySpawns" unique_id=835369176]
+position = Vector2(862, 532)
+
+[node name="Spawn_2" type="Marker2D" parent="EnemySpawns" unique_id=61943879]
+position = Vector2(724, 456)
+
+[node name="Spawn_3" type="Marker2D" parent="EnemySpawns" unique_id=555086309]
+position = Vector2(724, 614)
+
+[node name="Spawn_4" type="Marker2D" parent="EnemySpawns" unique_id=1774718427]
+position = Vector2(652, 576)
+
+[node name="Spawn_5" type="Marker2D" parent="EnemySpawns" unique_id=818083162]
+position = Vector2(811, 576)
+
+[node name="Doors" type="Node2D" parent="." unique_id=1101346063]
+
+[node name="Switches" type="Node2D" parent="." unique_id=501852480]
+
+[node name="Chests" type="Node2D" parent="." unique_id=1902007575]
+
+[node name="Supply" parent="Chests" unique_id=1521715946 instance=ExtResource("chest")]
+position = Vector2(840, 554)
+chest_id = "hell_supply"
+reward = "health_large"

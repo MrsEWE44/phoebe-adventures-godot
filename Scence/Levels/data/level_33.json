@@ -1,0 +1,11 @@
+{
+  "name": "真身与伪装",
+  "map": "Maps/Level4/哥特沼泽遗迹双门战场.png",
+  "chapter": 4,
+  "number": 6,
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 真身与伪装。左门封锁，完成挑战后从右门离开。"
+  }
+}

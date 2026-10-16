@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://o6s3bpjtox2a"]
+
+[ext_resource type="Texture2D" uid="uid://dxs6by5pkacj4" path="res://Art/Characters/ultimate_casts.png" id="0"]
+
+[sub_resource type="AtlasTexture" id="ultimate_0"]
+atlas = ExtResource("0")
+region = Rect2(0, 0, 443.5, 443.5)
+
+[sub_resource type="AtlasTexture" id="ultimate_1"]
+atlas = ExtResource("0")
+region = Rect2(443.5, 0, 443.5, 443.5)
+
+[sub_resource type="AtlasTexture" id="ultimate_2"]
+atlas = ExtResource("0")
+region = Rect2(887, 0, 443.5, 443.5)
+
+[sub_resource type="AtlasTexture" id="ultimate_3"]
+atlas = ExtResource("0")
+region = Rect2(1330.5, 0, 443.5, 443.5)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("ultimate_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("ultimate_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("ultimate_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("ultimate_3")
+}],
+"loop": 0,
+"name": &"ultimate",
+"speed": 7.0
+}]

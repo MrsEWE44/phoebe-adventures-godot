@@ -1,0 +1,11 @@
+{
+  "name": "两分钟的排练",
+  "map": "Maps/Level4/诅咒沼泽双生传送门.png",
+  "chapter": 4,
+  "number": 7,
+  "waves": 3,
+  "survival_seconds": 121,
+  "adventure": {
+    "intro": "第四章 · 两分钟的排练。左门封锁，完成挑战后从右门离开。"
+  }
+}

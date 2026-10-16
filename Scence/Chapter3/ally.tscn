@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://Scence/Chapter3/ally.gd" id="actor"]
+[ext_resource type="Script" path="res://Scence/Chapter3/cage.gd" id="cage"]
+[sub_resource type="RectangleShape2D" id="Foot"]
+size = Vector2(30,14)
+[node name="ChapterAlly" type="CharacterBody2D"]
+script = ExtResource("actor")
+collision_layer = 0
+collision_mask = 2
+[node name="FootCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("Foot")
+[node name="Cage" type="Node2D" parent="."]
+script = ExtResource("cage")
+z_index = 5

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/blood_monster.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/blood_monster.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "tide_sorcerer"
+display_name = "潮汐血灵"
+character_type = 3
+max_health = 480
+max_energy = 100
+movement_speed = 36
+default_weapon = "plasma_cannon"
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(2.5,2.5)
+sprite_offset = Vector2(0.0000, -20.0000)
+
+hurtbox_size = Vector2(51.0000, 43.5000)
+hurtbox_offset = Vector2(5.0000, -21.2500)
+
+aquatic = true
+foot_size = Vector2(20.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-20.5000, -40.5000, 51.0000, 38.5000), Rect2(-20.5000, -40.5000, 51.0000, 38.5000), Rect2(-20.5000, -38.0000, 51.0000, 38.5000), Rect2(-20.5000, -38.0000, 51.0000, 38.5000), Rect2(-20.5000, -40.5000, 51.0000, 41.0000), Rect2(-20.5000, -40.5000, 51.0000, 41.0000)], "walk": [Rect2(-20.5000, -40.5000, 51.0000, 38.5000), Rect2(-20.5000, -43.0000, 51.0000, 38.5000), Rect2(-20.5000, -40.5000, 51.0000, 38.5000), Rect2(-20.5000, -38.0000, 51.0000, 36.0000), Rect2(-20.5000, -40.5000, 51.0000, 38.5000), Rect2(-20.5000, -43.0000, 51.0000, 41.0000), Rect2(-20.5000, -40.5000, 51.0000, 41.0000), Rect2(-20.5000, -38.0000, 51.0000, 38.5000)]}
+
+home_biome = "ocean"

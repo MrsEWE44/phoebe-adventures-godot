@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter4/weiro.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/tensura.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "weiro_minion"
+display_name = "天素罗伪罗幼体"
+character_type = 1
+max_health = 110
+movement_speed = 85
+default_weapon = "voice_wave"
+allowed_weapons = Array[String]([])
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.11049723756906077,0.11049723756906077)
+sprite_offset = Vector2(0,-20.0)
+reaction_scale = Vector2(0.11049723756906077,0.11049723756906077)
+reaction_offset = Vector2(0,-20.0)
+ultimate_scale = Vector2(0.11049723756906077,0.11049723756906077)
+ultimate_offset = Vector2(0,-20.0)
+hurtbox_size = Vector2(35.2,36.0)
+hurtbox_offset = Vector2(0,-19.2)
+foot_size = Vector2(18,10)
+home_biome = "swamp"

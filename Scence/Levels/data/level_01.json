@@ -1,0 +1,105 @@
+{
+  "index": 1,
+  "name": "沉沙神殿",
+  "folder": "level_01_sunken_temple",
+  "floor_sample": [
+    820,
+    842,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 3,
+    "boss": "orc",
+    "enemies": [
+      "orc",
+      "beetle"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "riddle",
+        "clue": "白天陪你走，夜里随灯来；没有嘴和手，动作却相同。它是什么？",
+        "options": [
+          "影子",
+          "石头",
+          "回声",
+          "火焰"
+        ],
+        "answer": 0,
+        "hints": [
+          "它不是人，却会模仿你的动作。",
+          "想想光照在身上，地面会出现什么。",
+          "谜底是影子。"
+        ],
+        "explanation": "影子由光照形成，会跟随人的动作。"
+      },
+      "rune_2": {
+        "mode": "cipher",
+        "clue": "练习刻文：先水后火，再回到水。每按一次选择一个符号。",
+        "options": [
+          "火",
+          "水",
+          "风",
+          "土"
+        ],
+        "sequence": [
+          1,
+          0,
+          1
+        ],
+        "hints": [
+          "一句一句读，把“再回到”理解为重复。",
+          "一共输入三次。",
+          "顺序：水 → 火 → 水。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "rune_3": {
+        "mode": "direction",
+        "target": 3,
+        "clue": "镜面必须朝西；左右旋转后提交方向。",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "balance",
+        "target": 12,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。"
+      },
+      "rune_5": {
+        "mode": "hold",
+        "seconds": 2.9,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。"
+      },
+      "rune_6": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。",
+        "requires_switches": [
+          "rune_4"
+        ]
+      }
+    },
+    "patrol_count": 3,
+    "enemy_health": 0.8,
+    "min_pack": 2,
+    "boss_pack": 2
+  },
+  "biome": "land"
+}

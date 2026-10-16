@@ -1,0 +1,89 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://4xq2epw7vwwi"]
+
+[ext_resource type="Texture2D" uid="uid://cfp7u8htv5nxs" path="res://Art/Chapter2/ikun_sheet.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="r5c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 1080, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r5c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 1080, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r5c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 1080, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r5c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 1080, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r4c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 870, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r4c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 870, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r4c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 870, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r4c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 870, 237, 237)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r5c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r5c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r5c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r5c3")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r4c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c3")
+}],
+"loop": 0,
+"name": &"hit",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r4c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r4c3")
+}],
+"loop": 1,
+"name": &"hurt",
+"speed": 4.0
+}]

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="script"]
+[ext_resource type="AudioStream" path="res://Audio/千早爱音/千早爱音哭声.mp3" id="clip_0"]
+[ext_resource type="AudioStream" path="res://Audio/千早爱音/千早爱音哭声2.mp3" id="clip_1"]
+[ext_resource type="AudioStream" path="res://Audio/千早爱音/千早爱音笑声.mp3" id="clip_2"]
+[ext_resource type="AudioStream" path="res://Audio/千早爱音/千早爱音笑声2.mp3" id="clip_3"]
+[resource]
+script = ExtResource("script")
+volume_db = 0.0
+shared_cooldown = 1.8
+max_duration = 0.0
+event_cooldowns = {"idle": 12.0, "battle": 8.0, "hurt": 2.0, "death": 0.0, "angry": 7.0, "afraid": 9.0, "terrified": 10.0, "proud": 8.0, "skill": 4.0, "ultimate": 6.0, "victory": 6.0, "exhausted": 7.0, "dialogue": 3.0, "taunt": 12.0}
+idle = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+battle = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+hurt = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+death = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+angry = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+afraid = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+terrified = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+proud = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+skill = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+ultimate = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+victory = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+exhausted = Array[AudioStream]([ExtResource("clip_0"), ExtResource("clip_1")])
+dialogue = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+interaction = Array[AudioStream]([ExtResource("clip_2"), ExtResource("clip_3")])
+event_text = {"idle": ["（千早爱音笑声）", "（千早爱音笑声2）"], "battle": ["（千早爱音笑声）", "（千早爱音笑声2）"], "hurt": ["（千早爱音哭声）", "（千早爱音哭声2）"], "death": ["（千早爱音哭声）", "（千早爱音哭声2）"], "angry": ["（千早爱音哭声）", "（千早爱音哭声2）"], "afraid": ["（千早爱音哭声）", "（千早爱音哭声2）"], "terrified": ["（千早爱音哭声）", "（千早爱音哭声2）"], "proud": ["（千早爱音笑声）", "（千早爱音笑声2）"], "skill": ["（千早爱音笑声）", "（千早爱音笑声2）"], "ultimate": ["（千早爱音笑声）", "（千早爱音笑声2）"], "victory": ["（千早爱音笑声）", "（千早爱音笑声2）"], "exhausted": ["（千早爱音哭声）", "（千早爱音哭声2）"], "dialogue": ["（千早爱音笑声）", "（千早爱音笑声2）"], "interaction": ["（千早爱音笑声）", "（千早爱音笑声2）"]}

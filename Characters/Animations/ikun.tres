@@ -1,0 +1,138 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b614b7wjtglx6"]
+
+[ext_resource type="Texture2D" uid="uid://cfp7u8htv5nxs" path="res://Art/Chapter2/ikun_sheet.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="r1c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 214, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r1c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 214, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r1c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 214, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r1c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 214, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r0c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r0c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 0, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r0c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 0, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r0c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 0, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r2c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 432, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r2c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 432, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r2c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 432, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r2c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 432, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r3c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 649, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r3c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 649, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r3c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 649, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r3c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 649, 237, 237)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r1c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r1c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r1c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r1c3")
+}],
+"loop": 1,
+"name": &"down",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r0c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r0c3")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r2c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r2c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r2c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r2c3")
+}],
+"loop": 1,
+"name": &"left",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r3c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r3c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r3c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r3c3")
+}],
+"loop": 1,
+"name": &"up",
+"speed": 7.0
+}]

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="script"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅受伤声音.mp3" id="clip_0"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅嘲笑.mp3" id="clip_1"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅委屈.mp3" id="clip_2"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅快乐.mp3" id="clip_3"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅挑衅.mp3" id="clip_4"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅生气.mp3" id="clip_5"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅被击败声音.mp3" id="clip_6"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅难过至极.mp3" id="clip_7"]
+[ext_resource type="AudioStream" path="res://Audio/凑企鹅/凑企鹅非常生气忍无可忍.mp3" id="clip_8"]
+[resource]
+script = ExtResource("script")
+volume_db = 0.0
+shared_cooldown = 1.8
+max_duration = 0.0
+event_cooldowns = {"idle": 12.0, "battle": 8.0, "hurt": 2.0, "death": 0.0, "angry": 7.0, "afraid": 9.0, "terrified": 10.0, "proud": 8.0, "skill": 4.0, "ultimate": 6.0, "victory": 6.0, "exhausted": 7.0, "dialogue": 3.0, "taunt": 12.0}
+idle = Array[AudioStream]([ExtResource("clip_3")])
+battle = Array[AudioStream]([ExtResource("clip_4")])
+hurt = Array[AudioStream]([ExtResource("clip_0")])
+death = Array[AudioStream]([ExtResource("clip_6")])
+angry = Array[AudioStream]([ExtResource("clip_5"), ExtResource("clip_8")])
+afraid = Array[AudioStream]([ExtResource("clip_2")])
+terrified = Array[AudioStream]([ExtResource("clip_7")])
+proud = Array[AudioStream]([ExtResource("clip_1")])
+skill = Array[AudioStream]([ExtResource("clip_4")])
+ultimate = Array[AudioStream]([ExtResource("clip_8")])
+victory = Array[AudioStream]([ExtResource("clip_3")])
+exhausted = Array[AudioStream]([ExtResource("clip_2")])
+dialogue = Array[AudioStream]([ExtResource("clip_4")])
+interaction = Array[AudioStream]([ExtResource("clip_4")])
+taunt = Array[AudioStream]([ExtResource("clip_1")])
+event_text = {"idle": ["（凑企鹅快乐）"], "battle": ["（凑企鹅挑衅）"], "hurt": ["（凑企鹅受伤声音）"], "death": ["（凑企鹅被击败声音）"], "angry": ["（凑企鹅生气）", "（凑企鹅非常生气忍无可忍）"], "afraid": ["（凑企鹅委屈）"], "terrified": ["（凑企鹅难过至极）"], "proud": ["（凑企鹅嘲笑）"], "skill": ["（凑企鹅挑衅）"], "ultimate": ["（凑企鹅非常生气忍无可忍）"], "victory": ["（凑企鹅快乐）"], "exhausted": ["（凑企鹅委屈）"], "dialogue": ["（凑企鹅挑衅）"], "interaction": ["（凑企鹅挑衅）"], "taunt": ["（凑企鹅嘲笑）"]}

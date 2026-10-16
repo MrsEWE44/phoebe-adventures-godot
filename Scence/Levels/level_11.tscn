@@ -1,0 +1,193 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://Scence/Levels/level.gd" id="script"]
+[ext_resource type="Texture2D" path="res://Maps/Level2/2-4.png" id="bg"]
+[ext_resource type="Script" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" path="res://Scence/Levels/mechanism.gd" id="mech"]
+[ext_resource type="Script" path="res://Scence/portal.gd" id="portal"]
+[ext_resource type="PackedScene" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" path="res://Characters/sea_npc.gd" id="npc"]
+[ext_resource type="Script" path="res://Scence/underwater.gd" id="water"]
+[ext_resource type="Script" path="res://Scence/sea_vent.gd" id="vent"]
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(44,14)
+[sub_resource type="RectangleShape2D" id="Portal"]
+size = Vector2(30,20)
+[sub_resource type="CircleShape2D" id="Exit"]
+radius = 22.0
+[sub_resource type="RectangleShape2D" id="Vent"]
+size = Vector2(24,22)
+
+[node name="Level2_4" type="Node2D"]
+script = ExtResource("script")
+level_index = 11
+biome = "ocean"
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="FloorBoundary_0" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(916, 84, 980, 84, 992, 96, 992, 116, 980, 128, 952, 128, 952, 132, 848, 136, 848, 140, 836, 140, 836, 144, 816, 148, 808, 156, 796, 156, 788, 164, 664, 168, 668, 196, 680, 200, 680, 204, 704, 208, 704, 212, 904, 212, 904, 216, 920, 216, 920, 220, 932, 220, 932, 224, 948, 224, 948, 228, 964, 228, 964, 232, 980, 232, 980, 236, 996, 236, 996, 240, 1012, 240, 1012, 244, 1060, 256, 1072, 240, 1080, 240, 1116, 204, 1116, 192, 1120, 192, 1128, 168, 1120, 168, 1108, 156, 1108, 148, 1116, 140, 1128, 140, 1128, 136, 1140, 136, 1140, 132, 1172, 128, 1176, 96, 1184, 88, 1192, 88, 1192, 84, 1204, 84, 1204, 88, 1212, 88, 1220, 96, 1220, 128, 1268, 136, 1268, 140, 1284, 144, 1284, 152, 1292, 152, 1292, 156, 1356, 168, 1356, 172, 1372, 176, 1380, 188, 1388, 188, 1392, 196, 1400, 196, 1404, 204, 1412, 204, 1416, 212, 1424, 212, 1428, 220, 1436, 220, 1440, 228, 1448, 228, 1452, 240, 1456, 240, 1464, 276, 1480, 292, 1488, 292, 1504, 312, 1512, 312, 1524, 328, 1532, 328, 1544, 344, 1556, 348, 1556, 356, 1560, 356, 1560, 384, 1564, 384, 1568, 444, 1584, 460, 1584, 468, 1592, 472, 1596, 492, 1592, 492, 1588, 516, 1584, 516, 1584, 528, 1576, 536, 1576, 548, 1572, 548, 1568, 564, 1536, 596, 1536, 604, 1524, 612, 1524, 620, 1512, 628, 1512, 636, 1504, 640, 1504, 648, 1496, 652, 1496, 660, 1480, 676, 1480, 688, 1476, 688, 1476, 700, 1472, 700, 1472, 712, 1468, 712, 1456, 760, 1452, 760, 1456, 768, 1476, 768, 1476, 772, 1488, 772, 1492, 780, 1500, 780, 1500, 788, 1504, 788, 1500, 800, 1492, 800, 1488, 808, 1476, 808, 1476, 812, 1456, 812, 1456, 816, 1348, 824, 1348, 828, 1280, 832, 1280, 836, 1164, 836, 1164, 840, 1144, 840, 1140, 848, 1132, 848, 1128, 856, 1120, 856, 1116, 864, 1108, 864, 1092, 880, 1044, 880, 1044, 876, 1004, 876, 1004, 872, 936, 872, 936, 868, 812, 868, 812, 872, 792, 872, 792, 876, 776, 876, 776, 880, 756, 880, 756, 884, 716, 888, 716, 892, 700, 892, 700, 896, 660, 900, 660, 896, 652, 896, 652, 892, 644, 892, 636, 884, 624, 884, 624, 880, 616, 880, 616, 876, 608, 876, 608, 872, 568, 856, 564, 848, 556, 848, 544, 836, 536, 836, 532, 828, 516, 824, 512, 816, 504, 816, 488, 800, 472, 796, 456, 780, 448, 780, 436, 768, 428, 768, 424, 756, 412, 748, 412, 740, 400, 732, 400, 724, 388, 716, 388, 708, 284, 684, 272, 668, 264, 668, 252, 652, 244, 652, 232, 636, 224, 636, 212, 624, 208, 604, 204, 604, 204, 588, 200, 588, 200, 576, 196, 576, 196, 564, 192, 564, 192, 552, 188, 552, 184, 524, 196, 512, 196, 504, 220, 480, 220, 392, 192, 368, 188, 352, 180, 348, 180, 340, 172, 336, 172, 328, 164, 324, 164, 316, 156, 312, 152, 300, 104, 304, 104, 300, 84, 296, 68, 280, 72, 252, 80, 244, 96, 240, 96, 216, 108, 204, 132, 204, 144, 216, 144, 240, 156, 240, 164, 252, 176, 252, 176, 248, 188, 248, 188, 244, 200, 244, 200, 240, 216, 240, 216, 236, 252, 228, 260, 220, 276, 180, 284, 172, 292, 172, 292, 168, 304, 168, 304, 164, 316, 164, 316, 160, 332, 160, 332, 156, 344, 156, 344, 152, 356, 152, 356, 148, 372, 148, 372, 144, 384, 144, 384, 140, 396, 140, 396, 136, 408, 136, 408, 132, 424, 132, 424, 128, 436, 128, 436, 124, 452, 124, 452, 120, 468, 120, 468, 116, 480, 116, 480, 112, 496, 112, 496, 108, 512, 108, 512, 104, 524, 104, 524, 100, 540, 100, 540, 96, 576, 100, 576, 104, 588, 104, 588, 108, 600, 108, 600, 112, 612, 112, 612, 116, 628, 116, 628, 120, 772, 120, 772, 116, 784, 116, 784, 112, 804, 108, 812, 100, 824, 100, 832, 92, 848, 92, 848, 88, 916, 88)
+
+[node name="FloorBoundary_1" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(552, 144, 548, 148, 532, 148, 532, 152, 516, 152, 516, 156, 504, 156, 504, 160, 472, 164, 472, 168, 460, 168, 460, 172, 444, 172, 444, 176, 432, 176, 432, 180, 416, 180, 416, 184, 404, 184, 404, 188, 392, 188, 392, 192, 376, 192, 376, 196, 364, 196, 364, 200, 352, 200, 352, 204, 324, 208, 324, 212, 312, 216, 296, 256, 284, 268, 272, 268, 272, 272, 260, 272, 260, 276, 248, 276, 248, 280, 220, 284, 220, 288, 204, 292, 208, 304, 216, 308, 216, 316, 224, 320, 224, 328, 232, 332, 232, 340, 268, 372, 268, 492, 264, 492, 264, 504, 252, 512, 252, 520, 236, 532, 252, 596, 264, 600, 276, 616, 284, 616, 296, 632, 304, 632, 316, 644, 332, 644, 332, 648, 348, 648, 348, 652, 412, 664, 424, 676, 424, 684, 436, 692, 436, 700, 448, 708, 448, 716, 468, 736, 476, 736, 492, 752, 508, 756, 524, 772, 540, 776, 544, 784, 552, 784, 568, 800, 584, 804, 588, 812, 596, 812, 596, 816, 604, 816, 604, 820, 612, 820, 612, 824, 620, 824, 620, 828, 628, 828, 628, 832, 636, 832, 636, 836, 644, 836, 644, 840, 652, 840, 652, 844, 660, 844, 668, 852, 692, 848, 692, 844, 712, 844, 712, 840, 732, 840, 732, 836, 752, 836, 752, 832, 768, 832, 768, 828, 808, 824, 808, 820, 980, 820, 980, 824, 1076, 832, 1080, 824, 1088, 824, 1092, 816, 1112, 808, 1120, 800, 1120, 792, 1116, 792, 1116, 756, 1076, 716, 1020, 712, 1020, 716, 912, 720, 912, 724, 696, 724, 696, 720, 680, 720, 680, 716, 668, 716, 668, 712, 656, 712, 656, 708, 640, 708, 640, 704, 628, 704, 628, 700, 616, 700, 616, 696, 604, 696, 604, 692, 588, 692, 588, 688, 576, 688, 576, 684, 564, 684, 564, 680, 548, 680, 548, 676, 532, 676, 532, 672, 508, 668, 504, 636, 512, 628, 544, 628, 544, 632, 576, 636, 576, 640, 604, 644, 604, 648, 616, 648, 616, 652, 628, 652, 628, 656, 644, 656, 644, 660, 656, 660, 656, 664, 668, 664, 668, 668, 680, 668, 680, 672, 696, 672, 696, 676, 936, 676, 936, 672, 1028, 668, 1052, 644, 1068, 640, 1072, 632, 1080, 632, 1084, 624, 1092, 624, 1096, 616, 1104, 616, 1108, 608, 1116, 608, 1120, 600, 1128, 600, 1140, 588, 1108, 584, 1104, 576, 1088, 572, 1084, 564, 1068, 560, 1064, 552, 1048, 548, 1044, 540, 1028, 536, 1024, 528, 1000, 520, 996, 512, 988, 512, 980, 504, 964, 504, 964, 508, 948, 512, 944, 520, 924, 524, 912, 536, 900, 536, 900, 540, 888, 540, 888, 544, 864, 544, 864, 548, 852, 548, 852, 552, 840, 552, 840, 556, 828, 556, 828, 552, 804, 548, 804, 544, 780, 544, 780, 540, 748, 532, 740, 524, 740, 516, 736, 516, 740, 504, 748, 496, 756, 496, 756, 492, 812, 480, 816, 456, 828, 452, 828, 448, 840, 448, 840, 452, 852, 456, 856, 480, 888, 484, 888, 488, 900, 488, 900, 492, 908, 492, 908, 488, 916, 488, 916, 484, 924, 484, 924, 480, 932, 480, 932, 476, 940, 476, 940, 472, 948, 472, 948, 468, 956, 468, 964, 460, 984, 460, 984, 464, 1000, 468, 1004, 476, 1020, 480, 1024, 488, 1032, 488, 1032, 492, 1048, 496, 1052, 504, 1068, 508, 1072, 516, 1088, 520, 1092, 528, 1108, 532, 1120, 544, 1180, 556, 1180, 532, 1184, 532, 1184, 512, 1188, 512, 1192, 468, 1196, 468, 1196, 456, 1216, 436, 1216, 424, 1212, 424, 1196, 384, 1188, 380, 1188, 372, 1180, 372, 1168, 360, 1160, 360, 1160, 356, 1152, 356, 1152, 352, 1112, 336, 1108, 328, 1068, 312, 1064, 304, 1020, 296, 1020, 292, 1004, 292, 1004, 288, 988, 288, 988, 284, 972, 284, 972, 280, 960, 280, 960, 276, 944, 276, 944, 272, 928, 272, 928, 268, 912, 268, 912, 264, 896, 264, 896, 260, 696, 260, 696, 256, 684, 256, 684, 252, 672, 252, 672, 248, 656, 244, 652, 252, 644, 252, 628, 272, 620, 272, 604, 292, 596, 292, 564, 324, 564, 332, 552, 340, 544, 372, 540, 372, 540, 380, 532, 388, 532, 400, 524, 408, 524, 452, 512, 464, 488, 464, 476, 452, 476, 400, 484, 392, 484, 380, 492, 372, 492, 360, 500, 352, 500, 340, 508, 332, 512, 312, 532, 296, 532, 288, 564, 256, 572, 256, 588, 236, 596, 236, 608, 220, 616, 220, 624, 212, 624, 200, 620, 200, 620, 188, 616, 188, 616, 176, 612, 176, 608, 160, 592, 160, 592, 156, 580, 156, 580, 152, 568, 152, 568, 148)
+
+[node name="FloorBoundary_2" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(1180, 176, 1172, 180, 1172, 192, 1168, 192, 1168, 204, 1160, 212, 1160, 224, 1156, 224, 1152, 240, 1140, 252, 1132, 252, 1108, 280, 1116, 280, 1120, 288, 1128, 288, 1128, 292, 1136, 292, 1136, 296, 1144, 296, 1144, 300, 1176, 312, 1180, 320, 1188, 320, 1188, 324, 1196, 324, 1196, 328, 1204, 328, 1204, 332, 1224, 340, 1240, 380, 1248, 384, 1248, 392, 1252, 392, 1252, 400, 1256, 400, 1256, 408, 1260, 408, 1260, 416, 1268, 424, 1268, 444, 1264, 444, 1264, 452, 1248, 464, 1248, 472, 1236, 484, 1236, 504, 1232, 504, 1232, 528, 1228, 528, 1220, 588, 1208, 600, 1196, 600, 1176, 624, 1168, 624, 1164, 632, 1156, 632, 1140, 648, 1132, 648, 1120, 660, 1112, 660, 1104, 672, 1112, 676, 1116, 696, 1156, 732, 1164, 788, 1268, 788, 1268, 784, 1336, 780, 1336, 776, 1356, 776, 1356, 772, 1368, 772, 1368, 768, 1396, 764, 1396, 736, 1408, 724, 1416, 724, 1416, 712, 1420, 712, 1420, 700, 1424, 700, 1424, 688, 1432, 680, 1440, 648, 1448, 644, 1448, 636, 1456, 632, 1456, 624, 1464, 620, 1464, 612, 1472, 608, 1480, 588, 1496, 576, 1496, 568, 1524, 540, 1524, 532, 1532, 528, 1536, 504, 1540, 504, 1540, 484, 1532, 480, 1532, 472, 1520, 460, 1520, 428, 1516, 428, 1512, 376, 1504, 368, 1496, 368, 1484, 352, 1476, 352, 1464, 336, 1456, 336, 1444, 320, 1436, 320, 1424, 308, 1408, 260, 1400, 260, 1396, 252, 1388, 252, 1384, 244, 1376, 244, 1372, 236, 1364, 236, 1348, 220)
+
+[node name="Navigation" type="Node2D" parent="."]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(819,844)
+
+[node name="Bridges" type="Node2D" parent="."]
+
+[node name="ReturnPortal" type="Area2D" parent="."]
+position = Vector2(815,844)
+collision_layer = 32
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReturnPortal"]
+shape = SubResource("Exit")
+
+[node name="Label" type="Label" parent="ReturnPortal"]
+offset_left = -42.0
+offset_top = 15.0
+text = "通关后 E 返回"
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="door_1" type="Node2D" parent="Doors"]
+position = Vector2(120,246)
+script = ExtResource("mech")
+config = {"id": "door_1", "type": "door", "label": "潮封门 1", "requires": ["rune_1"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_1/Barrier"]
+shape = SubResource("Door")
+
+[node name="door_2" type="Node2D" parent="Doors"]
+position = Vector2(1197,132)
+script = ExtResource("mech")
+config = {"id": "door_2", "type": "door", "label": "潮封门 2", "requires": ["rune_2"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_2/Barrier"]
+shape = SubResource("Door")
+
+[node name="door_3" type="Node2D" parent="Doors"]
+position = Vector2(1421,766)
+script = ExtResource("mech")
+config = {"id": "door_3", "type": "door", "label": "潮封门 3", "requires": ["rune_3"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_3/Barrier"]
+shape = SubResource("Door")
+
+[node name="door_4" type="Node2D" parent="Doors"]
+position = Vector2(834,481)
+script = ExtResource("mech")
+config = {"id": "door_4", "type": "door", "label": "潮封门 4", "requires": ["rune_4"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_4"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_4/Barrier"]
+shape = SubResource("Door")
+
+[node name="Switches" type="Node2D" parent="."]
+
+[node name="EncounterSpawns" type="Node2D" parent="."]
+
+[node name="Chests" type="Node2D" parent="."]
+
+[node name="Traps" type="Node2D" parent="."]
+
+[node name="rune_1" type="Node2D" parent="Switches"]
+position = Vector2(246,385)
+script = ExtResource("mech")
+config = {"id": "rune_1", "type": "plate", "label": "蓄能踏板 1"}
+
+[node name="door_1" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(118.0,286.0)
+
+[node name="PressureVent_0" type="Area2D" parent="Traps"]
+position = Vector2(246.0,434.0)
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("vent")
+disabled_by = "rune_1"
+period = 4.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_0"]
+shape = SubResource("Vent")
+
+[node name="rune_2" type="Node2D" parent="Switches"]
+position = Vector2(1065,280)
+script = ExtResource("mech")
+config = {"id": "rune_2", "type": "wheel", "label": "连锁灯阵 2"}
+
+[node name="door_2" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(1198.0,170.0)
+
+[node name="rune_3" type="Node2D" parent="Switches"]
+position = Vector2(1240,811)
+script = ExtResource("mech")
+config = {"id": "rune_3", "type": "torch", "label": "铭文碑 3"}
+
+[node name="door_3" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(1422.0,806.0)
+
+[node name="rune_4" type="Node2D" parent="Switches"]
+position = Vector2(1064,531)
+script = ExtResource("mech")
+config = {"id": "rune_4", "type": "wheel", "label": "连锁灯阵 4"}
+
+[node name="door_4" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(834.0,522.0)
+
+[node name="PressureVent_3" type="Area2D" parent="Traps"]
+position = Vector2(1078.0,550.0)
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("vent")
+disabled_by = "rune_4"
+period = 4.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_3"]
+shape = SubResource("Vent")
+
+[node name="Supply_0" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(838.0,838.0)
+chest_id = "sea4_supply_0"
+reward = "health"
+
+[node name="Supply_1" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(246.0,410.0)
+chest_id = "sea4_supply_1"
+reward = "energy"
+
+[node name="Supply_2" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(1066.0,542.0)
+chest_id = "sea4_supply_2"
+reward = "harpoon"
+

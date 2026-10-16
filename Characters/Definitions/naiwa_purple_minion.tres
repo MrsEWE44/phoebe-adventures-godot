@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/naiwa_purple.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[ext_resource type="Resource" path="res://Characters/Voices/naiwa.tres" id="v"]
+[resource]
+script = ExtResource("s")
+character_id = "naiwa_purple_minion"
+display_name = "奶娃幽咒幼体"
+character_type = 1
+max_health = 100
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.11044776119402985,0.11044776119402985)
+sprite_offset = Vector2(0,-18.05820895522388)
+reaction_scale = Vector2(0.11044776119402985,0.11044776119402985)
+reaction_offset = Vector2(0,-18.05820895522388)
+ultimate_scale = Vector2(0.11044776119402985,0.11044776119402985)
+ultimate_offset = Vector2(0,-18.05820895522388)
+hurtbox_size = Vector2(23.68,30.34)
+hurtbox_offset = Vector2(0,-17.39)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+voice_profile = ExtResource("v")
+faces_right = true

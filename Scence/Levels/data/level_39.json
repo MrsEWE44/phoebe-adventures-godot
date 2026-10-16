@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 2,
+  "name": "葱绿的回声",
+  "map": "Maps/Level5/5-2.png",
+  "waves": 5,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

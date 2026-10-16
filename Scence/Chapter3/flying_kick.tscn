@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scence/Chapter3/flying_kick.gd" id="1"]
+
+[node name="FlyingKick" type="Node2D"]
+script = ExtResource("1")
+windup = 0.45
+travel_range = 340.0
+travel_speed = 680.0
+hit_radius = 34.0
+
+[node name="Leg" type="Node2D" parent="."]
+
+[node name="ExtendedLeg" type="Polygon2D" parent="Leg"]
+color = Color(0.93, 0.57, 0.13, 1)
+polygon = PackedVector2Array(-6, -7, 23, -6, 29, 0, 23, 8, -6, 6)
+
+[node name="WebbedFoot" type="Polygon2D" parent="Leg"]
+color = Color(1, 0.76, 0.24, 1)
+polygon = PackedVector2Array(20, -6, 29, -16, 34, -10, 43, -8, 39, -1, 43, 6, 31, 9, 23, 6)
+
+[node name="FootHighlight" type="Line2D" parent="Leg"]
+points = PackedVector2Array(25, -5, 32, -8, 37, -6)
+width = 2.0
+default_color = Color(1, 0.92, 0.65, 1)

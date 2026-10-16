@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Art/CombatUpdate/nuonuo_walk.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Voices/nuonuo.tres" id="3"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/nuonuo_states.tres" id="4"]
+
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/nuonuo_ultimate.tres" id="5"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/nuonuo.tres" id="6"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuonuo"
+display_name = "糯糯"
+animations = ExtResource("2")
+reaction_animations = ExtResource("4")
+voice_profile = ExtResource("3")
+skill_projectiles = 5
+ultimate = ExtResource("6")
+ultimate_animations = ExtResource("5")
+ultimate_scale = Vector2(0.11612903225806452,0.11612903225806452)
+
+home_biome = "land"
+
+sprite_scale = Vector2(0.14102564102564102,0.14102564102564102)
+
+sprite_offset = Vector2(0,-22.141025641025642)

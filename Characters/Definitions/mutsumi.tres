@@ -1,0 +1,29 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter4/mutsumi.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Voices/mutsumi.tres" id="v"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/mutsumi.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "mutsumi"
+display_name = "睦子米"
+character_type = 0
+max_health = 180
+movement_speed = 145
+default_weapon = "pink_cello"
+allowed_weapons = Array[String](["pink_cello","music_drums","conductor"])
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+voice_profile = ExtResource("v")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.16574585635359115,0.16574585635359115)
+sprite_offset = Vector2(0,-30.0)
+reaction_scale = Vector2(0.16574585635359115,0.16574585635359115)
+reaction_offset = Vector2(0,-30.0)
+ultimate_scale = Vector2(0.16574585635359115,0.16574585635359115)
+ultimate_offset = Vector2(0,-30.0)
+hurtbox_size = Vector2(42.0,54.0)
+hurtbox_offset = Vector2(0,-28.799999999999997)
+foot_size = Vector2(18,10)
+home_biome = "swamp"

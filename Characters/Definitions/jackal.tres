@@ -1,0 +1,21 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/jackal.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "jackal"
+display_name = "沙地胡狼"
+character_type = 1
+max_health = 55
+movement_speed = 68
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.11,0.11)
+sprite_offset = Vector2(0.0000, -15.4000)
+hurtbox_size = Vector2(33.5600, 32.2400)
+hurtbox_offset = Vector2(0.1100, -15.6200)
+ranged_attack = false
+foot_size = Vector2(14.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"default": [Rect2(-16.5600, -31.6300, 33.1200, 31.6900), Rect2(-16.6700, -31.7400, 33.5600, 31.2500), Rect2(-16.4500, -31.6300, 33.3400, 31.6900), Rect2(-16.6700, -31.7400, 33.1200, 32.2400)]}

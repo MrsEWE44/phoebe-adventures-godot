@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="1"]
+[ext_resource type="AudioStream" path="res://Audio/坤坤/坤坤amagi.mp3" id="2"]
+
+[resource]
+script = ExtResource("1")
+idle = Array[AudioStream]([ExtResource("2")])
+death = Array[AudioStream]([ExtResource("2")])
+interaction = Array[AudioStream]([ExtResource("2"), ExtResource("2"), ExtResource("2")])
+angry = Array[AudioStream]([ExtResource("2")])
+afraid = Array[AudioStream]([ExtResource("2")])
+terrified = Array[AudioStream]([ExtResource("2")])
+proud = Array[AudioStream]([ExtResource("2")])
+dialogue = Array[AudioStream]([ExtResource("2")])

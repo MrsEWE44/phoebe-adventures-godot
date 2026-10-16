@@ -1,0 +1,138 @@
+{
+  "index": 4,
+  "name": "沉没圣池",
+  "folder": "level_04_drowned_crypt",
+  "floor_sample": [
+    733,
+    369,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "blood_monster",
+    "enemies": [
+      "orc",
+      "snake",
+      "jackal",
+      "sand_guard",
+      "thorn_shaman",
+      "sky_sentinel",
+      "wind_spirit"
+    ],
+    "puzzles": {
+      "west_sluice": {
+        "mode": "riddle",
+        "clue": "有眼不能看，有口不能言；转动身体，门便打开。",
+        "options": [
+          "钥匙",
+          "月亮",
+          "水流",
+          "羽毛"
+        ],
+        "answer": 0,
+        "hints": [
+          "“眼”可能是一个孔，“口”也可能是齿口。",
+          "它是开锁用的物件，不是真正的生物。",
+          "谜底是钥匙。"
+        ],
+        "explanation": "钥匙上的孔与齿形是“眼”和“口”，转动后开锁。"
+      },
+      "lower_sluice": {
+        "mode": "cipher",
+        "clue": "暗语注明“回头看”：灯火照着月；纸条藏古井；天亮归来鸟。",
+        "options": [
+          "井",
+          "鸟",
+          "月",
+          "灯"
+        ],
+        "sequence": [
+          2,
+          0,
+          1
+        ],
+        "hints": [
+          "“回头看”指句尾，而不是句首。",
+          "每句话的最后一个字连起来。",
+          "顺序：月 → 井 → 鸟。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "east_sluice": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。",
+        "requires_switches": [
+          "west_sluice"
+        ]
+      },
+      "return_plate": {
+        "mode": "memory",
+        "sequence": [
+          3,
+          0,
+          3,
+          0
+        ],
+        "clue": "铭文从左向右：土 → 火 → 土 → 火"
+      },
+      "west_flame": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "central_mirror": {
+        "mode": "direction",
+        "target": 1,
+        "clue": "镜面必须朝东；左右旋转后提交方向。",
+        "requires_switches": [
+          "return_plate"
+        ]
+      },
+      "east_wheel": {
+        "mode": "balance",
+        "target": 11,
+        "clue": "阀门 A/B/C 范围 0～3，权重依次为 1/2/3。调节总压到目标值再提交。"
+      },
+      "upper_plate": {
+        "mode": "hold",
+        "seconds": 2.9,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。"
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "land"
+}

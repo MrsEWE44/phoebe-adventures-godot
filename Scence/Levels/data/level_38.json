@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 1,
+  "name": "余烬中的主唱",
+  "map": "Maps/Level5/5-1.png",
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

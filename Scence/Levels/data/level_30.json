@@ -1,0 +1,11 @@
+{
+  "name": "无法停止的歌",
+  "map": "Maps/Level4/幽绿沼泽中的双界传送门.png",
+  "chapter": 4,
+  "number": 3,
+  "waves": 3,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 无法停止的歌。左门封锁，完成挑战后从右门离开。"
+  }
+}

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/demon.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/demon.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "sky_sentinel"
+display_name = "苍穹魔翼"
+character_type = 1
+max_health = 110
+max_energy = 100
+movement_speed = 80
+default_weapon = "rune_staff"
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(2.3,2.3)
+sprite_offset = Vector2(0.0000, -23.0000)
+
+hurtbox_size = Vector2(49.3000, 51.6000)
+hurtbox_offset = Vector2(8.0500, -25.3000)
+foot_size = Vector2(20.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-16.6000, -48.8000, 47.0000, 47.0000), Rect2(-16.6000, -48.8000, 47.0000, 47.0000), Rect2(-16.6000, -51.1000, 47.0000, 47.0000), Rect2(-16.6000, -51.1000, 47.0000, 47.0000), Rect2(-16.6000, -48.8000, 47.0000, 44.7000), Rect2(-16.6000, -48.8000, 47.0000, 44.7000)], "walk": [Rect2(-16.6000, -48.8000, 47.0000, 47.0000), Rect2(-16.6000, -51.1000, 49.3000, 44.7000), Rect2(-16.6000, -48.8000, 49.3000, 44.7000), Rect2(-16.6000, -46.5000, 47.0000, 47.0000), Rect2(-16.6000, -48.8000, 47.0000, 47.0000), Rect2(-16.6000, -51.1000, 47.0000, 47.0000), Rect2(-16.6000, -48.8000, 47.0000, 47.0000), Rect2(-16.6000, -46.5000, 47.0000, 47.0000)]}
+home_biome = "sky"
+behavior = "charger"
+attack_projectiles = 1
+body_tint = Color(0.65,0.8,1,1)
+ranged_attack = false

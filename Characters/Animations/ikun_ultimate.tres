@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bt48x7ltbhknh"]
+
+[ext_resource type="Texture2D" uid="uid://cfp7u8htv5nxs" path="res://Art/Chapter2/ikun_sheet.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="r6c0"]
+atlas = ExtResource("1")
+region = Rect2(0, 1358, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r6c1"]
+atlas = ExtResource("1")
+region = Rect2(237, 1358, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r6c2"]
+atlas = ExtResource("1")
+region = Rect2(474, 1358, 237, 237)
+
+[sub_resource type="AtlasTexture" id="r6c3"]
+atlas = ExtResource("1")
+region = Rect2(711, 1358, 237, 237)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("r6c0")
+}, {
+"duration": 1.0,
+"texture": SubResource("r6c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("r6c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("r6c3")
+}],
+"loop": 0,
+"name": &"ultimate",
+"speed": 6.0
+}]

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/reimu.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/reimu.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "reimu"
+display_name = "博丽灵梦"
+character_type = 0
+max_health = 240
+movement_speed = 150
+default_weapon = "crescent_scythe"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.16802168021680217,0.16802168021680217)
+sprite_offset = Vector2(0,-30.32791327913279)
+reaction_scale = Vector2(0.16802168021680217,0.16802168021680217)
+reaction_offset = Vector2(0,-30.32791327913279)
+ultimate_scale = Vector2(0.16802168021680217,0.16802168021680217)
+ultimate_offset = Vector2(0,-30.32791327913279)
+hurtbox_size = Vector2(39.68,50.839999999999996)
+hurtbox_offset = Vector2(0,-29.139999999999997)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+faces_right = true
+allowed_weapons = Array[String](["crescent_scythe"])

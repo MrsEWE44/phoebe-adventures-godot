@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 7,
+  "name": "折翼的回声",
+  "map": "Maps/Level5/5-7.png",
+  "waves": 7,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

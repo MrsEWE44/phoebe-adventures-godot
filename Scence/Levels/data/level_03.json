@@ -1,0 +1,126 @@
+{
+  "index": 3,
+  "name": "镜像祭殿",
+  "folder": "level_03_mirror_sanctum",
+  "floor_sample": [
+    821,
+    836,
+    32,
+    32
+  ],
+  "adventure": {
+    "intro": "沿着糯糯留下的线索探索。L 旅程手册；向入口向导询问可获得分层提示。",
+    "hint": "M 可查看敌人与机关。先清除巡游敌人；完成关联机关后按 E 开门。新门出现战斗时需清场才能继续。",
+    "max_pack": 8,
+    "boss": "demon",
+    "enemies": [
+      "orc",
+      "snake",
+      "beetle",
+      "sand_guard",
+      "thorn_shaman"
+    ],
+    "puzzles": {
+      "rune_1": {
+        "mode": "riddle",
+        "clue": "你喊我才答，空屋也是家；重复你的话，却从不先开口。",
+        "options": [
+          "朋友",
+          "回声",
+          "书信",
+          "脚印"
+        ],
+        "answer": 1,
+        "hints": [
+          "它不会主动开始一句新的话。",
+          "检查是不是声音被反射后返回。",
+          "谜底是回声；门后的模仿不能证明朋友就在里面。"
+        ],
+        "explanation": "回声重复已有的声音，正如这里的假求救。"
+      },
+      "rune_2": {
+        "mode": "cipher",
+        "clue": "真假路标：真记号有短横。石碑说“只跟真记号”：月—、井、鸟—、灯、井—。",
+        "options": [
+          "月",
+          "鸟",
+          "灯",
+          "井"
+        ],
+        "sequence": [
+          0,
+          1,
+          3
+        ],
+        "hints": [
+          "忽略没有短横的符号。",
+          "从左到右保留三个真记号。",
+          "顺序：月 → 鸟 → 井。"
+        ],
+        "explanation": "暗语正确，封印回应了你。"
+      },
+      "rune_3": {
+        "mode": "hold",
+        "seconds": 2.5,
+        "clue": "站稳踏板完成充能；移动会中断，离开会重置。",
+        "requires_switches": [
+          "rune_1"
+        ]
+      },
+      "rune_4": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。"
+      },
+      "rune_5": {
+        "mode": "memory",
+        "sequence": [
+          3,
+          0,
+          3,
+          0
+        ],
+        "clue": "铭文从左向右：土 → 火 → 土 → 火"
+      },
+      "rune_6": {
+        "mode": "circuit",
+        "initial": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "clue": "让五盏灯全部亮起。每次拨动会翻转本灯及左右相邻灯，首尾相连。",
+        "requires_switches": [
+          "rune_4"
+        ]
+      }
+    },
+    "patrol_count": 12,
+    "enemy_health": 1.12,
+    "min_pack": 4,
+    "boss_pack": 4
+  },
+  "biome": "land"
+}

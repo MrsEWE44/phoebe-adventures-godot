@@ -1,0 +1,26 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/jellyfish.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/blood_monster.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "storm_jelly"
+display_name = "雷暴水母"
+character_type = 1
+max_health = 82
+movement_speed = 60
+aquatic = true
+ranged_attack = true
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.11977935382190702,0.11977935382190702)
+sprite_offset = Vector2(0.0000, -18.3262)
+hurtbox_size = Vector2(31.0646, 37.4129)
+hurtbox_offset = Vector2(0.8385, -18.2065)
+foot_size = Vector2(14.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-14.5741, -36.0745, 30.9448, 35.8558), Rect2(-13.7356, -36.3140, 29.1482, 35.3767), Rect2(-13.7356, -36.3140, 29.2679, 36.8140), Rect2(-14.6938, -36.9129, 27.7108, 36.4547)], "walk": [Rect2(-14.5741, -36.0745, 30.9448, 35.8558), Rect2(-13.7356, -36.3140, 29.1482, 35.3767), Rect2(-13.7356, -36.3140, 29.2679, 36.8140), Rect2(-14.6938, -36.9129, 27.7108, 36.4547)], "default": [Rect2(-14.5741, -36.0745, 30.9448, 35.8558), Rect2(-13.7356, -36.3140, 29.1482, 35.3767), Rect2(-13.7356, -36.3140, 29.2679, 36.8140), Rect2(-14.6938, -36.9129, 27.7108, 36.4547)]}
+home_biome = "ocean"
+behavior = "orbit"
+attack_projectiles = 3
+body_tint = Color(1,0.6,1,1)

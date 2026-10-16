@@ -1,0 +1,2735 @@
+[gd_scene format=3 uid="uid://cjjduw6ytt5i"]
+
+[ext_resource type="Texture2D" uid="uid://b3et8i84frxnw" path="res://Maps/Level2/2.png" id="bg"]
+[ext_resource type="Texture2D" uid="uid://duwnphmvdmadv" path="res://Maps/Tile/SWAMP TILESET 32x32.png" id="bridge_art"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" uid="uid://ywxpd1ybjalm" path="res://Characters/sea_npc.gd" id="npc"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://bekrfsu0cbipb" path="res://Scence/portal.gd" id="portal"]
+[ext_resource type="Script" uid="uid://bepjh08r5t5ex" path="res://Scence/chapter2_hub.gd" id="script"]
+[ext_resource type="Script" uid="uid://cig3mid2sujvr" path="res://Scence/underwater.gd" id="water"]
+
+[ext_resource type="Script" path="res://Scence/Chapter3/gate.gd" id="ice_gate"]
+
+[sub_resource type="AtlasTexture" id="BridgeVertical"]
+atlas = ExtResource("bridge_art")
+region = Rect2(388, 224, 24, 32)
+
+[sub_resource type="AtlasTexture" id="BridgeHorizontal"]
+atlas = ExtResource("bridge_art")
+region = Rect2(412, 292, 40, 24)
+
+[sub_resource type="CircleShape2D" id="Exit"]
+radius = 22.0
+
+[sub_resource type="RectangleShape2D" id="Portal"]
+size = Vector2(30, 20)
+
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(44, 14)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[sub_resource type="RectangleShape2D" id="Boundary_000"]
+size = Vector2(16, 336)
+
+[sub_resource type="RectangleShape2D" id="Boundary_001"]
+size = Vector2(16, 320)
+
+[sub_resource type="RectangleShape2D" id="Boundary_002"]
+size = Vector2(288, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_003"]
+size = Vector2(240, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_004"]
+size = Vector2(240, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_005"]
+size = Vector2(240, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_006"]
+size = Vector2(224, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_007"]
+size = Vector2(224, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_008"]
+size = Vector2(208, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_009"]
+size = Vector2(208, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_010"]
+size = Vector2(192, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_011"]
+size = Vector2(192, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_012"]
+size = Vector2(192, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_013"]
+size = Vector2(16, 144)
+
+[sub_resource type="RectangleShape2D" id="Boundary_014"]
+size = Vector2(128, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_015"]
+size = Vector2(128, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_016"]
+size = Vector2(112, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_017"]
+size = Vector2(112, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_018"]
+size = Vector2(112, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_019"]
+size = Vector2(16, 112)
+
+[sub_resource type="RectangleShape2D" id="Boundary_020"]
+size = Vector2(112, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_021"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_022"]
+size = Vector2(48, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_023"]
+size = Vector2(96, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_024"]
+size = Vector2(96, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_025"]
+size = Vector2(96, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_026"]
+size = Vector2(16, 80)
+
+[sub_resource type="RectangleShape2D" id="Boundary_027"]
+size = Vector2(80, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_028"]
+size = Vector2(16, 80)
+
+[sub_resource type="RectangleShape2D" id="Boundary_029"]
+size = Vector2(80, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_030"]
+size = Vector2(80, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_031"]
+size = Vector2(16, 80)
+
+[sub_resource type="RectangleShape2D" id="Boundary_032"]
+size = Vector2(80, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_033"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_034"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_035"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="Boundary_036"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="Boundary_037"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_038"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="Boundary_039"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="Boundary_040"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_041"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="Boundary_042"]
+size = Vector2(64, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_043"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_044"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_045"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_046"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_047"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_048"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_049"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_050"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_051"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_052"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_053"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_054"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_055"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_056"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_057"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_058"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_059"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_060"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_061"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_062"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_063"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_064"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_065"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_066"]
+size = Vector2(16, 48)
+
+[sub_resource type="RectangleShape2D" id="Boundary_067"]
+size = Vector2(48, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_068"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_069"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_070"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_071"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_072"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_073"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_074"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_075"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_076"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_077"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_078"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_079"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_080"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_081"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_082"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_083"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_084"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_085"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_086"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_087"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_088"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_089"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_090"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_091"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_092"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_093"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_094"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_095"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_096"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_097"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_098"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_099"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_100"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_101"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_102"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_103"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_104"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_105"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_106"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_107"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_108"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_109"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_110"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_111"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_112"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_113"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_114"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_115"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_116"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_117"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_118"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_119"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_120"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_121"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_122"]
+size = Vector2(16, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_123"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_124"]
+size = Vector2(32, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_125"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_126"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_127"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_128"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_129"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_130"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_131"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_132"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_133"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_134"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_135"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_136"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_137"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_138"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_139"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_140"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_141"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_142"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_143"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_144"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_145"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_146"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_147"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_148"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_149"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_150"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_151"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_152"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_153"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_154"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_155"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_156"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_157"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_158"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_159"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_160"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_161"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_162"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_163"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_164"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_165"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_166"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_167"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_168"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_169"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_170"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_171"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_172"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_173"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_174"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_175"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_176"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_177"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_178"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_179"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_180"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_181"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_182"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_183"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_184"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_185"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_186"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_187"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_188"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_189"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_190"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_191"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_192"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_193"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_194"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_195"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="Boundary_196"]
+size = Vector2(1736, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_197"]
+size = Vector2(1736, 32)
+
+[sub_resource type="RectangleShape2D" id="Boundary_198"]
+size = Vector2(32, 941)
+
+[sub_resource type="RectangleShape2D" id="Boundary_199"]
+size = Vector2(32, 941)
+
+[node name="Chapter2Hub" type="Node2D" unique_id=222824444]
+script = ExtResource("script")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=939240339]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=857529444]
+collision_layer = 2
+collision_mask = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1212115702]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=2027633927]
+position = Vector2(836, 861)
+
+[node name="Bridges" type="Node2D" parent="." unique_id=380000149]
+
+[node name="SteppingStones_0" type="Node2D" parent="Bridges" unique_id=2078828100]
+position = Vector2(682, 310)
+metadata/size = Vector2(36, 151)
+
+[node name="Tile_0" type="Sprite2D" parent="Bridges/SteppingStones_0" unique_id=677092555]
+scale = Vector2(1.5, 1)
+texture = SubResource("BridgeVertical")
+centered = false
+
+[node name="Tile_32" type="Sprite2D" parent="Bridges/SteppingStones_0" unique_id=615611493]
+position = Vector2(0, 32)
+scale = Vector2(1.5, 1)
+texture = SubResource("BridgeVertical")
+centered = false
+
+[node name="Tile_64" type="Sprite2D" parent="Bridges/SteppingStones_0" unique_id=394481633]
+position = Vector2(0, 64)
+scale = Vector2(1.5, 1)
+texture = SubResource("BridgeVertical")
+centered = false
+
+[node name="Tile_96" type="Sprite2D" parent="Bridges/SteppingStones_0" unique_id=1381861191]
+position = Vector2(0, 96)
+scale = Vector2(1.5, 1)
+texture = SubResource("BridgeVertical")
+centered = false
+
+[node name="Tile_128" type="Sprite2D" parent="Bridges/SteppingStones_0" unique_id=522982462]
+position = Vector2(0, 128)
+scale = Vector2(1.5, 0.719)
+texture = SubResource("BridgeVertical")
+centered = false
+
+[node name="SteppingStones_1" type="Node2D" parent="Bridges" unique_id=1141599549]
+position = Vector2(700, 308)
+metadata/size = Vector2(136, 34)
+
+[node name="Tile_0" type="Sprite2D" parent="Bridges/SteppingStones_1" unique_id=1922985288]
+scale = Vector2(1, 1.417)
+texture = SubResource("BridgeHorizontal")
+centered = false
+
+[node name="Tile_40" type="Sprite2D" parent="Bridges/SteppingStones_1" unique_id=1656107501]
+position = Vector2(40, 0)
+scale = Vector2(1, 1.417)
+texture = SubResource("BridgeHorizontal")
+centered = false
+
+[node name="Tile_80" type="Sprite2D" parent="Bridges/SteppingStones_1" unique_id=312074006]
+position = Vector2(80, 0)
+scale = Vector2(1, 1.417)
+texture = SubResource("BridgeHorizontal")
+centered = false
+
+[node name="Tile_120" type="Sprite2D" parent="Bridges/SteppingStones_1" unique_id=1545766139]
+position = Vector2(120, 0)
+scale = Vector2(0.4, 1.417)
+texture = SubResource("BridgeHorizontal")
+centered = false
+
+[node name="ReturnPortal" type="Area2D" parent="." unique_id=281104273]
+position = Vector2(836, 439)
+collision_layer = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReturnPortal" unique_id=917371555]
+shape = SubResource("Exit")
+
+[node name="Label" type="Label" parent="ReturnPortal" unique_id=745378193]
+offset_left = -60.0
+offset_top = 15.0
+text = "E · 返回海岸"
+
+[node name="Portals" type="Node2D" parent="." unique_id=578139579]
+
+[node name="sea_01" type="Area2D" parent="Portals" unique_id=207180606]
+position = Vector2(169, 688)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_01"
+target_scene = "res://Scence/Levels/level_08.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_01" unique_id=453338757]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_01" unique_id=1185112005]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-1"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_01" unique_id=2070329158]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_01/Barrier" unique_id=748067693]
+shape = SubResource("Door")
+
+[node name="sea_02" type="Area2D" parent="Portals" unique_id=926507042]
+position = Vector2(506, 716)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_02"
+target_scene = "res://Scence/Levels/level_09.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_02" unique_id=2051755289]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_02" unique_id=222625450]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-2"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_02" unique_id=430247669]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_02/Barrier" unique_id=992762976]
+shape = SubResource("Door")
+
+[node name="sea_03" type="Area2D" parent="Portals" unique_id=1670884675]
+position = Vector2(144, 404)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_03"
+target_scene = "res://Scence/Levels/level_10.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_03" unique_id=764480732]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_03" unique_id=113353679]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-3"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_03" unique_id=230217513]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_03/Barrier" unique_id=361303964]
+shape = SubResource("Door")
+
+[node name="sea_04" type="Area2D" parent="Portals" unique_id=1201189909]
+position = Vector2(145, 220)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_04"
+target_scene = "res://Scence/Levels/level_11.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_04" unique_id=1436317278]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_04" unique_id=1492318433]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-4"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_04" unique_id=5689990]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_04/Barrier" unique_id=1427327960]
+shape = SubResource("Door")
+
+[node name="sea_05" type="Area2D" parent="Portals" unique_id=1837649962]
+position = Vector2(565, 91)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_05"
+target_scene = "res://Scence/Levels/level_12.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_05" unique_id=1976772330]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_05" unique_id=817343473]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-5"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_05" unique_id=757356332]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_05/Barrier" unique_id=1362267092]
+shape = SubResource("Door")
+
+[node name="sea_06" type="Area2D" parent="Portals" unique_id=532928340]
+position = Vector2(836, 159)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_06"
+target_scene = "res://Scence/Levels/level_13.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_06" unique_id=715537952]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_06" unique_id=1326860750]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-6"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_06" unique_id=317574441]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_06/Barrier" unique_id=20073578]
+shape = SubResource("Door")
+
+[node name="sea_07" type="Area2D" parent="Portals" unique_id=782108187]
+position = Vector2(1183, 92)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_07"
+target_scene = "res://Scence/Levels/level_14.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_07" unique_id=1979152541]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_07" unique_id=1009656223]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-7"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_07" unique_id=1553170669]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_07/Barrier" unique_id=1056888563]
+shape = SubResource("Door")
+
+[node name="sea_08" type="Area2D" parent="Portals" unique_id=673866459]
+position = Vector2(1541, 239)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_08"
+target_scene = "res://Scence/Levels/level_15.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_08" unique_id=182814823]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_08" unique_id=1552045001]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-8"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_08" unique_id=225336898]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_08/Barrier" unique_id=2061408412]
+shape = SubResource("Door")
+
+[node name="sea_09" type="Area2D" parent="Portals" unique_id=1747324410]
+position = Vector2(1297, 430)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_09"
+target_scene = "res://Scence/Levels/level_16.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_09" unique_id=2066683089]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_09" unique_id=908892249]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-9"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_09" unique_id=1875143676]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_09/Barrier" unique_id=113486830]
+shape = SubResource("Door")
+
+[node name="sea_10" type="Area2D" parent="Portals" unique_id=730605095]
+position = Vector2(1521, 703)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"sea_10"
+target_scene = "res://Scence/Levels/level_17.tscn"
+target_spawn_id = &"entry"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_10" unique_id=1619108829]
+shape = SubResource("Portal")
+
+[node name="Label" type="Label" parent="Portals/sea_10" unique_id=1929534803]
+offset_left = -38.0
+offset_top = 14.0
+theme_override_font_sizes/font_size = 11
+text = "2-10"
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/sea_10" unique_id=75057648]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/sea_10/Barrier" unique_id=164357576]
+shape = SubResource("Door")
+
+[node name="Player" parent="." unique_id=840130996 instance=ExtResource("player")]
+position = Vector2(836, 861)
+
+[node name="NPCs" type="Node2D" parent="." unique_id=1763806360]
+
+[node name="help" type="CharacterBody2D" parent="NPCs" unique_id=1090221613]
+position = Vector2(803, 578)
+script = ExtResource("npc")
+display_name = "潮汐向导"
+
+[node name="items" type="CharacterBody2D" parent="NPCs" unique_id=1972233032]
+position = Vector2(917, 453)
+script = ExtResource("npc")
+service = "items"
+display_name = "补给商人"
+
+[node name="weapons" type="CharacterBody2D" parent="NPCs" unique_id=1560867445]
+position = Vector2(753, 453)
+script = ExtResource("npc")
+service = "weapons"
+display_name = "潮猎铁匠"
+
+[node name="Underwater" type="Node2D" parent="." unique_id=48396283]
+script = ExtResource("water")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[node name="Boundary_000" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(872.0, 776.0)
+shape = SubResource("Boundary_000")
+
+[node name="Boundary_001" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(792.0, 768.0)
+shape = SubResource("Boundary_001")
+
+[node name="Boundary_002" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(864.0, 408.0)
+shape = SubResource("Boundary_002")
+
+[node name="Boundary_003" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(984.0, 232.0)
+shape = SubResource("Boundary_003")
+
+[node name="Boundary_004" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1368.0, 280.0)
+shape = SubResource("Boundary_004")
+
+[node name="Boundary_005" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1112.0, 472.0)
+shape = SubResource("Boundary_005")
+
+[node name="Boundary_006" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(752.0, 136.0)
+shape = SubResource("Boundary_006")
+
+[node name="Boundary_007" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(576.0, 472.0)
+shape = SubResource("Boundary_007")
+
+[node name="Boundary_008" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1000.0, 168.0)
+shape = SubResource("Boundary_008")
+
+[node name="Boundary_009" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1352.0, 200.0)
+shape = SubResource("Boundary_009")
+
+[node name="Boundary_010" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(704.0, 216.0)
+shape = SubResource("Boundary_010")
+
+[node name="Boundary_011" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(576.0, 392.0)
+shape = SubResource("Boundary_011")
+
+[node name="Boundary_012" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1104.0, 392.0)
+shape = SubResource("Boundary_012")
+
+[node name="Boundary_013" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(88.0, 664.0)
+shape = SubResource("Boundary_013")
+
+[node name="Boundary_014" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(736.0, 296.0)
+shape = SubResource("Boundary_014")
+
+[node name="Boundary_015" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(160.0, 744.0)
+shape = SubResource("Boundary_015")
+
+[node name="Boundary_016" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1512.0, 216.0)
+shape = SubResource("Boundary_016")
+
+[node name="Boundary_017" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1160.0, 248.0)
+shape = SubResource("Boundary_017")
+
+[node name="Boundary_018" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(936.0, 488.0)
+shape = SubResource("Boundary_018")
+
+[node name="Boundary_019" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1336.0, 536.0)
+shape = SubResource("Boundary_019")
+
+[node name="Boundary_020" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1512.0, 760.0)
+shape = SubResource("Boundary_020")
+
+[node name="Boundary_021" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1192.0, 160.0)
+shape = SubResource("Boundary_021")
+
+[node name="Boundary_022" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(232.0, 368.0)
+shape = SubResource("Boundary_022")
+
+[node name="Boundary_023" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(128.0, 456.0)
+shape = SubResource("Boundary_023")
+
+[node name="Boundary_024" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(736.0, 488.0)
+shape = SubResource("Boundary_024")
+
+[node name="Boundary_025" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1392.0, 600.0)
+shape = SubResource("Boundary_025")
+
+[node name="Boundary_026" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(872.0, 280.0)
+shape = SubResource("Boundary_026")
+
+[node name="Boundary_027" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(760.0, 360.0)
+shape = SubResource("Boundary_027")
+
+[node name="Boundary_028" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(664.0, 344.0)
+shape = SubResource("Boundary_028")
+
+[node name="Boundary_029" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(840.0, 376.0)
+shape = SubResource("Boundary_029")
+
+[node name="Boundary_030" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1240.0, 408.0)
+shape = SubResource("Boundary_030")
+
+[node name="Boundary_031" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1272.0, 584.0)
+shape = SubResource("Boundary_031")
+
+[node name="Boundary_032" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1352.0, 664.0)
+shape = SubResource("Boundary_032")
+
+[node name="Boundary_033" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(560.0, 152.0)
+shape = SubResource("Boundary_033")
+
+[node name="Boundary_034" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(144.0, 280.0)
+shape = SubResource("Boundary_034")
+
+[node name="Boundary_035" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(232.0, 256.0)
+shape = SubResource("Boundary_035")
+
+[node name="Boundary_036" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(792.0, 256.0)
+shape = SubResource("Boundary_036")
+
+[node name="Boundary_037" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(288.0, 296.0)
+shape = SubResource("Boundary_037")
+
+[node name="Boundary_038" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1256.0, 512.0)
+shape = SubResource("Boundary_038")
+
+[node name="Boundary_039" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(792.0, 528.0)
+shape = SubResource("Boundary_039")
+
+[node name="Boundary_040" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(464.0, 632.0)
+shape = SubResource("Boundary_040")
+
+[node name="Boundary_041" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(552.0, 688.0)
+shape = SubResource("Boundary_041")
+
+[node name="Boundary_042" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(560.0, 760.0)
+shape = SubResource("Boundary_042")
+
+[node name="Boundary_043" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(568.0, 56.0)
+shape = SubResource("Boundary_043")
+
+[node name="Boundary_044" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1096.0, 136.0)
+shape = SubResource("Boundary_044")
+
+[node name="Boundary_045" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(200.0, 216.0)
+shape = SubResource("Boundary_045")
+
+[node name="Boundary_046" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(344.0, 312.0)
+shape = SubResource("Boundary_046")
+
+[node name="Boundary_047" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(392.0, 328.0)
+shape = SubResource("Boundary_047")
+
+[node name="Boundary_048" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1464.0, 328.0)
+shape = SubResource("Boundary_048")
+
+[node name="Boundary_049" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(184.0, 376.0)
+shape = SubResource("Boundary_049")
+
+[node name="Boundary_050" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(360.0, 408.0)
+shape = SubResource("Boundary_050")
+
+[node name="Boundary_051" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1336.0, 408.0)
+shape = SubResource("Boundary_051")
+
+[node name="Boundary_052" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(312.0, 424.0)
+shape = SubResource("Boundary_052")
+
+[node name="Boundary_053" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(72.0, 424.0)
+shape = SubResource("Boundary_053")
+
+[node name="Boundary_054" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(872.0, 520.0)
+shape = SubResource("Boundary_054")
+
+[node name="Boundary_055" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(376.0, 584.0)
+shape = SubResource("Boundary_055")
+
+[node name="Boundary_056" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(184.0, 616.0)
+shape = SubResource("Boundary_056")
+
+[node name="Boundary_057" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(312.0, 616.0)
+shape = SubResource("Boundary_057")
+
+[node name="Boundary_058" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(168.0, 648.0)
+shape = SubResource("Boundary_058")
+
+[node name="Boundary_059" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(520.0, 648.0)
+shape = SubResource("Boundary_059")
+
+[node name="Boundary_060" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1512.0, 664.0)
+shape = SubResource("Boundary_060")
+
+[node name="Boundary_061" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(232.0, 712.0)
+shape = SubResource("Boundary_061")
+
+[node name="Boundary_062" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1432.0, 712.0)
+shape = SubResource("Boundary_062")
+
+[node name="Boundary_063" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(440.0, 728.0)
+shape = SubResource("Boundary_063")
+
+[node name="Boundary_064" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(600.0, 728.0)
+shape = SubResource("Boundary_064")
+
+[node name="Boundary_065" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(504.0, 776.0)
+shape = SubResource("Boundary_065")
+
+[node name="Boundary_066" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1112.0, 760.0)
+shape = SubResource("Boundary_066")
+
+[node name="Boundary_067" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1144.0, 792.0)
+shape = SubResource("Boundary_067")
+
+[node name="Boundary_068" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1184.0, 56.0)
+shape = SubResource("Boundary_068")
+
+[node name="Boundary_069" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(624.0, 88.0)
+shape = SubResource("Boundary_069")
+
+[node name="Boundary_070" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1136.0, 88.0)
+shape = SubResource("Boundary_070")
+
+[node name="Boundary_071" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(504.0, 112.0)
+shape = SubResource("Boundary_071")
+
+[node name="Boundary_072" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(648.0, 112.0)
+shape = SubResource("Boundary_072")
+
+[node name="Boundary_073" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1240.0, 112.0)
+shape = SubResource("Boundary_073")
+
+[node name="Boundary_074" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(880.0, 152.0)
+shape = SubResource("Boundary_074")
+
+[node name="Boundary_075" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(144.0, 184.0)
+shape = SubResource("Boundary_075")
+
+[node name="Boundary_076" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(584.0, 176.0)
+shape = SubResource("Boundary_076")
+
+[node name="Boundary_077" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1232.0, 184.0)
+shape = SubResource("Boundary_077")
+
+[node name="Boundary_078" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1584.0, 232.0)
+shape = SubResource("Boundary_078")
+
+[node name="Boundary_079" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(88.0, 240.0)
+shape = SubResource("Boundary_079")
+
+[node name="Boundary_080" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1232.0, 264.0)
+shape = SubResource("Boundary_080")
+
+[node name="Boundary_081" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1608.0, 256.0)
+shape = SubResource("Boundary_081")
+
+[node name="Boundary_082" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(168.0, 304.0)
+shape = SubResource("Boundary_082")
+
+[node name="Boundary_083" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1560.0, 320.0)
+shape = SubResource("Boundary_083")
+
+[node name="Boundary_084" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(432.0, 344.0)
+shape = SubResource("Boundary_084")
+
+[node name="Boundary_085" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(904.0, 336.0)
+shape = SubResource("Boundary_085")
+
+[node name="Boundary_086" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(144.0, 360.0)
+shape = SubResource("Boundary_086")
+
+[node name="Boundary_087" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1544.0, 352.0)
+shape = SubResource("Boundary_087")
+
+[node name="Boundary_088" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1520.0, 376.0)
+shape = SubResource("Boundary_088")
+
+[node name="Boundary_089" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(96.0, 392.0)
+shape = SubResource("Boundary_089")
+
+[node name="Boundary_090" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(728.0, 384.0)
+shape = SubResource("Boundary_090")
+
+[node name="Boundary_091" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1296.0, 392.0)
+shape = SubResource("Boundary_091")
+
+[node name="Boundary_092" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1376.0, 392.0)
+shape = SubResource("Boundary_092")
+
+[node name="Boundary_093" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1488.0, 392.0)
+shape = SubResource("Boundary_093")
+
+[node name="Boundary_094" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(400.0, 424.0)
+shape = SubResource("Boundary_094")
+
+[node name="Boundary_095" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(272.0, 440.0)
+shape = SubResource("Boundary_095")
+
+[node name="Boundary_096" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(432.0, 440.0)
+shape = SubResource("Boundary_096")
+
+[node name="Boundary_097" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1424.0, 440.0)
+shape = SubResource("Boundary_097")
+
+[node name="Boundary_098" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(192.0, 472.0)
+shape = SubResource("Boundary_098")
+
+[node name="Boundary_099" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(280.0, 480.0)
+shape = SubResource("Boundary_099")
+
+[node name="Boundary_100" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1360.0, 488.0)
+shape = SubResource("Boundary_100")
+
+[node name="Boundary_101" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(216.0, 512.0)
+shape = SubResource("Boundary_101")
+
+[node name="Boundary_102" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(320.0, 520.0)
+shape = SubResource("Boundary_102")
+
+[node name="Boundary_103" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(160.0, 552.0)
+shape = SubResource("Boundary_103")
+
+[node name="Boundary_104" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(128.0, 568.0)
+shape = SubResource("Boundary_104")
+
+[node name="Boundary_105" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(256.0, 568.0)
+shape = SubResource("Boundary_105")
+
+[node name="Boundary_106" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(760.0, 576.0)
+shape = SubResource("Boundary_106")
+
+[node name="Boundary_107" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(904.0, 576.0)
+shape = SubResource("Boundary_107")
+
+[node name="Boundary_108" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(400.0, 600.0)
+shape = SubResource("Boundary_108")
+
+[node name="Boundary_109" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1456.0, 616.0)
+shape = SubResource("Boundary_109")
+
+[node name="Boundary_110" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1232.0, 632.0)
+shape = SubResource("Boundary_110")
+
+[node name="Boundary_111" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(352.0, 664.0)
+shape = SubResource("Boundary_111")
+
+[node name="Boundary_112" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(200.0, 672.0)
+shape = SubResource("Boundary_112")
+
+[node name="Boundary_113" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(384.0, 680.0)
+shape = SubResource("Boundary_113")
+
+[node name="Boundary_114" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1192.0, 672.0)
+shape = SubResource("Boundary_114")
+
+[node name="Boundary_115" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1296.0, 680.0)
+shape = SubResource("Boundary_115")
+
+[node name="Boundary_116" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1408.0, 680.0)
+shape = SubResource("Boundary_116")
+
+[node name="Boundary_117" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(416.0, 696.0)
+shape = SubResource("Boundary_117")
+
+[node name="Boundary_118" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(576.0, 696.0)
+shape = SubResource("Boundary_118")
+
+[node name="Boundary_119" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1264.0, 696.0)
+shape = SubResource("Boundary_119")
+
+[node name="Boundary_120" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1568.0, 696.0)
+shape = SubResource("Boundary_120")
+
+[node name="Boundary_121" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1136.0, 728.0)
+shape = SubResource("Boundary_121")
+
+[node name="Boundary_122" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1592.0, 720.0)
+shape = SubResource("Boundary_122")
+
+[node name="Boundary_123" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(464.0, 760.0)
+shape = SubResource("Boundary_123")
+
+[node name="Boundary_124" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1184.0, 776.0)
+shape = SubResource("Boundary_124")
+
+[node name="Boundary_125" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(536.0, 72.0)
+shape = SubResource("Boundary_125")
+
+[node name="Boundary_126" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(600.0, 72.0)
+shape = SubResource("Boundary_126")
+
+[node name="Boundary_127" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1160.0, 72.0)
+shape = SubResource("Boundary_127")
+
+[node name="Boundary_128" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1208.0, 72.0)
+shape = SubResource("Boundary_128")
+
+[node name="Boundary_129" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(520.0, 88.0)
+shape = SubResource("Boundary_129")
+
+[node name="Boundary_130" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1224.0, 88.0)
+shape = SubResource("Boundary_130")
+
+[node name="Boundary_131" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1112.0, 104.0)
+shape = SubResource("Boundary_131")
+
+[node name="Boundary_132" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(520.0, 136.0)
+shape = SubResource("Boundary_132")
+
+[node name="Boundary_133" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1224.0, 136.0)
+shape = SubResource("Boundary_133")
+
+[node name="Boundary_134" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(120.0, 200.0)
+shape = SubResource("Boundary_134")
+
+[node name="Boundary_135" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(168.0, 200.0)
+shape = SubResource("Boundary_135")
+
+[node name="Boundary_136" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(600.0, 200.0)
+shape = SubResource("Boundary_136")
+
+[node name="Boundary_137" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(104.0, 216.0)
+shape = SubResource("Boundary_137")
+
+[node name="Boundary_138" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(104.0, 264.0)
+shape = SubResource("Boundary_138")
+
+[node name="Boundary_139" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(248.0, 280.0)
+shape = SubResource("Boundary_139")
+
+[node name="Boundary_140" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1592.0, 280.0)
+shape = SubResource("Boundary_140")
+
+[node name="Boundary_141" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1496.0, 296.0)
+shape = SubResource("Boundary_141")
+
+[node name="Boundary_142" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1576.0, 296.0)
+shape = SubResource("Boundary_142")
+
+[node name="Boundary_143" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(888.0, 312.0)
+shape = SubResource("Boundary_143")
+
+[node name="Boundary_144" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1480.0, 312.0)
+shape = SubResource("Boundary_144")
+
+[node name="Boundary_145" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(184.0, 328.0)
+shape = SubResource("Boundary_145")
+
+[node name="Boundary_146" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(200.0, 344.0)
+shape = SubResource("Boundary_146")
+
+[node name="Boundary_147" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1432.0, 344.0)
+shape = SubResource("Boundary_147")
+
+[node name="Boundary_148" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(456.0, 360.0)
+shape = SubResource("Boundary_148")
+
+[node name="Boundary_149" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(888.0, 360.0)
+shape = SubResource("Boundary_149")
+
+[node name="Boundary_150" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1416.0, 360.0)
+shape = SubResource("Boundary_150")
+
+[node name="Boundary_151" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(120.0, 376.0)
+shape = SubResource("Boundary_151")
+
+[node name="Boundary_152" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(472.0, 376.0)
+shape = SubResource("Boundary_152")
+
+[node name="Boundary_153" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1400.0, 376.0)
+shape = SubResource("Boundary_153")
+
+[node name="Boundary_154" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1464.0, 408.0)
+shape = SubResource("Boundary_154")
+
+[node name="Boundary_155" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1448.0, 424.0)
+shape = SubResource("Boundary_155")
+
+[node name="Boundary_156" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(264.0, 456.0)
+shape = SubResource("Boundary_156")
+
+[node name="Boundary_157" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(456.0, 456.0)
+shape = SubResource("Boundary_157")
+
+[node name="Boundary_158" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1400.0, 456.0)
+shape = SubResource("Boundary_158")
+
+[node name="Boundary_159" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1384.0, 472.0)
+shape = SubResource("Boundary_159")
+
+[node name="Boundary_160" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(200.0, 488.0)
+shape = SubResource("Boundary_160")
+
+[node name="Boundary_161" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1240.0, 488.0)
+shape = SubResource("Boundary_161")
+
+[node name="Boundary_162" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(296.0, 504.0)
+shape = SubResource("Boundary_162")
+
+[node name="Boundary_163" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(200.0, 520.0)
+shape = SubResource("Boundary_163")
+
+[node name="Boundary_164" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(184.0, 536.0)
+shape = SubResource("Boundary_164")
+
+[node name="Boundary_165" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(344.0, 536.0)
+shape = SubResource("Boundary_165")
+
+[node name="Boundary_166" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(360.0, 552.0)
+shape = SubResource("Boundary_166")
+
+[node name="Boundary_167" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(776.0, 552.0)
+shape = SubResource("Boundary_167")
+
+[node name="Boundary_168" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(888.0, 552.0)
+shape = SubResource("Boundary_168")
+
+[node name="Boundary_169" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(104.0, 584.0)
+shape = SubResource("Boundary_169")
+
+[node name="Boundary_170" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(232.0, 584.0)
+shape = SubResource("Boundary_170")
+
+[node name="Boundary_171" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(280.0, 584.0)
+shape = SubResource("Boundary_171")
+
+[node name="Boundary_172" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(216.0, 600.0)
+shape = SubResource("Boundary_172")
+
+[node name="Boundary_173" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(296.0, 600.0)
+shape = SubResource("Boundary_173")
+
+[node name="Boundary_174" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(776.0, 600.0)
+shape = SubResource("Boundary_174")
+
+[node name="Boundary_175" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(888.0, 600.0)
+shape = SubResource("Boundary_175")
+
+[node name="Boundary_176" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(424.0, 616.0)
+shape = SubResource("Boundary_176")
+
+[node name="Boundary_177" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1256.0, 616.0)
+shape = SubResource("Boundary_177")
+
+[node name="Boundary_178" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(152.0, 632.0)
+shape = SubResource("Boundary_178")
+
+[node name="Boundary_179" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1480.0, 632.0)
+shape = SubResource("Boundary_179")
+
+[node name="Boundary_180" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(328.0, 648.0)
+shape = SubResource("Boundary_180")
+
+[node name="Boundary_181" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1208.0, 648.0)
+shape = SubResource("Boundary_181")
+
+[node name="Boundary_182" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1496.0, 648.0)
+shape = SubResource("Boundary_182")
+
+[node name="Boundary_183" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(136.0, 664.0)
+shape = SubResource("Boundary_183")
+
+[node name="Boundary_184" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(216.0, 680.0)
+shape = SubResource("Boundary_184")
+
+[node name="Boundary_185" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1496.0, 680.0)
+shape = SubResource("Boundary_185")
+
+[node name="Boundary_186" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1544.0, 680.0)
+shape = SubResource("Boundary_186")
+
+[node name="Boundary_187" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1176.0, 696.0)
+shape = SubResource("Boundary_187")
+
+[node name="Boundary_188" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1160.0, 712.0)
+shape = SubResource("Boundary_188")
+
+[node name="Boundary_189" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1256.0, 712.0)
+shape = SubResource("Boundary_189")
+
+[node name="Boundary_190" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1240.0, 728.0)
+shape = SubResource("Boundary_190")
+
+[node name="Boundary_191" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1224.0, 744.0)
+shape = SubResource("Boundary_191")
+
+[node name="Boundary_192" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1448.0, 744.0)
+shape = SubResource("Boundary_192")
+
+[node name="Boundary_193" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1576.0, 744.0)
+shape = SubResource("Boundary_193")
+
+[node name="Boundary_194" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1208.0, 760.0)
+shape = SubResource("Boundary_194")
+
+[node name="Boundary_195" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(808.0, 936.0)
+shape = SubResource("Boundary_195")
+
+[node name="Boundary_196" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(836.0, -16.0)
+shape = SubResource("Boundary_196")
+
+[node name="Boundary_197" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(836.0, 957.0)
+shape = SubResource("Boundary_197")
+
+[node name="Boundary_198" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(-16.0, 470.5)
+shape = SubResource("Boundary_198")
+
+[node name="Boundary_199" type="CollisionShape2D" parent="Terrain"]
+position = Vector2(1688.0, 470.5)
+shape = SubResource("Boundary_199")
+
+[node name="Chapter3Passage" type="Area2D" parent="."]
+position = Vector2(1148,751)
+script = ExtResource("ice_gate")
+portal_id = &"chapter3_entry"
+target_chapter = 3
+portal_color = Color(0.4,0.85,1,1)
+collision_layer = 32
+collision_mask = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chapter3Passage"]
+shape = SubResource("Portal")

@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bwag3xgvq1kjy"]
+
+[ext_resource type="Texture2D" uid="uid://8823hkgcg2ee" path="res://Maps/Level3/3-6.png" id="bg"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://cdyjyh6hhiad3" path="res://Scence/Chapter3/gate.gd" id="portal"]
+[ext_resource type="Script" uid="uid://bl7hffq5eadi2" path="res://Scence/Chapter3/arena.gd" id="script"]
+
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(32, 22)
+
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(46, 18)
+
+[node name="Arena3_6" type="Node2D" unique_id=1834154989]
+script = ExtResource("script")
+level_index = 23
+
+[node name="Background" type="Sprite2D" parent="." unique_id=564460853]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=119799618]
+collision_layer = 2
+collision_mask = 0
+
+[node name="FloorBoundary_0" type="CollisionPolygon2D" parent="Terrain" unique_id=419392661]
+build_mode = 1
+polygon = PackedVector2Array(1430, 103, 1513, 120, 1505, 284, 1342, 349, 1072, 473, 1051, 513, 1121, 555, 1036, 603, 900, 548, 806, 587, 458, 746, 310, 761, 296, 792, 304, 867, 207, 873, 203, 740, 197, 674, 276, 596, 346, 692, 603, 614, 707, 552, 702, 495, 725, 436, 624, 344, 664, 327, 775, 386, 842, 388, 1007, 425, 1263, 308, 1271, 210, 1396, 204)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1014356306]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1806072905]
+position = Vector2(401, 729)
+
+[node name="Player" parent="." unique_id=1181026398 instance=ExtResource("player")]
+position = Vector2(401, 729)
+
+[node name="Portals" type="Node2D" parent="." unique_id=198616825]
+
+[node name="Exit" type="Area2D" parent="Portals" unique_id=37504737]
+position = Vector2(1473, 195)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"arena_exit"
+level_index = 23
+target_chapter = -1
+portal_color = Color(0.6666667, 0.8745098, 1, 1)
+visual_offset = Vector2(0, -60)
+visual_radius = 25.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit" unique_id=778365476]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit" unique_id=571875254]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier" unique_id=286179319]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="LockedEntrance" type="Area2D" parent="Portals" unique_id=1604459937]
+position = Vector2(259, 757)
+collision_layer = 32
+script = ExtResource("portal")
+portal_id = &"arena_entry"
+level_index = 23
+target_chapter = -2
+portal_color = Color(1, 0.20392157, 0.53333336, 1)
+visual_offset = Vector2(0, -60)
+visual_radius = 25.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance" unique_id=1647503927]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance" unique_id=366886705]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier" unique_id=1364078739]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="ArenaCenter" type="Marker2D" parent="." unique_id=1710925550]
+position = Vector2(859, 499)
+
+[node name="EnemySpawns" type="Node2D" parent="." unique_id=26657013]
+
+[node name="Spawn0" type="Marker2D" parent="EnemySpawns" unique_id=431488618]
+position = Vector2(974, 498)
+
+[node name="Spawn1" type="Marker2D" parent="EnemySpawns" unique_id=1891311839]
+position = Vector2(942, 534)
+
+[node name="Spawn2" type="Marker2D" parent="EnemySpawns" unique_id=672356854]
+position = Vector2(858, 550)
+
+[node name="Spawn3" type="Marker2D" parent="EnemySpawns" unique_id=906463583]
+position = Vector2(778, 534)
+
+[node name="Spawn4" type="Marker2D" parent="EnemySpawns" unique_id=99621484]
+position = Vector2(742, 498)
+
+[node name="Spawn5" type="Marker2D" parent="EnemySpawns" unique_id=738263273]
+position = Vector2(778, 462)
+
+[node name="Spawn6" type="Marker2D" parent="EnemySpawns" unique_id=1842432616]
+position = Vector2(858, 446)
+
+[node name="Spawn7" type="Marker2D" parent="EnemySpawns" unique_id=217627110]
+position = Vector2(942, 462)

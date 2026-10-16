@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/omo.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "omo"
+display_name = "奥摩"
+character_type = 2
+max_health = 240
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.16711590296495957,0.16711590296495957)
+sprite_offset = Vector2(0,-30.33153638814016)
+reaction_scale = Vector2(0.16711590296495957,0.16711590296495957)
+reaction_offset = Vector2(0,-30.33153638814016)
+ultimate_scale = Vector2(0.16711590296495957,0.16711590296495957)
+ultimate_offset = Vector2(0,-30.33153638814016)
+hurtbox_size = Vector2(39.68,50.839999999999996)
+hurtbox_offset = Vector2(0,-29.139999999999997)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+faces_right = true

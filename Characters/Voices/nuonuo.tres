@@ -1,0 +1,46 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/voice_profile.gd" id="1"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/alert.wav" id="alert"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/battle_1.wav" id="battle_1"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/battle_2.wav" id="battle_2"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/death.wav" id="death"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/determined.wav" id="determined"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/hurt.wav" id="hurt"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/proud.wav" id="proud"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/skill.wav" id="skill"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/startled.wav" id="startled"]
+[ext_resource type="AudioStream" path="res://Audio/糯糯/OriginalVariants/victory.wav" id="victory"]
+
+[resource]
+script = ExtResource("1")
+idle = Array[AudioStream]([ExtResource("alert")])
+death = Array[AudioStream]([ExtResource("death")])
+battle = Array[AudioStream]([ExtResource("battle_1"), ExtResource("battle_2")])
+angry = Array[AudioStream]([ExtResource("determined")])
+afraid = Array[AudioStream]([ExtResource("alert")])
+terrified = Array[AudioStream]([ExtResource("startled")])
+proud = Array[AudioStream]([ExtResource("proud")])
+dialogue = Array[AudioStream]([ExtResource("alert")])
+hurt = Array[AudioStream]([ExtResource("hurt")])
+skill = Array[AudioStream]([ExtResource("skill")])
+ultimate = Array[AudioStream]([ExtResource("skill")])
+victory = Array[AudioStream]([ExtResource("victory")])
+exhausted = Array[AudioStream]([ExtResource("determined")])
+event_text = {
+"idle": ["（轻声自语）"],
+"death": ["（力竭时的低声回应）"],
+"battle": ["（轻声为自己加油）"],
+"angry": ["（连续受击后，坚定地鼓励自己）"],
+"afraid": ["（警惕陌生环境）"],
+"terrified": ["（发现强敌，安慰自己）"],
+"proud": ["（轻声开心）"],
+"dialogue": ["（安慰同伴）"],
+"hurt": ["（受伤后自我鼓励）"],
+"skill": ["（轻声回应）"],
+"ultimate": ["（集中精神）"],
+"victory": ["（开心）"],
+"exhausted": ["（低声鼓励自己）"]
+}
+volume_db = 0.0
+max_duration = 0.0
+event_cooldowns = {"battle": 12.0, "hurt": 4.0, "afraid": 20.0, "terrified": 20.0, "angry": 12.0, "proud": 14.0, "skill": 5.0}

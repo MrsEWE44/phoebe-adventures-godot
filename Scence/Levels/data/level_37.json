@@ -1,0 +1,11 @@
+{
+  "name": "最后的合奏",
+  "map": "Maps/Level4/幽暗沼泽哥特遗迹迷宫.png",
+  "chapter": 4,
+  "number": 10,
+  "waves": 5,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 最后的合奏。左门封锁，完成挑战后从右门离开。"
+  }
+}

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/snake.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/creature.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "snake"
+display_name = "遗迹蛇"
+character_type = 1
+max_health = 38
+movement_speed = 40
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.11,0.11)
+sprite_offset = Vector2(0.0000, -11.8800)
+hurtbox_size = Vector2(35.4300, 25.2000)
+hurtbox_offset = Vector2(-0.0550, -12.1000)
+ranged_attack = true
+foot_size = Vector2(14.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"default": [Rect2(-16.4500, -24.5900, 34.0000, 25.0900), Rect2(-17.6600, -24.7000, 34.5500, 25.0900), Rect2(-17.6600, -24.7000, 34.2200, 25.0900), Rect2(-17.7700, -24.7000, 35.4300, 24.3200)]}
+
+behavior = "ranged"

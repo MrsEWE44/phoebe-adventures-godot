@@ -1,0 +1,11 @@
+{
+  "name": "黄白和弦",
+  "map": "Maps/Level4/幽冥沼泽墓园传送之路.png",
+  "chapter": 4,
+  "number": 2,
+  "waves": 2,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 黄白和弦。左门封锁，完成挑战后从右门离开。"
+  }
+}

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="s"]
+[resource]
+script = ExtResource("s")
+display_name = "贴地滑翔"
+weapon_id = "penguin_wing"
+cooldown = 8.0
+initial_charges = 3
+max_charges = 5

@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://nx3nqsegufpp"]
+
+[ext_resource type="Texture2D" uid="uid://ovwvdlnjacy5" path="res://Maps/Level5/5-1.png" id="bg"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" uid="uid://cdyjyh6hhiad3" path="res://Scence/Chapter3/gate.gd" id="gate"]
+[ext_resource type="Script" uid="uid://dyq6kextixiwk" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="PackedScene" uid="uid://ci1iuddmn5wb2" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="Script" uid="uid://cyo1jay1dckq1" path="res://Scence/Chapter5/arena.gd" id="script"]
+
+[sub_resource type="RectangleShape2D" id="Gate"]
+size = Vector2(38, 24)
+
+[sub_resource type="RectangleShape2D" id="Barrier"]
+size = Vector2(42, 20)
+
+[node name="Hell_1" type="Node2D" unique_id=865266110]
+script = ExtResource("script")
+level_index = 38
+biome = "hell"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=720780625]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="." unique_id=763876842]
+collision_layer = 2
+collision_mask = 0
+
+[node name="StoneRoad_0" type="CollisionPolygon2D" parent="Terrain" unique_id=9122623]
+build_mode = 1
+polygon = PackedVector2Array(986, 201, 813, 246, 808, 402, 892, 440, 1016, 506, 1205, 499, 1368, 444, 1407, 570, 1285, 582, 1200, 557, 983, 554, 852, 644, 813, 658, 828, 778, 892, 816, 1020, 848, 1013, 884, 975, 921, 732, 928, 535, 844, 741, 779, 748, 660, 636, 644, 540, 548, 215, 548, 60, 574, 44, 507, 74, 456, 137, 452, 229, 487, 515, 494, 586, 498, 731, 409, 741, 243, 616, 232, 589, 141, 689, 124, 909, 122)
+
+[node name="Navigation" type="Node2D" parent="." unique_id=1599591904]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="." unique_id=1484743372]
+position = Vector2(168, 530)
+
+[node name="ArenaCenter" type="Marker2D" parent="." unique_id=661254032]
+position = Vector2(775, 532)
+
+[node name="RescuePosition" type="Marker2D" parent="." unique_id=1056474547]
+position = Vector2(702, 576)
+
+[node name="Player" parent="." unique_id=1168107136 instance=ExtResource("player")]
+position = Vector2(168, 530)
+
+[node name="Portals" type="Node2D" parent="." unique_id=1491913106]
+
+[node name="LockedEntrance" type="Area2D" parent="Portals" unique_id=833722293]
+position = Vector2(104, 525)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"LockedEntrance"
+level_index = 38
+target_chapter = -2
+portal_color = Color(1, 0.15, 0.2, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance" unique_id=1517976048]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/LockedEntrance" unique_id=351805571]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/LockedEntrance/Barrier" unique_id=1948804196]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="Exit" type="Area2D" parent="Portals" unique_id=1500768201]
+position = Vector2(1339, 523)
+collision_layer = 32
+script = ExtResource("gate")
+portal_id = &"Exit"
+level_index = 38
+target_chapter = -1
+portal_color = Color(0.3, 1, 0.7, 1)
+visual_offset = Vector2(0, -35)
+visual_radius = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit" unique_id=2147124839]
+shape = SubResource("Gate")
+
+[node name="Barrier" type="StaticBody2D" parent="Portals/Exit" unique_id=10469267]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portals/Exit/Barrier" unique_id=1247636996]
+shape = SubResource("Barrier")
+disabled = true
+
+[node name="EnemySpawns" type="Node2D" parent="." unique_id=623625840]
+
+[node name="Spawn_0" type="Marker2D" parent="EnemySpawns" unique_id=54861962]
+position = Vector2(644, 532)
+
+[node name="Spawn_1" type="Marker2D" parent="EnemySpawns" unique_id=2110081263]
+position = Vector2(912, 532)
+
+[node name="Spawn_2" type="Marker2D" parent="EnemySpawns" unique_id=984008482]
+position = Vector2(775, 456)
+
+[node name="Spawn_3" type="Marker2D" parent="EnemySpawns" unique_id=2116334586]
+position = Vector2(775, 614)
+
+[node name="Spawn_4" type="Marker2D" parent="EnemySpawns" unique_id=325797236]
+position = Vector2(702, 576)
+
+[node name="Spawn_5" type="Marker2D" parent="EnemySpawns" unique_id=921367958]
+position = Vector2(862, 576)
+
+[node name="Doors" type="Node2D" parent="." unique_id=1174531857]
+
+[node name="Switches" type="Node2D" parent="." unique_id=649644084]
+
+[node name="Chests" type="Node2D" parent="." unique_id=1473195646]
+
+[node name="Supply" parent="Chests" unique_id=1011937258 instance=ExtResource("chest")]
+position = Vector2(891, 554)
+chest_id = "hell_supply"
+reward = "health_large"

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="s"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/mouse_green.tres" id="a"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="u"]
+[resource]
+script = ExtResource("s")
+character_id = "mouse_green_mini"
+display_name = "奶娃鼠铁壁中级体"
+character_type = 3
+max_health = 600
+movement_speed = 110
+default_weapon = "fists"
+animations = ExtResource("a")
+reaction_animations = ExtResource("a")
+ultimate_animations = ExtResource("a")
+ultimate = ExtResource("u")
+sprite_scale = Vector2(0.32275132275132273,0.32275132275132273)
+sprite_offset = Vector2(0,-29.20899470899471)
+reaction_scale = Vector2(0.32275132275132273,0.32275132275132273)
+reaction_offset = Vector2(0,-29.20899470899471)
+ultimate_scale = Vector2(0.32275132275132273,0.32275132275132273)
+ultimate_offset = Vector2(0,-29.20899470899471)
+hurtbox_size = Vector2(39.04,50.019999999999996)
+hurtbox_offset = Vector2(0,-28.669999999999998)
+foot_size = Vector2(16,10)
+home_biome = "hell"
+faces_right = true

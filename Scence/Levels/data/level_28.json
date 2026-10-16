@@ -1,0 +1,11 @@
+{
+  "name": "失声的琴房",
+  "map": "Maps/Level4/哥特沼泽遗迹传送之路.png",
+  "chapter": 4,
+  "number": 1,
+  "waves": 2,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "第四章 · 失声的琴房。左门封锁，完成挑战后从右门离开。"
+  }
+}

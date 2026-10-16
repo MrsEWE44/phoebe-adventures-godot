@@ -1,0 +1,26 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/abyss_king.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/abyss_king.tres" id="3"]
+[resource]
+script = ExtResource("1")
+character_id = "abyss_king"
+display_name = "深渊蟹王"
+character_type = 3
+max_health = 620
+movement_speed = 37.0
+aquatic = true
+ranged_attack = true
+animations = ExtResource("2")
+ultimate = ExtResource("3")
+sprite_scale = Vector2(0.18282111899133174,0.18282111899133174)
+sprite_offset = Vector2(0.0000, -26.7376)
+hurtbox_size = Vector2(55.2979, 55.2979)
+hurtbox_offset = Vector2(-0.1828, -28.0173)
+foot_size = Vector2(20.0000, 8.0000)
+foot_offset = Vector2(0.0000, -2.0000)
+hurtbox_frames = {"idle": [Rect2(-24.5410, -54.9350, 51.6414, 54.5666), Rect2(-26.1864, -55.6663, 53.2868, 53.4697), Rect2(-26.5520, -55.4834, 52.9212, 54.0181), Rect2(-27.8318, -55.6663, 55.2979, 53.4697)], "walk": [Rect2(-24.5410, -54.9350, 51.6414, 54.5666), Rect2(-26.1864, -55.6663, 53.2868, 53.4697), Rect2(-26.5520, -55.4834, 52.9212, 54.0181), Rect2(-27.8318, -55.6663, 55.2979, 53.4697)], "default": [Rect2(-24.5410, -54.9350, 51.6414, 54.5666), Rect2(-26.1864, -55.6663, 53.2868, 53.4697), Rect2(-26.5520, -55.4834, 52.9212, 54.0181), Rect2(-27.8318, -55.6663, 55.2979, 53.4697)]}
+
+home_biome = "ocean"
+
+behavior = "ranged"

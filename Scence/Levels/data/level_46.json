@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 9,
+  "name": "时空胶囊的交易",
+  "map": "Maps/Level5/5-9.png",
+  "waves": 10,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

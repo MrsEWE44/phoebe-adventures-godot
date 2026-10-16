@@ -1,0 +1,177 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://Scence/Levels/level.gd" id="script"]
+[ext_resource type="Texture2D" path="res://Maps/Level2/2-3.png" id="bg"]
+[ext_resource type="Script" path="res://Scence/Levels/geometry.gd" id="nav"]
+[ext_resource type="Script" path="res://Scence/Levels/mechanism.gd" id="mech"]
+[ext_resource type="Script" path="res://Scence/portal.gd" id="portal"]
+[ext_resource type="PackedScene" path="res://Player/Phoebe.tscn" id="player"]
+[ext_resource type="PackedScene" path="res://Combat/chest.tscn" id="chest"]
+[ext_resource type="Script" path="res://Characters/sea_npc.gd" id="npc"]
+[ext_resource type="Script" path="res://Scence/underwater.gd" id="water"]
+[ext_resource type="Script" path="res://Scence/sea_vent.gd" id="vent"]
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(44,14)
+[sub_resource type="RectangleShape2D" id="Portal"]
+size = Vector2(30,20)
+[sub_resource type="CircleShape2D" id="Exit"]
+radius = 22.0
+[sub_resource type="RectangleShape2D" id="Vent"]
+size = Vector2(24,22)
+
+[node name="Level2_3" type="Node2D"]
+script = ExtResource("script")
+level_index = 10
+biome = "ocean"
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("bg")
+centered = false
+
+[node name="Terrain" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="FloorBoundary_0" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(820, 96, 852, 96, 868, 112, 868, 188, 896, 188, 896, 192, 1060, 192, 1060, 188, 1068, 188, 1076, 180, 1088, 180, 1088, 176, 1096, 176, 1096, 172, 1104, 172, 1112, 164, 1124, 164, 1124, 160, 1132, 160, 1132, 156, 1140, 156, 1148, 148, 1164, 148, 1180, 164, 1180, 180, 1168, 192, 1160, 192, 1160, 196, 1152, 196, 1152, 200, 1144, 200, 1136, 208, 1124, 208, 1124, 212, 1116, 212, 1116, 216, 1108, 216, 1100, 224, 1088, 224, 1088, 228, 1080, 228, 1072, 236, 880, 236, 880, 240, 868, 240, 868, 396, 992, 396, 992, 392, 1000, 392, 1000, 388, 1008, 388, 1008, 384, 1016, 384, 1024, 376, 1036, 376, 1036, 372, 1140, 372, 1144, 360, 1152, 356, 1152, 348, 1160, 344, 1160, 336, 1172, 324, 1200, 320, 1200, 316, 1212, 316, 1212, 312, 1224, 312, 1224, 308, 1236, 308, 1236, 304, 1252, 304, 1252, 300, 1404, 300, 1404, 272, 1408, 272, 1408, 244, 1412, 240, 1296, 236, 1296, 232, 1284, 232, 1272, 220, 1272, 208, 1268, 208, 1268, 200, 1260, 192, 1260, 180, 1256, 180, 1260, 164, 1272, 160, 1272, 156, 1296, 160, 1300, 172, 1304, 172, 1308, 192, 1428, 196, 1440, 180, 1464, 180, 1476, 192, 1472, 232, 1456, 248, 1456, 276, 1452, 276, 1452, 304, 1448, 308, 1476, 312, 1476, 316, 1488, 316, 1488, 320, 1520, 328, 1520, 336, 1536, 352, 1540, 368, 1556, 384, 1556, 476, 1576, 484, 1576, 500, 1556, 508, 1556, 512, 1548, 512, 1548, 528, 1552, 528, 1552, 536, 1556, 536, 1556, 544, 1560, 544, 1560, 552, 1564, 552, 1564, 560, 1572, 568, 1572, 592, 1564, 600, 1556, 600, 1544, 616, 1536, 616, 1528, 628, 1520, 628, 1512, 640, 1504, 640, 1500, 648, 1412, 648, 1384, 680, 1372, 684, 1372, 696, 1380, 700, 1380, 708, 1396, 724, 1396, 732, 1400, 732, 1400, 740, 1404, 740, 1404, 748, 1408, 748, 1408, 756, 1412, 756, 1420, 776, 1520, 792, 1524, 804, 1528, 804, 1528, 820, 1524, 820, 1520, 832, 1496, 836, 1496, 832, 1444, 828, 1444, 824, 1420, 824, 1420, 820, 1388, 816, 1380, 796, 1376, 796, 1376, 788, 1372, 788, 1372, 780, 1368, 780, 1368, 772, 1364, 772, 1364, 764, 1360, 764, 1360, 756, 1356, 756, 1356, 748, 1352, 748, 1352, 740, 1344, 736, 1344, 728, 1336, 724, 1336, 716, 1328, 708, 1316, 708, 1316, 712, 1268, 712, 1268, 716, 1216, 716, 1216, 720, 1168, 720, 1164, 724, 1164, 720, 1128, 712, 1120, 704, 1084, 696, 1076, 688, 1040, 680, 1032, 672, 1016, 672, 1016, 668, 1004, 668, 1004, 664, 992, 664, 992, 660, 980, 660, 980, 656, 968, 656, 968, 652, 956, 652, 956, 648, 944, 648, 944, 644, 932, 644, 932, 640, 920, 640, 920, 636, 872, 624, 872, 620, 868, 620, 868, 924, 864, 924, 864, 932, 856, 940, 816, 940, 808, 932, 808, 924, 804, 924, 804, 616, 800, 620, 764, 624, 764, 628, 748, 628, 748, 632, 712, 636, 712, 640, 692, 640, 684, 648, 672, 648, 672, 652, 664, 652, 664, 656, 656, 656, 656, 660, 648, 660, 640, 668, 628, 668, 628, 672, 620, 672, 620, 676, 612, 676, 612, 680, 604, 680, 604, 684, 596, 684, 588, 692, 576, 692, 576, 696, 568, 696, 568, 700, 560, 700, 560, 704, 552, 704, 552, 708, 544, 708, 536, 716, 524, 716, 524, 720, 404, 716, 404, 712, 388, 708, 384, 700, 360, 692, 356, 684, 324, 672, 320, 664, 312, 664, 308, 656, 300, 656, 296, 648, 288, 648, 284, 640, 268, 636, 256, 624, 136, 620, 112, 644, 120, 676, 140, 692, 140, 700, 176, 736, 184, 736, 208, 760, 216, 760, 228, 772, 268, 776, 276, 784, 280, 800, 276, 800, 276, 812, 264, 816, 264, 820, 204, 812, 184, 792, 176, 792, 168, 780, 148, 772, 108, 732, 108, 724, 84, 704, 84, 696, 76, 688, 76, 676, 72, 676, 72, 664, 68, 664, 68, 652, 64, 652, 64, 628, 84, 612, 80, 600, 76, 600, 80, 588, 92, 584, 92, 580, 108, 580, 108, 576, 200, 576, 180, 556, 180, 548, 164, 536, 164, 528, 156, 524, 156, 468, 152, 468, 152, 456, 148, 456, 148, 448, 140, 440, 140, 428, 132, 420, 144, 348, 156, 344, 160, 336, 184, 328, 188, 320, 212, 312, 208, 228, 188, 220, 184, 208, 180, 208, 180, 188, 184, 188, 188, 176, 216, 176, 216, 180, 224, 180, 240, 196, 248, 196, 248, 192, 288, 192, 288, 188, 332, 188, 340, 180, 344, 164, 352, 160, 356, 144, 368, 132, 376, 132, 376, 128, 488, 128, 488, 132, 496, 132, 496, 136, 504, 136, 512, 144, 524, 144, 524, 148, 532, 148, 532, 152, 540, 152, 540, 156, 548, 156, 556, 164, 568, 164, 568, 168, 576, 168, 576, 172, 584, 172, 592, 180, 604, 180, 604, 184, 612, 184, 620, 192, 776, 192, 776, 188, 804, 188, 804, 112)
+
+[node name="FloorBoundary_1" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(432, 172, 428, 176, 392, 176, 388, 188, 380, 192, 376, 208, 368, 212, 368, 220, 360, 228, 300, 232, 300, 236, 260, 236, 256, 240, 256, 288, 260, 288, 260, 300, 448, 300, 456, 312, 464, 312, 480, 332, 488, 332, 504, 352, 512, 352, 532, 372, 616, 372, 616, 376, 628, 376, 628, 380, 640, 380, 640, 384, 656, 384, 656, 388, 668, 388, 668, 392, 680, 392, 680, 396, 692, 396, 692, 400, 792, 400, 792, 396, 804, 396, 804, 240, 792, 240, 792, 236, 608, 236, 608, 232, 600, 232, 592, 224, 580, 224, 580, 220, 572, 220, 572, 216, 564, 216, 556, 208, 544, 208, 544, 204, 536, 204, 536, 200, 528, 200, 528, 196, 520, 196, 512, 188, 500, 188, 500, 184, 492, 184, 492, 180, 484, 180, 476, 172)
+
+[node name="FloorBoundary_2" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(244, 344, 184, 376, 180, 416, 184, 416, 184, 428, 188, 428, 188, 436, 196, 444, 196, 456, 200, 456, 200, 508, 280, 588, 288, 588, 292, 596, 300, 596, 304, 604, 312, 604, 316, 612, 336, 620, 340, 628, 364, 636, 368, 644, 400, 656, 412, 668, 432, 668, 432, 672, 520, 672, 520, 668, 528, 668, 528, 664, 536, 664, 544, 656, 556, 656, 556, 652, 564, 652, 564, 648, 572, 648, 572, 644, 580, 644, 580, 640, 588, 640, 596, 632, 608, 632, 608, 628, 616, 628, 616, 624, 624, 624, 624, 620, 632, 620, 640, 612, 652, 612, 652, 608, 660, 608, 668, 600, 732, 588, 740, 576, 748, 576, 756, 568, 800, 564, 804, 560, 804, 444, 680, 444, 680, 440, 668, 440, 668, 436, 620, 424, 620, 420, 516, 416, 496, 396, 488, 396, 480, 384, 472, 384, 456, 364, 448, 364, 432, 344)
+
+[node name="FloorBoundary_3" type="CollisionPolygon2D" parent="Terrain"]
+build_mode = 1
+polygon = PackedVector2Array(1256, 348, 1224, 356, 1224, 360, 1212, 360, 1212, 364, 1200, 364, 1188, 376, 1188, 384, 1176, 396, 1176, 404, 1164, 416, 1152, 416, 1152, 420, 1040, 420, 1040, 424, 1016, 432, 1016, 436, 996, 440, 996, 444, 868, 444, 868, 560, 872, 564, 916, 568, 916, 572, 936, 580, 936, 588, 932, 588, 936, 596, 948, 596, 948, 600, 960, 600, 960, 604, 972, 604, 972, 608, 984, 608, 984, 612, 996, 612, 996, 616, 1008, 616, 1008, 620, 1056, 632, 1056, 636, 1068, 636, 1076, 644, 1112, 652, 1120, 660, 1144, 664, 1144, 668, 1164, 672, 1164, 676, 1240, 672, 1240, 668, 1288, 668, 1288, 664, 1332, 664, 1352, 640, 1360, 640, 1396, 604, 1484, 604, 1496, 588, 1504, 588, 1512, 576, 1520, 576, 1520, 568, 1516, 568, 1516, 560, 1512, 560, 1512, 552, 1508, 552, 1508, 544, 1500, 536, 1500, 512, 1504, 508, 1484, 500, 1484, 484, 1504, 476, 1504, 472, 1512, 472, 1512, 404, 1508, 404, 1504, 388, 1496, 384, 1496, 376, 1488, 372, 1488, 364, 1460, 360, 1460, 356, 1432, 352, 1432, 348)
+
+[node name="Navigation" type="Node2D" parent="."]
+script = ExtResource("nav")
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(836,874)
+
+[node name="Bridges" type="Node2D" parent="."]
+
+[node name="ReturnPortal" type="Area2D" parent="."]
+position = Vector2(836,882)
+collision_layer = 32
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ReturnPortal"]
+shape = SubResource("Exit")
+
+[node name="Label" type="Label" parent="ReturnPortal"]
+offset_left = -42.0
+offset_top = 15.0
+text = "通关后 E 返回"
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="door_1" type="Node2D" parent="Doors"]
+position = Vector2(203,201)
+script = ExtResource("mech")
+config = {"id": "door_1", "type": "door", "label": "潮封门 1", "requires": ["rune_1"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_1"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_1/Barrier"]
+shape = SubResource("Door")
+
+[node name="door_2" type="Node2D" parent="Doors"]
+position = Vector2(1452,211)
+script = ExtResource("mech")
+config = {"id": "door_2", "type": "door", "label": "潮封门 2", "requires": ["rune_2"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_2"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_2/Barrier"]
+shape = SubResource("Door")
+
+[node name="door_3" type="Node2D" parent="Doors"]
+position = Vector2(836,139)
+script = ExtResource("mech")
+config = {"id": "door_3", "type": "door", "label": "潮封门 3", "requires": ["rune_3"]}
+
+[node name="Barrier" type="StaticBody2D" parent="Doors/door_3"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/door_3/Barrier"]
+shape = SubResource("Door")
+
+[node name="Switches" type="Node2D" parent="."]
+
+[node name="EncounterSpawns" type="Node2D" parent="."]
+
+[node name="Chests" type="Node2D" parent="."]
+
+[node name="Traps" type="Node2D" parent="."]
+
+[node name="rune_1" type="Node2D" parent="Switches"]
+position = Vector2(287,321)
+script = ExtResource("mech")
+config = {"id": "rune_1", "type": "lever", "label": "压力阀 1"}
+
+[node name="door_1" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(218.0,242.0)
+
+[node name="PressureVent_0" type="Area2D" parent="Traps"]
+position = Vector2(286.0,334.0)
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("vent")
+disabled_by = "rune_1"
+period = 4.15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_0"]
+shape = SubResource("Vent")
+
+[node name="rune_2" type="Node2D" parent="Switches"]
+position = Vector2(1352,323)
+script = ExtResource("mech")
+config = {"id": "rune_2", "type": "plate", "label": "蓄能踏板 2"}
+
+[node name="door_2" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(1446.0,254.0)
+
+[node name="rune_3" type="Node2D" parent="Switches"]
+position = Vector2(836,335)
+script = ExtResource("mech")
+config = {"id": "rune_3", "type": "wheel", "label": "连锁灯阵 3"}
+
+[node name="door_3" type="Marker2D" parent="EncounterSpawns"]
+position = Vector2(834.0,182.0)
+
+[node name="PressureVent_2" type="Area2D" parent="Traps"]
+position = Vector2(834.0,382.0)
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("vent")
+disabled_by = "rune_3"
+period = 4.15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Traps/PressureVent_2"]
+shape = SubResource("Vent")
+
+[node name="Supply_0" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(854.0,866.0)
+chest_id = "sea3_supply_0"
+reward = "health"
+
+[node name="Supply_1" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(286.0,334.0)
+chest_id = "sea3_supply_1"
+reward = "energy"
+
+[node name="Supply_2" parent="Chests" instance=ExtResource("chest")]
+position = Vector2(834.0,358.0)
+chest_id = "sea3_supply_2"
+reward = "harpoon"
+

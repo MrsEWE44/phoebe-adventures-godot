@@ -1,0 +1,34 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://Scence/Chapter5/enemy.gd" id="s"]
+[ext_resource type="Resource" path="res://Characters/Definitions/kangaroo_red_minion.tres" id="d"]
+[ext_resource type="Script" path="res://Combat/hurtbox.gd" id="h"]
+[ext_resource type="SpriteFrames" path="res://Art/Chapter5/kangaroo_red.tres" id="a"]
+[sub_resource type="RectangleShape2D" id="FootShape"]
+resource_local_to_scene = true
+size = Vector2(18,10)
+[sub_resource type="RectangleShape2D" id="BodyShape"]
+resource_local_to_scene = true
+size = Vector2(23.68,30.34)
+[node name="kangaroo_red_minion" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("s")
+definition = ExtResource("d")
+use_scene_collision_shapes = true
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0,-18.062130177514792)
+scale = Vector2(0.10946745562130178,0.10946745562130178)
+sprite_frames = ExtResource("a")
+animation = &"idle"
+[node name="FootCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0,-2)
+shape = SubResource("FootShape")
+[node name="Hurtbox" type="Area2D" parent="."]
+position = Vector2(0,-17.39)
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+script = ExtResource("h")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("BodyShape")

@@ -1,0 +1,11 @@
+{
+  "chapter": 5,
+  "number": 10,
+  "name": "把四个名字带回家",
+  "map": "Maps/Level5/5-10.png",
+  "waves": 12,
+  "survival_seconds": 0,
+  "adventure": {
+    "intro": "左门封锁，清除全部波次后从右门离开。"
+  }
+}

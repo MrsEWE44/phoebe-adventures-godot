@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://l7al6le3qp5a"]
+
+[ext_resource type="Script" uid="uid://y3vbg57yn5ls" path="res://Scence/global.gd" id="1_3beb8"]
+[ext_resource type="AudioStream" uid="uid://0pcvs5gu30vs" path="res://Audio/菲比/菲比人鱼湾.mp3" id="2_8sxix"]
+[ext_resource type="AudioStream" uid="uid://g12e1q7hkbwc" path="res://Audio/菲比/菲比低皮质醇.mp3" id="2_w8kls"]
+
+[node name="Global" type="Node" unique_id=11358641]
+script = ExtResource("1_3beb8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1526770090]
+stream = ExtResource("2_8sxix")
+autoplay = true
+bus = &"Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=1266131930]
+stream = ExtResource("2_w8kls")
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="AudioStreamPlayer2" to="." method="_on_audio_stream_player_2_finished"]

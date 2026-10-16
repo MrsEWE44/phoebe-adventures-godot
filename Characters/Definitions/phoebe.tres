@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://Characters/character_definition.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/phoebe.tres" id="2"]
+[ext_resource type="Resource" path="res://Characters/Voices/phoebe.tres" id="3"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/phoebe_states.tres" id="4"]
+
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/phoebe_ultimate.tres" id="5"]
+[ext_resource type="Resource" path="res://Characters/Ultimates/phoebe.tres" id="6"]
+
+[resource]
+script = ExtResource("1")
+character_id = "phoebe"
+display_name = "菲比"
+animations = ExtResource("2")
+reaction_animations = ExtResource("4")
+voice_profile = ExtResource("3")
+skill_projectiles = 3
+ultimate = ExtResource("6")
+ultimate_animations = ExtResource("5")
+ultimate_scale = Vector2(0.11612903225806452,0.11612903225806452)
+
+home_biome = "land"

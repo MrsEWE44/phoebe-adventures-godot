@@ -1,0 +1,105 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://s0jtjx8sayus"]
+
+[ext_resource type="Texture2D" uid="uid://bheoiel3i8bix" path="res://Art/Characters/phoebe_states.png" id="1"]
+
+[sub_resource type="AtlasTexture" id="Frame8"]
+atlas = ExtResource("1")
+region = Rect2(0, 724, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame9"]
+atlas = ExtResource("1")
+region = Rect2(362, 724, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame10"]
+atlas = ExtResource("1")
+region = Rect2(724, 724, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame11"]
+atlas = ExtResource("1")
+region = Rect2(1086, 724, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame0"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame1"]
+atlas = ExtResource("1")
+region = Rect2(362, 0, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame2"]
+atlas = ExtResource("1")
+region = Rect2(724, 0, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame3"]
+atlas = ExtResource("1")
+region = Rect2(1086, 0, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame4"]
+atlas = ExtResource("1")
+region = Rect2(0, 362, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame5"]
+atlas = ExtResource("1")
+region = Rect2(362, 362, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame6"]
+atlas = ExtResource("1")
+region = Rect2(724, 362, 362, 362)
+
+[sub_resource type="AtlasTexture" id="Frame7"]
+atlas = ExtResource("1")
+region = Rect2(1086, 362, 362, 362)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame8")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame9")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame10")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame11")
+}],
+"loop": 0,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame0")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame1")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame2")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame3")
+}],
+"loop": 0,
+"name": &"hit",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Frame4")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame5")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame6")
+}, {
+"duration": 1.0,
+"texture": SubResource("Frame7")
+}],
+"loop": 1,
+"name": &"hurt",
+"speed": 5.0
+}]

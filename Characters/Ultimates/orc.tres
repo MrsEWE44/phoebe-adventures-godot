@@ -1,0 +1,11 @@
+[gd_resource type="Resource" format=3]
+[ext_resource type="Script" path="res://Characters/ultimate_definition.gd" id="1"]
+[resource]
+script = ExtResource("1")
+display_name = "旋斧重击"
+mode = "area"
+damage = 22
+radius = 58
+weapon_id = "bronze_blade"
+cooldown = 8
+windup = 0.9
