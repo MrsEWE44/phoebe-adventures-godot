@@ -1,0 +1,17 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://Player/Ikun.gd" id="1"]
+[ext_resource type="Resource" path="res://Characters/Definitions/ikun.tres" id="2"]
+[sub_resource type="RectangleShape2D" id="Foot"]
+size = Vector2(16,10)
+[node name="Ikun" type="CharacterBody2D" groups=["players"]]
+collision_layer = 1
+collision_mask = 2
+script = ExtResource("1")
+definition = ExtResource("2")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("Foot")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2,2)
+position_smoothing_enabled = true

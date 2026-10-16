@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://Player/Phoebe.tscn" id="1"]
+[ext_resource type="Script" path="res://Player/Nuonuo.gd" id="2"]
+[ext_resource type="Resource" path="res://Characters/Definitions/nuonuo.tres" id="3"]
+[ext_resource type="SpriteFrames" path="res://Characters/Animations/nuonuo.tres" id="4"]
+
+[node name="糯糯" instance=ExtResource("1")]
+script = ExtResource("2")
+definition = ExtResource("3")
+use_campaign_character = false
+
+[node name="AnimatedSprite2D" parent="." index="2"]
+sprite_frames = ExtResource("4")
