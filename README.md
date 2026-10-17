@@ -2,6 +2,21 @@
 
 [中文 / Chinese](README.zh-CN.md) · [English / 英文](README.en.md)
 
+[![Godot 4.7.2](https://img.shields.io/badge/Godot-4.7.2-478cbf?logo=godot-engine&logoColor=white)](https://godotengine.org/)
+[![GDScript](https://img.shields.io/badge/GDScript-2.0-478cbf?logo=godot-engine&logoColor=white)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
+[![Git LFS](https://img.shields.io/badge/Git%20LFS-enabled-0b7285?logo=git&logoColor=white)](https://git-lfs.com/)
+[![2D Game](https://img.shields.io/badge/Genre-2D%20action%20adventure-ff6b6b)](https://github.com/MrsEWE44/phoebe-adventures-godot)
+[![GitHub stars](https://img.shields.io/github/stars/MrsEWE44/phoebe-adventures-godot?style=flat-square&logo=github)](https://github.com/MrsEWE44/phoebe-adventures-godot/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/MrsEWE44/phoebe-adventures-godot?style=flat-square&logo=github)](https://github.com/MrsEWE44/phoebe-adventures-godot/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/MrsEWE44/phoebe-adventures-godot?style=flat-square&logo=github)](https://github.com/MrsEWE44/phoebe-adventures-godot/issues)
+[![Downloads](https://img.shields.io/github/downloads/MrsEWE44/phoebe-adventures-godot/total?style=flat-square&logo=github)](https://github.com/MrsEWE44/phoebe-adventures-godot/releases)
+[![Last commit](https://img.shields.io/github/last-commit/MrsEWE44/phoebe-adventures-godot?style=flat-square)](https://github.com/MrsEWE44/phoebe-adventures-godot/commits/main)
+[![Repository size](https://img.shields.io/github/repo-size/MrsEWE44/phoebe-adventures-godot?style=flat-square)](https://github.com/MrsEWE44/phoebe-adventures-godot)
+
+**Topics / 标签:** `godot` · `gdscript` · `godot-4` · `2d-game` · `action-adventure` · `puzzle-game` · `wave-combat` · `npc-dialogue` · `git-lfs`
+
+**Repository / 仓库:** [github.com/MrsEWE44/phoebe-adventures-godot](https://github.com/MrsEWE44/phoebe-adventures-godot)
+
 > 中文和 English 两个完整版本见上方链接。
 
 Godot 4.7.2 的 2D 探索、解谜与动作战斗项目，目前包含五章、47 个子关卡。
